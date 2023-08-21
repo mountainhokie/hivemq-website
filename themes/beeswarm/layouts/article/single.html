@@ -1,160 +1,290 @@
 {{ define "main" }}
 <script type="text/javascript" src="/js/popup.js"></script>
 <script type="text/javascript" src="/js/pagination.js"></script>
+<script type="text/javascript" src="/js/toc.js"></script>
+
 {{ with .Page.Params.mqttheader }}
-<div class="mqtt-essentials-header"><img src="/img/blog/mqtt-essentials-header.jpg" alt="MQTT Essentials Header" id="essentials-img"></div>
+<div class="mqtt-essentials-header">
+  <img
+    src="/img/blog/mqtt-essentials-header.jpg"
+    alt="MQTT Essentials Header"
+    id="essentials-img"
+  />
+</div>
 <div class="mqtt-ebook-ticker">
-    <article>
-        <h2>Get the MQTT Essentials eBook</h2>
-        72 pages of MQTT education and learning for beginners and experts alike.
-    </article>
-    <button id="tickerCTA">Get eBook</button>
+  <article>
+    <h2>Get the MQTT Essentials eBook</h2>
+    72 pages of MQTT education and learning for beginners and experts alike.
+  </article>
+  <button id="tickerCTA">Get eBook</button>
 </div>
 {{ end }}
 <article class="blogpost">
-    <div class="blog-poster"><img src="{{ .Site.BaseURL }}{{ .Page.Params.poster }}" alt="{{ .Page.Params.title }}" ></div>
-    <div id="back-to-overview"><img src="/img/svg/fa-circle-arrow-left.svg" class="fa-icon" style="position: relative; width: 15px; height: 15px; top: 3px;" alt="arrow left"><a href="/article/"> All Articles</a></div>
-    <aside class="share-buttons" id="share-buttons-desktop">
-            <!-- LinkedIn -->
-            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Params.ogurl }}" target="_blank">
-                <img src="/img/svg/fa-linkedin-social.svg" alt="LinkedIn" />
-            </a>
-            <!-- Facebook -->
-            <a href="http://www.facebook.com/sharer.php?u={{ .Params.ogurl }}" target="_blank">
-                <img src="/img/svg/fa-facebook-social.svg" alt="Facebook" />
-            </a>
-            <!-- Twitter -->
-            <a href="https://twitter.com/share?url={{ .Params.ogurl }}&amp;text={{ .Params.title }}" target="_blank">
-                <img src="/img/svg/fa-twitter-social.svg" alt="Twitter" />
-            </a>
-            <!-- Email -->
-            <a href="mailto:?Subject=I found this interesting blog post for you&amp;Body={{ .Params.title }} {{ .Permalink }}">
-                <img src="/img/svg/fa-mail-social.svg" alt="Email" />
-            </a>
-        </aside>
+  <div class="blog-poster">
+    <img
+      src="{{ .Site.BaseURL }}{{ .Page.Params.poster }}"
+      alt="{{ .Page.Params.title }}"
+    />
+  </div>
+  <div id="back-to-overview">
+    <img
+      src="/img/svg/fa-circle-arrow-left.svg"
+      class="fa-icon"
+      style="position: relative; width: 15px; height: 15px; top: 3px"
+      alt="arrow left"
+    /><a href="/article/"> All Articles</a>
+  </div>
+  <div class="blog-content-container">
+    <aside class="toc-sidebar">
+      <!-- <div class="share-buttons" id="share-buttons-desktop">
+        <a
+          href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Params.ogurl }}"
+          target="_blank"
+        >
+          <img src="/img/svg/fa-linkedin-social.svg" alt="LinkedIn" />
+        </a>
+        <a
+          href="http://www.facebook.com/sharer.php?u={{ .Params.ogurl }}"
+          target="_blank"
+        >
+          <img src="/img/svg/fa-facebook-social.svg" alt="Facebook" />
+        </a>
+        <a
+          href="https://twitter.com/share?url={{ .Params.ogurl }}&amp;text={{ .Params.title }}"
+          target="_blank"
+        >
+          <img src="/img/svg/fa-twitter-social.svg" alt="Twitter" />
+        </a>
+        <a
+          href="mailto:?Subject=I found this interesting blog post for you&amp;Body={{ .Params.title }} {{ .Permalink }}"
+        >
+          <img src="/img/svg/fa-mail-social.svg" alt="Email" />
+        </a>
+      </div> -->
+      <div class="toc">
+        <div class="toc-content">
+          <h3>Table of contents</h3>
+          <ol>
+            <li>
+              <a href="#blog-title-top">MQTT Data Integration with Mongo DB</a>
+            </li>
+            <li>
+              <a href="#about-the-enterprise-extension-for-mongodb"
+                >About the Enterprise Extension for MongoDB</a
+              >
+            </li>
+            <li>
+              <a
+                href="#sample-use-case-hivemq-and-mongodb-make-smart-buildings-energy-efficient-and-sustainable"
+                >Sample Use Case: HiveMQ and MongoDB Make Smart Buildings Energy
+                Efficient and Sustainable</a
+              >
+            </li>
+            <li>
+              <a href="#reference-architecture">Reference Architecture</a>
+            </li>
+            <li>
+              <a href="#get-started-with-the-enterprise-mongodb-extension"
+                >Set Started with the Enterprise MongoDB extension</a
+              >
+            </li>
+            <li>
+              <a href="#contact-us-to-explore-how-hivemq-can-help"
+                >Contact Us</a
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+    </aside>
+
     <div class="blog-content">
-    <aside class="blog-sidenav">
-            <span style="font-weight: bold; padding-left: 10px;">Related Links</span>
-            <ul>
-                <li><a href="/hivemq/features/" title="HiveMQ Product Info">HiveMQ Product Info</a></li>
-                <li><a href="/downloads/" title="Get HiveMQ">Get HiveMQ</a></li>
-                {{ with .Params.special_link01 }}
-                    <li><a href="{{ index . 0 }}" target="_blank">{{ index . 1 }}</a></li>
-                {{ end }}
-                {{ with .Params.special_link02 }}
-                    <li><a href="{{ index . 0 }}" target="_blank">{{ index . 1 }}</a></li>
-                {{ end }}
-                {{ with .Params.special_link03 }}
-                    <li><a href="{{ index . 0 }}" target="_blank">{{ index . 1 }}</a></li>
-                {{ end }}
-            </ul>
-        </aside>
-        {{ if .Page.Params.Headline }}
-            <h1 class="blog-title">{{ .Page.Params.Headline }}</h1>
-        {{ else }}
-            <h1 class="blog-title">{{ .Page.Params.Title }}</h1>
-        {{ end }}
-        {{ partial "post-infobox-top.html" . }}
-        <section class="blogtext">
+      <aside class="blog-sidenav">
+        <span style="font-weight: bold; padding-left: 10px">Related Links</span>
+        <ul>
+          <li>
+            <a href="/hivemq/features/" title="HiveMQ Product Info"
+              >HiveMQ Product Info</a
+            >
+          </li>
+          <li><a href="/downloads/" title="Get HiveMQ">Get HiveMQ</a></li>
+          {{ with .Params.special_link01 }}
+          <li><a href="{{ index . 0 }}" target="_blank">{{ index . 1 }}</a></li>
+          {{ end }} {{ with .Params.special_link02 }}
+          <li><a href="{{ index . 0 }}" target="_blank">{{ index . 1 }}</a></li>
+          {{ end }} {{ with .Params.special_link03 }}
+          <li><a href="{{ index . 0 }}" target="_blank">{{ index . 1 }}</a></li>
+          {{ end }}
+        </ul>
+      </aside>
+      {{ if .Page.Params.Headline }}
+      <h1 id="blog-title-top" class="blog-title">
+        {{ .Page.Params.Headline }}
+      </h1>
+      {{ else }}
+      <h1 id="blog-title-top" class="blog-title">{{ .Page.Params.Title }}</h1>
+      {{ end }} {{ partial "post-infobox-top.html" . }}
+
+      <section class="blogtext">
         <!-- Share buttons below 1024px -->
         <div class="share-buttons" id="share-buttons-mobile">
-            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Params.ogurl }}" target="_blank">
-                <img src="/img/svg/fa-linkedin-social.svg" alt="LinkedIn" />
-            </a>
-            <a href="http://www.facebook.com/sharer.php?u={{ .Params.ogurl }}" target="_blank">
-                <img src="/img/svg/fa-facebook-social.svg" alt="Facebook" />
-            </a>
-            <a href="https://twitter.com/share?url={{ .Params.ogurl }}&amp;text={{ .Params.title }}" target="_blank">
-                <img src="/img/svg/fa-twitter-social.svg" alt="Twitter" />
-            </a>
-            <a href="mailto:?Subject=I found this interesting blog post for you&amp;Body={{ .Params.title }} {{ .Permalink }}">
-                <img src="/img/svg/fa-mail-social.svg" alt="Email" />
-            </a>
+          <a
+            href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Params.ogurl }}"
+            target="_blank"
+          >
+            <img src="/img/svg/fa-linkedin-social.svg" alt="LinkedIn" />
+          </a>
+          <a
+            href="http://www.facebook.com/sharer.php?u={{ .Params.ogurl }}"
+            target="_blank"
+          >
+            <img src="/img/svg/fa-facebook-social.svg" alt="Facebook" />
+          </a>
+          <a
+            href="https://twitter.com/share?url={{ .Params.ogurl }}&amp;text={{ .Params.title }}"
+            target="_blank"
+          >
+            <img src="/img/svg/fa-twitter-social.svg" alt="Twitter" />
+          </a>
+          <a
+            href="mailto:?Subject=I found this interesting blog post for you&amp;Body={{ .Params.title }} {{ .Permalink }}"
+          >
+            <img src="/img/svg/fa-mail-social.svg" alt="Email" />
+          </a>
         </div>
-            {{ .Content }}
-            {{ partial "authorbox.html" . }}
-            <aside class="blog-sidenav mobile-only">
-                <span style="font-weight: bold; padding-left: 10px;">Related Links</span>
-                <ul>
-                    <li><a href="/hivemq/features/">HiveMQ Product Info</a></li>
-                    <li><a href="/downloads/" target="_blank">Download HiveMQ</a></li>
-                    {{ with .Params.special_link01 }}
-                        <li><a href="{{ index . 0 }}">{{ index . 1 }}</a></li>
-                    {{ end }}
-                    {{ with .Params.special_link02 }}
-                        <li><a href="{{ index . 0 }}">{{ index . 1 }}</a></li>
-                    {{ end }}
-                    {{ with .Params.special_link03 }}
-                        <li><a href="{{ index . 0 }}" target="_blank">{{ index . 1 }}</a></li>
-                    {{ end }}
-                </ul>
-            </aside>
-        </section>
-   
-        {{ partial "section-nav" . }}
-        <div id="blog-nl-box" class="newsletter-blog-extra">
-            <h3 style="margin-bottom: 5px; padding-top: 15px;">Keep up to date on HiveMQ</h3>
-            Subscribe to our newsletter for updates on HiveMQ, MQTT, and IoT.<br/><br/>
-            <div class="hubspot-form">
-                <!--[if lte IE 8]>
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                <![endif]-->
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                <script>
-              hbspt.forms.create({
-                region: "na1",
-                portalId: "5867930",
-                formId: "3b8feebe-56f3-428e-814b-993d8b58e8e5"
+
+        {{ .Content }} {{ partial "authorbox.html" . }}
+
+        <aside class="blog-sidenav mobile-only">
+          <span style="font-weight: bold; padding-left: 10px"
+            >Related Links</span
+          >
+          <ul>
+            <li><a href="/hivemq/features/">HiveMQ Product Info</a></li>
+            <li><a href="/downloads/" target="_blank">Download HiveMQ</a></li>
+            {{ with .Params.special_link01 }}
+            <li><a href="{{ index . 0 }}">{{ index . 1 }}</a></li>
+            {{ end }} {{ with .Params.special_link02 }}
+            <li><a href="{{ index . 0 }}">{{ index . 1 }}</a></li>
+            {{ end }} {{ with .Params.special_link03 }}
+            <li>
+              <a href="{{ index . 0 }}" target="_blank">{{ index . 1 }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </aside>
+      </section>
+
+      {{ partial "section-nav" . }}
+      <div id="blog-nl-box" class="newsletter-blog-extra">
+        <h3 style="margin-bottom: 5px; padding-top: 15px">
+          Keep up to date on HiveMQ
+        </h3>
+        Subscribe to our newsletter for updates on HiveMQ, MQTT, and IoT.<br /><br />
+        <div class="hubspot-form">
+          <!--[if lte IE 8]>
+            <script
+              charset="utf-8"
+              type="text/javascript"
+              src="//js.hsforms.net/forms/v2-legacy.js"
+            ></script>
+          <![endif]-->
+          <script
+            charset="utf-8"
+            type="text/javascript"
+            src="//js.hsforms.net/forms/v2.js"
+          ></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "5867930",
+              formId: "3b8feebe-56f3-428e-814b-993d8b58e8e5",
             });
-            </script>
-            </div>
-            <div id="signup-consent">By clicking the <i>subscribe</i> button, you give your consent to the use of your data according to our <a href="/privacy-policy/" rel="noopener" target="_blank">Privacy Policy</a>. You can withdraw your consent at any time with future effect.
-            </div>
+          </script>
         </div>
-        <!-- Start disqus -->
-        <div id="disqus_thread"></div>
-        <script>
-            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-               // true for mobile device
-                    document.getElementById('disqus_thread').innerHTML = "For comments please switch to the desktop version of our website."
-               } else if ( window.innerWidth <= 600 ){
-                    document.getElementById('disqus_thread').innerHTML = "For comments please switch to the desktop version of our website."
-               } else {
-               // false for not mobile device
-               (function() {
-                var d = document, s = d.createElement('script');
-                s.src = 'https://hivemq-1.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-            }
-            </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <!-- End disqus -->
+        <div id="signup-consent">
+          By clicking the <i>subscribe</i> button, you give your consent to the
+          use of your data according to our
+          <a href="/privacy-policy/" rel="noopener" target="_blank"
+            >Privacy Policy</a
+          >. You can withdraw your consent at any time with future effect.
+        </div>
+      </div>
+      <!-- Start disqus -->
+      <div id="disqus_thread"></div>
+      <script>
+        if (
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          )
+        ) {
+          // true for mobile device
+          document.getElementById("disqus_thread").innerHTML =
+            "For comments please switch to the desktop version of our website.";
+        } else if (window.innerWidth <= 600) {
+          document.getElementById("disqus_thread").innerHTML =
+            "For comments please switch to the desktop version of our website.";
+        } else {
+          // false for not mobile device
+          (function () {
+            var d = document,
+              s = d.createElement("script");
+            s.src = "https://hivemq-1.disqus.com/embed.js";
+            s.setAttribute("data-timestamp", +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        }
+      </script>
+      <noscript
+        >Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript"
+          >comments powered by Disqus.</a
+        ></noscript
+      >
+      <!-- End disqus -->
     </div>
+  </div>
 </article>
 
 <div id="nlPopup" class="popup-container">
-    <div id="nlClose"><img src="/img/svg/fa-times.svg" style="height: 20px; width: 20px" alt="close popup icon"></div>
-    <h4>Like this post?</h4>
-    <h3>Get HiveMQ news delivered<br /> directly to your inbox</h3>
-    <div class="nl-popup">
-        <!--[if lte IE 8]>
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-        <![endif]-->
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-        <script>
-          hbspt.forms.create({
-            region: "na1",
-            portalId: "5867930",
-            formId: "7ba696af-b7b9-430d-a4aa-4c621ba589c5"
-        });
-        </script>
-    </div>
-    <br/>
-    <div class="privacy-agreement">By clicking the <i>subscribe</i> button, you give your consent to the
-        use of your data according to our <a href="/privacy-policy/">Privacy Policy</a>. You can withdraw
-        your consent at any time with future effect.
-    </div>
+  <div id="nlClose">
+    <img
+      src="/img/svg/fa-times.svg"
+      style="height: 20px; width: 20px"
+      alt="close popup icon"
+    />
+  </div>
+  <h4>Like this post?</h4>
+  <h3>
+    Get HiveMQ news delivered<br />
+    directly to your inbox
+  </h3>
+  <div class="nl-popup">
+    <!--[if lte IE 8]>
+      <script
+        charset="utf-8"
+        type="text/javascript"
+        src="//js.hsforms.net/forms/v2-legacy.js"
+      ></script>
+    <![endif]-->
+    <script
+      charset="utf-8"
+      type="text/javascript"
+      src="//js.hsforms.net/forms/v2.js"
+    ></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "5867930",
+        formId: "7ba696af-b7b9-430d-a4aa-4c621ba589c5",
+      });
+    </script>
+  </div>
+  <br />
+  <div class="privacy-agreement">
+    By clicking the <i>subscribe</i> button, you give your consent to the use of
+    your data according to our <a href="/privacy-policy/">Privacy Policy</a>.
+    You can withdraw your consent at any time with future effect.
+  </div>
 </div>
 {{ end }}

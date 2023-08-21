@@ -727,3 +727,128 @@ p, div ~ p {
    }
 
 }
+
+
+/* ------------------ 
+                        Take Home Test
+                                       ---------------------- */
+
+/* Table of Contents Specific Styles */
+
+.toc {
+   font-family: "Inter", sans-serif;
+ }
+ 
+ .toc-content {
+   background: #f4f5f3;
+   font-family: Inter;
+   padding-bottom: 17px;
+   margin: 0 auto;
+   width: 100%;
+ }
+ 
+ .toc h3 {
+   font-size: 1.25rem;
+   font-weight: 700;
+   font-family: Inter;
+   line-height: 1rem;
+   border-bottom: 2px solid #000;
+   padding: 28px 0 24px 59px;
+   margin: 0;
+ }
+ 
+ .toc ol {
+   margin: 18px 40px 0 81px;
+   padding: 0;
+   font-size: 0.9375rem;
+   line-height: 100%; /* 0.9375rem */
+ }
+ 
+ .toc li {
+   margin-bottom: 15px;
+ }
+ 
+ .toc a {
+   color: #000;
+   font-weight: normal;
+ }
+ 
+ @media only screen and (min-width: 768px) {
+   .toc {
+     margin-top: 1rem;
+   }
+   .toc-content {
+     width: 335px;
+     margin: 0;
+   }
+ }
+ 
+ @media only screen and (min-width: 1024px) {
+   .blog-content-container {
+     display: flex;
+   }
+ 
+   .toc {
+     position: sticky;
+     top: 50%;
+     transform: translateY(-50%);
+     left: 50%;
+     margin-top: calc(100% + 120px);
+   }
+ }
+ 
+ @media only screen and (max-width: 1024px) {
+   .toc-sidebar {
+     float: left;
+     margin: 2.5% 2.5% 2.5% 0;
+     position: relative;
+     z-index: 100;
+   }
+ }
+ 
+ @media only screen and (min-width: 1280px) {
+   .blog-content-container aside {
+     width: 161px;
+   }
+   .toc {
+     transform: translate(-50%, -50%);
+     float: left;
+   }
+ }
+ 
+ @media only screen and (min-width: 1600px) {
+   .toc {
+     margin-left: 8px;
+   }
+ }
+ 
+ /* TOC Additional Edits */
+ .blog-content {
+   position: relative;
+   padding: 20px 4.5% 50px 4.5%;
+ }
+ 
+ @media only screen and (min-width: 1024px) {
+   #back-to-overview {
+     position: absolute;
+   }
+ 
+   .blog-content > .blog-title {
+     padding-right: 135px;
+   }
+ 
+   .blog-sidenav {
+     position: absolute;
+     top: 35px;
+     right: 30px;
+     margin: 0 0px 0 25px;
+   }
+ 
+   .share-buttons {
+     position: static;
+     margin-left: 9.5%;
+     margin-top: 175px;
+     width: 36px;
+   }
+ }
+ 

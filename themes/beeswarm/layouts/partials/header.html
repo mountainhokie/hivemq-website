@@ -1,54 +1,66 @@
 <!-- charset|http-equiv|viewport -->
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- title -->
 <title>{{ .Params.Title }}</title>
 {{ if .Page.Params.canonical }}
-<link rel="canonical" href="{{ .Page.Params.canonical }}">
+<link rel="canonical" href="{{ .Page.Params.canonical }}" />
 {{ else }}
-<link rel="canonical" href="https://www.hivemq.com{{ .RelPermalink }}">
+<link rel="canonical" href="https://www.hivemq.com{{ .RelPermalink }}" />
 {{ end }}
-<link rel="icon" type="image/png" href="/img/favicon.png">
-<link rel="apple-touch-icon" href="/img/favicon.png">
+<link rel="icon" type="image/png" href="/img/favicon.png" />
+<link rel="apple-touch-icon" href="/img/favicon.png" />
 
 <!-- css  -->
-{{ $style := resources.Get "css/style.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
-{{ $normalize := resources.Get "css/normalize.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" type="text/css" href="{{ $normalize.Permalink }}">
-{{ $syntax := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" type="text/css" href="{{ $syntax.Permalink }}">
+{{ $style := resources.Get "css/style.css" | resources.Minify |
+resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" />
+{{ $normalize := resources.Get "css/normalize.css" | resources.Minify |
+resources.Fingerprint }}
+<link rel="stylesheet" type="text/css" href="{{ $normalize.Permalink }}" />
+{{ $syntax := resources.Get "css/syntax.css" | resources.Minify |
+resources.Fingerprint }}
+<link rel="stylesheet" type="text/css" href="{{ $syntax.Permalink }}" />
 <!-- "with" checks if a custom.css is defined in front matter. If not the following will not be rendered -->
-{{ with .Params.custom_css }}
-{{ $stylea := resources.Get . | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $stylea.Permalink }}">
+{{ with .Params.custom_css }} {{ $stylea := resources.Get . | resources.Minify |
+resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $stylea.Permalink }}" />
 {{ end }}
 <link rel="stylesheet" href="/css/output.css" />
 
+<!-- Inter Font Family -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+
 <!-- jQuery 3.4.1. -->
-<script src="/vendor/jquery/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script
+  src="/vendor/jquery/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"
+></script>
 
 <!-- Everything else ('SEO' meta tags, icons, Open Graph, etc.) -->
 {{ if .Params.noindex }}
 <meta name="robots" content="noindex" />
 {{ else }}
-<meta name="robots" content="index, follow"/>
-{{ end }}
-{{ if isset .Page.Params "meta_description" }}
-    <meta name="description" content="{{ .Params.meta_description }}" />
-{{ end }}
-{{ if isset .Page.Params "authors" }}
-    {{ $authorNames := slice }}
-    {{ range $author := .Page.Params.authors }}
-        {{ $data := index $.Site.Data.authors $author }}
-        {{$authorNames = $authorNames | append (printf "%s %s" $data.name.firstName $data.name.lastName)}}
-    {{ end }}
-    <meta name="author" content="{{ delimit $authorNames " and " }}" />
-{{ end }}
-<meta property="og:url" content="{{ .Permalink }}">
-{{ if isset .Params "ogtitle" }} <meta property="og:title" content="{{ .Params.ogtitle }}">{{ end }}
-{{ if isset .Params "ogdescription" }} <meta property="og:description" content="{{ .Params.ogdescription }}">{{ end }}
-{{ if isset .Params "ogimage" }} <meta property="og:image" content="{{ .Params.ogimage }}">{{ end }}
-
+<meta name="robots" content="index, follow" />
+{{ end }} {{ if isset .Page.Params "meta_description" }}
+<meta name="description" content="{{ .Params.meta_description }}" />
+{{ end }} {{ if isset .Page.Params "authors" }} {{ $authorNames := slice }} {{
+range $author := .Page.Params.authors }} {{ $data := index $.Site.Data.authors
+$author }} {{$authorNames = $authorNames | append (printf "%s %s"
+$data.name.firstName $data.name.lastName)}} {{ end }} <meta name="author"
+content="{{ delimit $authorNames " and " }}" /> {{ end }}
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ if isset .Params "ogtitle" }}
+<meta property="og:title" content="{{ .Params.ogtitle }}" />{{ end }} {{ if
+isset .Params "ogdescription" }}
+<meta property="og:description" content="{{ .Params.ogdescription }}" />{{ end
+}} {{ if isset .Params "ogimage" }}
+<meta property="og:image" content="{{ .Params.ogimage }}" />{{ end }}
