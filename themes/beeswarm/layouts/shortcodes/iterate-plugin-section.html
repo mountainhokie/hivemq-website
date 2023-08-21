@@ -1,0 +1,25 @@
+
+<section id="marketplace">
+<div id="marketplace-description"><p>The HiveMQ Marketplace is a catalog of pre-built extensions built by the HiveMQ team and the HiveMQ community.</p>
+</div>
+<div id="extension-list">
+      {{ range where .Site.RegularPages "Section" "marketplace" }}
+      <a href="{{ .Permalink }}">   
+            <div class="extension-card {{ range $purpose := .Params.purpose }}{{ $purpose }} {{ end }}" >
+                  <div class="ext-card-upper">
+                        <div style="background-image: url( {{ .Params.cover }} );" class="extensioncard-cover"></div>
+                        <h3>{{.Title}}</h3>
+                        <p class="ext-short">{{ .Params.card_description }}</p>
+                  </div>
+                  <div>
+                        <p class="ext-params">
+                              <b>Type:</b>{{ range .Params.purpose }} {{ . }} {{ end }} <br />
+                              <b>License:</b> {{ .Params.license }}
+                        </p>
+                        <button class="ext-learn-more"><img src="/img/svg/fa-circle-arrow-right.svg" style="height: 16px; position: relative; top: 3px;"> Learn more</button>
+                  </div>
+            </div>
+      </a>
+      {{ end }}
+</div> 
+</section>

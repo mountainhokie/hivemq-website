@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Georg",
+        "lastName": "Held"
+    },
+    "image": "/img/blog/author-gh.jpg",
+    "description": "Georg serves as an engineering manager at HiveMQ. Under his responsibility the HiveMQ Broker, Enterprise Extensions, and Swarm are developed.",
+    "links": {
+        "email": "georg.held@hivemq.com"
+    }
+}

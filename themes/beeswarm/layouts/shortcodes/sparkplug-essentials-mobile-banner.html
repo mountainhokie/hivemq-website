@@ -1,0 +1,57 @@
+<section class="popup-layer popup-form-standard" id="ebook-download-form">
+<div class="popup-form-standard-container" id="ebook-download-form-container">
+   <img src="/img/svg/fa-times.svg" id="close-ebook" style="float: right; height: 20px; width: 20px; position: relative; top: -8px; right: -15px; cursor: pointer;" />
+   <div id="ebook-form-layer-header">
+      <div style="min-width: 100px; margin-right: 10px;">
+         <img src="/img/sparkplug-ebook-cover.png" class="ebook-banner" id="sparkplug-ebook-cover-form-layer" />
+      </div>
+      <div>
+         <h3>Get the Sparkplug Essentials eBook</h3>
+         Fill out the form below, we will send you an email containing a link to download the free eBook.
+      </div>
+   </div>
+   <hr>
+   <div class="hubspot-form">
+      <!--[if lte IE 8]>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <![endif]-->
+      <script charset="utf-877" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+      <script>
+      hbspt.forms.create({
+      portalId: "5867930",
+      formId: "9f28c35b-5d5c-4228-a585-f62f4c947a76"
+      });
+      </script>
+   </div>
+</div>
+</section>
+
+<div id="ebook-banner-mobile">
+<div style="border: 1px solid #999; border-radius: 10px; padding:0 10px 25px 10px;">
+   <img src="/img/sparkplug-ebook-cover.png" class="ebook-banner" style="height: 140px; margin: 10px 25px 0 0; float: left;" />
+   <h4>Get the Sparkplug Essentials eBook</h4>
+   This will be your kickstart for MQTT Sparkplug. The entire Sparkplug blog series is now available as eBook.
+   <br/>
+   <button class="btn-grey-outline ebook-banner" style="margin-top: 10px;">Get eBook now</button>
+</div>
+<!--div style="width: 45%;">
+      <div class="cloud-banner">
+         <h4>Get Started with HiveMQ Cloud!</h4>
+         It´s free to connect up to 100 devices.<br/><span style="font-size: 12px">(no credit card required)</span>
+         <br/>
+         <br/>
+         <a href="https://console.hivemq.cloud/?utm_source=hivemq-com&utm_medium=mqtt-essentials-banner" target="_blank" title="Sign up for HiveMQ MQTT Cloud Broker"><button class="btn-grey-outline">Sign up now</button></a>
+      </div>
+</div-->
+</div>
+<div class="clearfix"></div>
+
+<script>
+   $(".ebook-banner").click(function(){
+      $("#ebook-download-form").show(50, function(){
+         $("#close-ebook").click(function(){
+            $("#ebook-download-form").hide(50);
+            })
+      });
+   });
+</script>

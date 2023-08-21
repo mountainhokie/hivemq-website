@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Jean-Noel",
+        "lastName": "Guillerme"
+    },
+    "image": "/img/blog/author-jng.jpg",
+    "description": "Jean-Noel works as an independent software developer in London. He has been working on projects around messaging for more than 10 years. Jean-Noel started working with MQTT a couple of years ago, when he was involved in mobile app projects.",
+    "links": {
+        "github": "https://github.com/jnguillerme/mqtt.dart"
+    },
+    "isGuestAuthor": "true"
+}

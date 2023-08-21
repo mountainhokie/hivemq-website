@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="default-list-overview">
+        <article class="post-preview">
+        {{ range (.Paginator 48).Pages }}
+        {{ partial "list-overview-item" . }}
+        {{ end }}
+        </article>
+        <div style="margin-top: 50px;">{{ template "_internal/pagination.html" . }}</div>
+</section>
+{{ end }}

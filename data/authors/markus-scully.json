@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Markus",
+        "lastName": "Scully"
+    },
+    "image": "/img/blog/author-ms.png",
+    "description": "Markus Scully is a Software Engineer at HiveMQ. His work involves developing new features for the HiveMQ broker with a focus on satisfying customer needs and ensuring quality.",
+    "links": {
+        "email": "markus.scully@hivemq.com"
+    }
+}

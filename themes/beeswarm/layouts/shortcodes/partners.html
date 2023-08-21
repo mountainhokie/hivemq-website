@@ -1,0 +1,32 @@
+<section class="light-bg">
+      <h2>Resellers</h2>
+         <article class="partner-box-wrapper">
+         {{ range .Site.Data.partners.reseller }}
+               <a href="{{ .url }}" target="_blank"><img src="/img/partners/{{ .img }}" class="partner-box"></a>
+         {{ end }}
+      </article>
+   </section>
+<section>
+   <h2>Consulting/Training Partners</h2>
+      <article class="partner-box-wrapper">
+      {{ range .Site.Data.partners.training }}
+            <a href="{{ .url }}" target="_blank"><img src="/img/partners/{{ .img }}" class="partner-box"></a>
+      {{ end }}
+   </article>
+</section>
+<section class="light-bg">
+      <h2>Technology Partners</h2>
+      <article class="partner-box-wrapper">
+      {{ range .Site.Data.partners.technology }}
+            <a href="{{ .url }}" target="_blank"><img src="/img/partners/{{ .img }}" class="partner-box"></a>
+      {{ end }}
+      </article>
+</section>
+<section style="padding-bottom: 50px; margin-bottom: -10px;">
+    <h2>Hosting Partners</h2>
+    <article class="partner-box-wrapper">
+    {{ range .Site.Data.partners.hosting }}
+         <a href="{{ .url }}" target="_blank"><img src="/img/partners/{{ .img }}" class="partner-box"></a>
+    {{ end }}
+   </article>
+</section>

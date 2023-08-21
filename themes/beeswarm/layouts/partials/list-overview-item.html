@@ -1,0 +1,25 @@
+<div class="overview-content">
+    <div class="overview-poster"><a href="{{.Permalink}}"><img src="{{ .Params.poster }}" alt="blog post header image"></a></div>
+    <div class="overview-description">
+        {{ $authorNames := slice }}
+        {{ range $author := .Page.Params.authors }}
+            {{ $data := index $.Site.Data.authors $author }}
+            {{$authorNames = $authorNames | append (printf "%s %s" $data.name.firstName $data.name.lastName)}}
+        {{ end }}
+        <span class="overview-details">{{ delimit $authorNames " and " }}, {{ dateFormat " Jan 2, 2006" .Date }}</span>
+        <h3>{{ if .Params.headline }}
+            <a href="{{.Permalink}}">{{ .Params.headline }}</a>
+            {{ else }}
+            <a href="{{.Permalink}}">{{ .Title }}</a>
+            {{ end }}
+        </h3>
+        <span class="overview-details">
+            {{ if .Params.tags }}Category:
+                    {{range .Params.tags }}
+                            <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="tag-links" >{{ . }}</a>
+                    {{end}}
+            {{end}}
+        </span>
+        <p class="overview-summary">{{ .Params.custom_summary }}</p>
+    </div>
+</div>

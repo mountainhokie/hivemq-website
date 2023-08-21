@@ -1,0 +1,72 @@
+{
+  "MQTT 5 in Azure mit HiveMQ Enterprise MQTT Broker": {
+    "id": "10",
+    "release": "JUN 2020",
+    "speaker": "Dominik Obermaier, Sven Kobow",
+    "title": "MQTT 5 in Azure mit HiveMQ Enterprise MQTT Broker",
+    "url": "https://www.diva-e.com/de/txp/webinare/mqtt-5-in-azure/"
+  },
+  "How to build a reliable connected car platform with MQTT": {
+    "id": "09",
+    "release": "JUN 2020",
+    "speaker": "Christian Götz",
+    "title": "How to build a reliable connected car platform with MQTT",
+    "url": "https://mobex.io/webinars/how-to-build-a-reliable-connected-car-platform-with-mqtt/"
+  },
+  "The Four Paradigm Shifts for the Connected Car of the Future": {
+    "id": "08",
+    "release": "MAY 2020",
+    "speaker": "Dominik Obermaier, Daniel Himmelein",
+    "title": "The Four Paradigm Shifts for the Connected Car of the Future",
+    "url": "https://youtu.be/_M6bRX8gWtI"
+  },
+  "HiveMQ + Kafka - The Ideal Solution for IoT MQTT Data Integration": {
+    "id": "07",
+    "release": "APR 2020",
+    "speaker": "Dominik Obermaier, Magi Erber",
+    "title": "HiveMQ + Kafka - The Ideal Solution for IoT MQTT Data Integration",
+    "url": "https://youtu.be/w47_ylEM0Bs"
+  },
+  "Machine to Machine Communication with IoT Edge & HiveMQ": {
+    "id": "06",
+    "release": "MAR 2020",
+    "speaker": "Christoph Schäbel, Kresimir Galic",
+    "title": "Machine to Machine Communication with IoT Edge & HiveMQ",
+    "url": "https://youtu.be/su80An90rSE"
+  },
+  "Introducing HiveMQ Cloud": {
+    "id": "05",
+    "release": "FEB 2020",
+    "speaker": "Dominik Obermaier, Magi Erber",
+    "title": "Introducing HiveMQ Cloud",
+    "url": "https://youtu.be/2fJMDWSgNUY"
+  },
+  "Building Scalable and Reliable MQTT Clients for Enterprise Computing": {
+    "id": "04",
+    "release": "DEC 2019",
+    "speaker": "Silvio Giebl, Clive Jevons",
+    "title": "Building Scalable and Reliable MQTT Clients for Enterprise Computing",
+    "url": "https://youtu.be/5qZLNzzVLkI"
+  },
+  "IoT in Production": {
+    "id": "03",
+    "release": "NOV 2019",
+    "speaker": "Florian Raschbichler",
+    "title": "IoT in Production",
+    "url": "https://youtu.be/ux5KlRzKjtI"
+  },
+  "MQTT 5: Why You Need It and Potential Pitfalls": {
+    "id": "02",
+    "release": "OCT 2019",
+    "speaker": "Dominik Obermaier",
+    "title": "MQTT 5: Why You Need It and Potential Pitfalls",
+    "url": "https://youtu.be/Q8nQ2J27r0c"
+  },
+  "Lightweight & Scalable IoT Messaging with MQTT": {
+    "id": "01",
+    "release": "SEP 2019",
+    "speaker": "Dominik Obermaier",
+    "title": "Lightweight & Scalable IoT Messaging with MQTT",
+    "url": "https://youtu.be/TyRxxx6IBqw"
+  }
+}

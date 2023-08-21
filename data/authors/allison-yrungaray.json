@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Allison",
+        "lastName": "Yrungaray"
+    },
+    "image": "/img/portraits/author-allison-yrungaray.png",
+    "description": "Allison Yrungaray is Head of Communications at HiveMQ. She has 20 years of experience in high-tech marketing and public relations, much of it focused on the Internet of Things. She has written hundreds of technical articles and achieved media placements in the Wall Street Journal, New York Times, Forbes and other leading publications.",
+    "links": {
+        "email": "allison.yrungaray@hivemq.com"
+    }
+}

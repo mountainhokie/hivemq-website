@@ -1,0 +1,9 @@
+{
+    "name": {
+        "firstName": "Christian",
+        "lastName": "Kurze"
+    },
+    "image": "/img/blog/author-ck-mongodb.png",
+    "description": "Christian spent the last 10+ years on data management and data integration in order to generate value out of data. In MongoDB he works as a Principal Solutions Architect. Prior to joining MongoDB, he worked on data virtualization, data warehousing and active metadata management. He holds a PhD in data warehouse automation. When not working, he loves to play the Trumpet in a Big Band as well as traditional Bavarian wind music.",
+    "isGuestAuthor": "true"
+}

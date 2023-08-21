@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Andrej",
+        "lastName": "Schujkow"
+    },
+    "image": "/img/blog/author-as.png",
+    "description": "Andrej is Senior Frontend Engineer at HiveMQ.",
+    "links": {
+        "email": "andreas.schujkow@hivemq.com"
+    }
+}

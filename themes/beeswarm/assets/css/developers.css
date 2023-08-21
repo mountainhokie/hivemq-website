@@ -1,0 +1,456 @@
+/*******************/
+/* Resources start */
+/*******************/
+
+.resources-h1 {
+  color: #fff;
+  font-size: 55px;
+  line-height: 2.5rem;
+}
+
+.resources-h1::before {
+  content: "II";
+  color: #ffc000;
+  letter-spacing: -0.5rem;
+  padding-right: 20px;
+}
+
+.resources-h2 {
+  color: #fff;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.resources-section {
+  text-align: center;
+  border: 0;
+  outline: none;
+}
+
+.resources-section h1 {
+  font-size: 36px;
+  margin: 35px 0 25px 0;
+}
+
+.res-box-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.res-box-wrapper > .res-box {
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #c9c9c9;
+  box-shadow: 2px 2px 4px #afafaf;
+  margin: 10px 12px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.res-box h3,
+.res-box h4,
+.res-box p {
+  padding: 0 12px;
+  margin: 0;
+}
+
+.res-box h3 {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 5px 0;
+}
+
+.res-box p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.core-resource-box,
+.resources-section .blog-series-box {
+  width: 220px;
+}
+/* Core Resources */
+.core-resource-box h3 {
+  height: 45px;
+}
+
+.core-resource-box p {
+  height: 65px;
+}
+
+/* Blog Series */
+#blog-series {
+  background-color: #003e6e;
+  padding-bottom: 10px;
+}
+
+#blog-series h1 {
+  color: #fff;
+  padding-top: 20px;
+}
+
+.res-box.blog-series-box,
+#blog-series .large-yellow-btn {
+  box-shadow: none
+}
+.res-box .med-cta {
+  font-size: 14px;
+  margin: 5px 0 15px 10px;
+}
+
+.resources-section .blog-series-box h3 {
+    margin: 0;
+    padding: 0 0 5px 10px;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    background: rgb(85,95,99);
+    background: linear-gradient(0deg, rgba(85,95,99,1) 0%, rgba(133,143,147,1) 100%);
+    color: #fff;
+}
+
+.resources-section .blog-series-box p {
+  height: 80px;
+  margin-top: 10px;
+}
+
+/* Videos - Whitepapers */
+.video-box,
+.whitepaper-box {
+  width: 275px;
+}
+.video-box h3 {
+  margin: 0;
+  padding: 20px 5px 5px 15px;
+  height: 50px;
+  background-color: #e8ecef;
+}
+.video-box p {
+  height: 80px;
+  margin: 15px 12px 5px 5px;
+}
+
+.video-box .video-length {
+  font-size: 12px;
+}
+
+#white-papers {
+  background-color: #e8ecef;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+#white-papers h1 {
+  padding-top: 25px;
+}
+
+.whitepaper-box h3 {
+  height: 45px;
+}
+
+.whitepaper-box p {
+  height: 85px;
+}
+
+/* Newsletters */
+#newsletters {
+  width: 65%;
+  margin: 0 auto;
+}
+
+/*****************/
+/* Resources end */
+/*****************/
+
+/* Overview Start */
+.developer-overview {
+  width: 90%;
+  padding: 0 5%;
+  margin: 0 0 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#core-resources {
+  text-align: center;
+}
+
+#core-resources .toplinkcard {
+  display: inline-block;
+  margin: 20px;
+}
+
+.toplinkcard {
+  width: 400px;
+  height: 330px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 4px #afafaf;
+}
+
+.toplinkcard-hl {
+  width: 340px;
+  height: 50px;
+  padding: 5px 30px 20px 30px;
+  color: #333;
+  text-align: center;
+}
+
+#whitepapers {
+  background-color: transparent;
+  text-align: center;
+}
+
+#whitepapers .resources-card {
+  font-weight: 300;
+  box-shadow: 1px 1px 4px #afafaf;
+  font-size: 90%;
+  line-height: 1.25rem;
+}
+#whitepapers .resources-card h3 {
+  font-size: 18px;
+  line-height: 1.25rem;
+}
+/* Overview End */
+/* Community Start */
+
+#open-source-logo-box {
+  display: flex;
+  align-items: top;
+  justify-content: space-around;  
+  margin: 15px 10% 25px;
+  border-bottom: 1px solid #000; 
+  padding: 40px 20px;
+}
+
+.open-source-logo {
+  height: 125px;
+}
+.open-source-logo.mqtt-cli-logo {
+  height: 110px;
+}
+.clean-gray-table.community-table {
+  width: 100%;
+  margin: 0;
+}
+
+.clean-gray-table.community-table .table-head {
+  text-align: left;
+  padding: 8px 8px 8px 15px;
+}
+
+.clean-gray-table.community-table tr,
+.clean-gray-table.community-table td {
+  text-align: left;
+  padding: 5px 8px;
+}
+
+.clean-gray-table.community-table td:not(.col1) {
+  width: 100%;
+}
+
+.github-section {
+  background-image: url("/img/svg/community-background.svg");
+  background-size: cover;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  margin-top: -25px;
+}
+
+.github-btns {
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.github-btns p {
+  margin: 15px;
+}
+
+/* Ask me anything */
+#ama-intro {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+}
+
+#next-ama-date {
+    width: 30%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #c9c9c9;
+    background-color: #E1E9EC;
+    text-align: center;
+    font-size: 14px;
+}
+
+#ama-intro p {
+    width: 65%;
+    margin-left: 5%;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+#next-ama-date h1 {
+    margin: 0;
+    line-height: 2rem;
+}
+
+#ama-gallery-section {
+    padding-top: 15px;
+    margin: 50px auto -100px;
+}
+
+.ama-gallery {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 75px;
+}
+
+.ama-portrait {
+    width: 180px;
+    padding: 0;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+}
+.ama-portrait p,
+ .ama-portrait .jobtitle {
+    padding: 0px 10px;
+    line-height: 1.25rem;
+    margin: 5px 0;
+}
+
+.ama-portrait .jobtitle {
+    font-size: 0.8rem;
+    padding-bottom: 15px;
+}
+/* Community End */
+/* Responsive Rules */
+
+@media screen and (max-width: 1280px ){
+  .open-source-logo {
+    width: 100px;
+  }
+  .webinar-item iframe,
+  .webinar-item img {
+    width: 380px;
+    height: 225px;
+  }
+  .webinar-item {
+    align-self: flex-start;
+    width: 47%;
+    margin: 0 1.5% 25px 1.5%;
+  }
+  .resources-h1 {
+    font-size: 50px;
+    line-height: 1.5rem;
+  }
+  .resources-h2 {
+    font-size: 20px;
+  }
+    /* Newsletters */
+    #newsletters-section {
+      width: 80%;
+      margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px ){
+  #open-source-logo-box {
+    margin: 10px 0;
+  }
+  .open-source-logo {
+    width: 90px;
+  }
+  .webinar-item iframe,
+  .webinar-item img {
+    width: 315px;
+    height: 190px;
+  }
+  .webinar-item {
+    align-self: flex-start;
+    width: 45%;
+    margin: 0 2.5% 15px 0;
+  }
+  .resources-h1 {
+    font-size: 45px;
+    line-height: 1.2rem;
+  }
+  .resources-h2 {
+    font-size: 20px;
+  }
+  /* Newsletters */
+  #newsletters-section {
+    width: 100%;
+  }
+  /* Ask me anything */
+    #next-ama-date {
+        width: 40%;
+    }
+    #ama-intro p {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 768px ){
+  .github-section h4 {
+    padding-left: 5%;
+  }
+  .github-btns {
+    margin: 25px 0 25px 5%;
+    display: flex;
+  }
+  #whitepapers {
+    margin-top: -25px;
+  }
+  #open-source-logo-box {
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  .open-source-logo {
+    width: 100px;
+    margin: 25px 50px;
+  }
+  /* Ask me anything */
+  #ama-intro {
+flex-direction: column;
+  }
+    #next-ama-date {
+        width: 90%;
+    }
+    #ama-intro p {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 480px ){
+  #core-resources .toplinkcard img {
+    margin-bottom: -7px;
+  }
+  .toplinkcard {
+    width: 90%;
+    height: auto;
+    border: 1px solid #ccc;
+  }
+  .toplinkcard-hl {
+    width: 90%;
+    height: 20px;
+    padding: 0px 10px 20px 0px;
+  } 
+  .toplinkcard-hl h3 {
+    font-size: 16px;
+  }
+  #open-source-logo-box {
+    flex-direction: column;
+  }
+  .open-source-logo {
+    margin: 15px 10%;
+  }
+}

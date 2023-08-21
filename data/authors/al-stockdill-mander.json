@@ -1,0 +1,9 @@
+{
+    "name": {
+        "firstName": "Al",
+        "lastName": "Stockdill-Mander"
+    },
+    "image": "/img/blog/author-asm.jpg",
+    "description": "Al is a Software Engineer at IBM and has worked on the Paho C, Java, Javascript and Embedded C clients as well as being one of the originators and maintainer of the Paho Go client. He is also a member of the OASIS MQTT TC.",
+    "isGuestAuthor": "true"
+}

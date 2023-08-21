@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{ partial "header" . }}
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5XD3GM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+{{ partial "mainnav" . }}
+    <div id="extension-content">
+        <section class="standalone-extension-header">
+            <div class="standalone-description">
+                <h1 class="header-extensions-h1">{{ .Params.headerH1 }}</h1>
+                <h2 class="header-extensions-h2">{{ .Params.headerH2 }}</h2>
+                <div class="extension-details">
+                    Category: <b>{{ delimit .Params.purpose " / " }}</b> &nbsp;|&nbsp;
+                    {{ with .Params.extension_version }}
+                        Version: <b>{{.}}</b> &nbsp;|&nbsp;
+                    {{ end }}
+                    {{ with .Params.license }}
+                        License: <b>{{ . }}</b>
+                    {{ end }}
+                    {{ with .Params.eap }}
+                    <br/>Extension Version: <b>{{ . }}</b>
+                    {{ end }}
+                    {{ with .Params.requires }}
+                    <br/>Requires HiveMQ Version: <b>{{ . }}</b> &nbsp;|&nbsp;
+                    {{ end }}
+                    Provider: <b>{{ .Params.provider }}</b> &nbsp;|&nbsp;Verified: <b>{{ .Params.verified }}</b><br/>
+                    {{ with .Params.variable_input }}
+                    {{ . }}
+                    {{ end }}
+                 </div>
+                <h3 style="margin-bottom: 0;">Installation</h3>
+                <p>
+                    The HiveMQ broker is needed to run this extension. If you have not yet installed HiveMQ, click "Download HiveMQ Platform" and follow our <a href="https://docs.hivemq.com/hivemq/latest/user-guide/getting-started.html#download" target="_blank">getting started guide</a> to set up your HiveMQ broker.
+                    <br><br>
+                    To download the extension, click on “Download Extension,” fill out the form, and then click “Download.zip.”
+                    <br><br>
+                    After you unzip the file, follow the instructions in the included documentation to install and run the extension.
+                    <br><br>
+                <strong>Note:</strong> Trial licenses for HiveMQ Enterprise Extensions are valid for 5 hours. For more license information or to request an extended evaluation license, contact HiveMQ sales. To reset the limit, simply restart your HiveMQ broker.<br>
+                </p>
+            </div>
+            <figure>
+                <img src="{{ .Params.cover }}" class="extensions-page-cover" />
+            </figure>
+        </section>
+        <div class="standalone-extension-ctas">
+            <a href="/downloads/hivemq"><button class="btn-grey-outline">Download HiveMQ Platform</button></a>
+            {{with .Params.extension_download }}
+            <a href="{{.}}" onclick="DownloadFormFunction()"><button class="btn-grey-outline">Download Extension</button></a>
+            {{ end }}
+            {{with .Params.extension_buy }}
+            <a href="{{.}}" onclick="BuyFormFunction()">Buy License</a>
+            {{ end }}
+            {{with .Params.extension_documentation }}
+            <a href="{{.}}">Documentation</a>
+            {{ end }}
+        </div>
+        {{ .Content }}
+    </div>
+    {{ partial "footer" . }}
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Humza",
+        "lastName": "Akhtar"
+    },
+    "image": "/img/blog/author-humza-akhtar.jpg",
+    "description": "Dr. Humza Akhtar is a Principal in the Industry Solutions Team at MongoDB, designing Industry 4.0 solutions for the manufacturing and energy sector. Prior to joining MongoDB, he was working at Ernst & Young Canada as a Senior Manager in digital operations consultancy practice. Humza attained his Ph.D. at Nanyang Technological University, Singapore, and worked with the Singapore manufacturing industry for a number of years on Industry 4.0 research and implementation. He has spent most of his career enabling smart and connected factories for many manufacturing clients.",
+    "links": {
+        "email": "humza.akhtar@mongodb.com",
+        "linkedin": "https://www.linkedin.com/in/humzaakhtar"
+    }
+}

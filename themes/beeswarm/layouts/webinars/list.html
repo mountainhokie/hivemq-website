@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section id="webinar-list">
+        <div id="top-pagination"  style="width: 100%; text-align: center;">{{ template "_internal/pagination.html" . }}</div>
+        {{ range .Pages.ByDate }}
+        <article class="webinar-list-preview centered-60">
+                <div class="webinar-overview-content">
+                        <span class="webinar-date">{{ .Params.webinardate }}</span>
+                        <h3><a href="{{.Permalink}}">{{ .Title }}</a></h3>
+                        <span class="webinar-overview-summary">{{ .Params.custom_summary }}</span><br/><br/>
+                        <a href="{{.Permalink}}"><img src="/img/svg/fa-circle-arrow-right.svg" style="height: 18px; position: relative; top: 3px;"> Read more</a><br>
+                </div>
+        </article>
+        {{ end }}
+</section>
+{{ end }}

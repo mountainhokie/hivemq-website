@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{ partial "header" . }}
+<style>
+    #content404 {
+        text-align: center;
+    }
+    .error404 {
+        background: #ffc000;
+        width: 100%;
+        height: 70vh;
+        min-height: 400px;
+    }
+    .graphic404 {
+        width: 400px;
+        margin-top: 16vh;
+    }
+    #footer404 {
+        background: #202020;
+    }
+    .hint404 {
+        margin: auto;
+        padding-top: 25px;
+        color: #fff;
+        font-weight: 700;
+        width: 40%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .hint404 a {
+        transition: all 0.5s;
+    }
+    .hint404 a:hover {
+        color: #ffc000;
+    }
+    .help-actions {
+        text-align: left;
+    }
+    @media screen and (max-width: 768px){
+    .error404 {
+        height: 70vh;
+        min-height: 300px;
+    }
+    .graphic404 {
+        width: 50%;
+        margin-top: 15vh;
+    }
+    .hint404 {
+        width: 90%;
+        justify-content: space-evenly;
+    }
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5XD3GM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+{{ partial "mainnav" . }}
+<div id="content404">
+    <section class="error404">
+        <img src="/img/svg/404.svg" alt="error code 404" class="graphic404">
+        <h2>Page Not Found</h2>
+        <p class="lead">This page either doesn't exist, or it moved somewhere else.</p>
+    </section>
+    <section id="footer404">
+        <div class="hint404">
+        <p>That's what you can do</p>
+        <ul class="help-actions">
+            <li><a href="javascript:location.reload();">Reload Page</a></li>
+            <li><a href="javascript:history.back();">Back to Previous Page</a></li>
+            <li><a href="/">Home Page</a></li>
+        </ul>
+        </div>
+    </section>
+</div>
+</body>
+</html>

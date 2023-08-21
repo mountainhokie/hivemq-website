@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Clive",
+        "lastName": "Jevons"
+    },
+    "image": "/img/blog/author-cj.jpg",
+    "description": "Clive is a freelance programmer who specializes in backend Java applications and has recently been doing a lot of work in the field of automotive communication between vehicles and backend applications using MQTT. He is also involved in the development of the HiveMQ MQTT Client library.",
+    "links": {
+        "github": "https://github.com/clive-jevons"
+    },
+    "isGuestAuthor": "true"
+}

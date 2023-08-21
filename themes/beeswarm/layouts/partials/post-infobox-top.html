@@ -1,0 +1,28 @@
+{{ $authors := newScratch }}
+{{ $names := slice }}
+{{ range $author := .Page.Params.authors }}
+    {{ $authors.Set "data" (index $.Site.Data.authors $author) }}
+    {{$author := $authors.Get "data"}}
+    {{$names = $names | append (printf "%s %s" $author.name.firstName $author.name.lastName)}}
+{{ end }}
+<div class="flex gap-5 flex-wrap">
+    {{ if (eq ($names | len) 1) }}
+    <img src="{{ ($authors.Get `data`).image }}" alt="author {{delimit $names " and "}}" style="width: 65px; height: 65px;"/>
+    {{ else }}
+    <img src="/img/svg/hivemq-bee.svg" alt="hivemq logo" style="width: 65px; height: 65px;"/>
+    {{ end }}
+    <div class="italic font-light leading-5 text-black text-[0.75rem]">
+        <p class="m-0">Written by {{ delimit $names " and " }} </p>
+        <p class="m-0">
+            {{ if .Page.Params.tags }}Category:
+                {{range .Page.Params.tags }}
+                    <a class="tag-links" href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ . }}</a>
+                {{end}}
+            {{end}}
+        </p>
+        <p class="m-0">Published: {{ dateFormat "January 2, 2006" .Page.Params.date }}</p>
+        {{ if .Page.Params.updated }}
+        <p class="m-0">Updated: {{ dateFormat "January 2, 2006" .Page.Params.updated }}</p>
+        {{end}}
+    </div>
+</div>

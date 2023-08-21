@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Florian",
+        "lastName": "Raschbichler"
+    },
+    "image": "/img/blog/author-fr.jpg",
+    "description": "Florian serves as the head of the HiveMQ support team with years of first hand experience overcoming challenges in achieving reliable, scalable, and secure IoT messaging for enterprise customers.",
+    "links": {
+        "email": "florian@hivemq.com"
+    }
+}

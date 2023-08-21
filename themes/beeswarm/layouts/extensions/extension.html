@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{ partial "header" . }}
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5XD3GM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+{{ partial "mainnav" . }}
+        <div id="extension-content">
+            <section class="header-extensions">
+                <img src="{{ .Params.cover }}" class="extensions-page-cover" />
+                <h1 class="header-extensions-h1">{{ .Params.headerH1 }}</h1>
+                <h2 class="header-extensions-h2">{{ .Params.headerH2 }}</h2>
+                <div class="extension-details">
+                    Category: <b>{{ delimit .Params.purpose " / " }}</b><br/>
+                    {{ with .Params.extension_version }}
+                        Version: <b>{{.}}</b>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+                    {{ end }}
+                    {{ with .Params.license }}
+                        License: <b>{{ . }}</b><br/>
+                    {{ end }}
+                    {{ with .Params.eap }}
+                        <br/>Extension Version: <b>{{ . }}</b><br/>
+                    {{ end }}
+                    Provider: <b>{{ .Params.provider }}</b> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Verified: <b>{{ .Params.verified }}</b><br/><br/>
+                    <b>Product Resources</b><br/>Please use the following links to download and try the extension, read the installation guide, learn more about features, or find out how we can help.
+                    <br/><br/>
+                    {{with .Params.extension_github_link }}
+                        <a href="{{.}}"><button class="btn-grey-outline">Source Code</button></a>
+                    {{ end }}
+                    {{with .Params.extension_download_link }}
+                        <a href="{{.}}"><button class="btn-grey-outline">Download</button></a>
+                    {{ end }}
+                    {{with .Params.extension_get_with_hivemq }}
+                    <a href="{{.}}"><button class="btn-grey-outline">Try With HiveMQ</button></a>
+                    {{ end }}
+                    {{with .Params.extension_buy }}
+                    <a href="{{.}}"><button class="btn-grey-outline ext-download-button" onclick="formFunction()">Buy License</button></a>
+                    {{ end }}
+                    {{with .Params.extension_installation }}
+                        <a href="{{.}}"><button class="btn-grey-outline">How to install</button></a>
+                    {{ end }}
+                    {{with .Params.extension_documentation }}
+                        <a href="{{.}}"><button class="btn-grey-outline">Documentation</button></a>
+                    {{ end }}
+                    <hr style="margin-top: 25px;">
+                 </div>
+                 <div class="clearfix" style="height: 5px;"></div>
+            </section>
+            {{ .Content }}
+        </div>
+        {{ partial "footer" . }}
+</body>
+</html>

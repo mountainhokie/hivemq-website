@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Magi",
+        "lastName": "Erber"
+    },
+    "image": "/img/blog/author-me.jpg",
+    "description": "Magi Erber is Senior Product Manager at HiveMQ. She loves creating software that delights customers and helps them realizing innovative IoT solutions.",
+    "links": {
+        "email": "margaretha.erber@hivemq.com"
+    }
+}

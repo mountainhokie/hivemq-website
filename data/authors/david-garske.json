@@ -1,0 +1,9 @@
+{
+    "name": {
+        "firstName": "David",
+        "lastName": "Garske"
+    },
+    "image": "/img/svg/hivemq-bee.svg",
+    "description": "David Garske works for wolfSSL and has been in IoT embedded software development since 2005. wolfSSL, founded in 2004, is an Open Source Internet security company with products including the wolfSSL embedded SSL/TLS library, wolfCrypt crypto engine, SSL Inspection, and wolfMQTT.",
+    "isGuestAuthor": "true"
+}

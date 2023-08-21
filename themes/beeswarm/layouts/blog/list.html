@@ -1,0 +1,18 @@
+{{ define "main" }}
+<script type="text/javascript" src="/js/pagination.js"></script>
+<section id="blog-list">
+        <h1>Welcome to our Blog</h1>
+        <div id="blog-sub-bar">
+        {{ partial "blog-category-filter" . }}
+        {{ partial "algolia-search-box" . }}
+        </div>
+        <div class="clearfix"></div>
+        <div class="post-preview">
+        {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") 36 }}
+        {{ range $paginator.Pages }}
+        {{ partial "list-overview-item" . }}
+        {{ end }}
+        </div>
+        <div style="margin-top: 50px;">{{ template "_internal/pagination.html" . }}</div>
+</section>
+{{ end }}

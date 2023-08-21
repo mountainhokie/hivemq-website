@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Gaurav",
+        "lastName": "Suman"
+    },
+    "image": "/img/blog/author-gs.jpg",
+    "description": "Gaurav is the Director of Product Marketing at HiveMQ. He is an engineer by education, and is passionate about helping businesses thrive with the help of technology.",
+    "links": {
+        "email": "gaurav.suman@hivemq.com"
+    }
+}

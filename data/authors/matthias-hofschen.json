@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Matthias",
+        "lastName": "Hofschen"
+    },
+    "image": "/img/blog/author-mho.jpg",
+    "description": "Matthias Hofschen is Engineering Manager at HiveMQ.",
+    "links": {
+        "email": "matthias.hofschen@hivemq.com"
+    }
+}

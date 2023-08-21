@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Ravi",
+        "lastName": "Subramanyan"
+    },
+    "image": "/img/blog/author-ravis.png",
+    "description": "Ravi Subramanyan is a Product Marketing and Management leader with extensive experience delivering high-quality products and services that have generated revenues and cost savings of over $10B for companies such as Motorola, GE, Bosch, and Weir. <br> Mr. Subramanyan has successfully launched products, established branding, and created product advertisements and marketing campaigns for global and regional business teams.",
+    "links": {
+        "email": "ravi.subramanyan@hivemq.com",
+        "linkedin": "https://www.linkedin.com/in/ravisubra"
+    }
+}

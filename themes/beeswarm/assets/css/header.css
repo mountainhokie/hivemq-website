@@ -1,0 +1,346 @@
+header {
+  font-family: "Roboto", sans-serif;
+  @apply relative flex flex-wrap gap-1 bg-black p-4 font-sans text-white md:flex-row md:items-center md:justify-between;
+}
+
+
+header ul,
+header ul li {
+  @apply mx-auto list-none p-0;
+}
+
+.branding {
+  @apply h-full ml-5 flex-grow items-center p-0 md:flex-grow-0;
+}
+.branding a {
+  @apply flex;
+}
+.branding img {
+  @apply h-10;
+}
+
+.nav-main {
+  @apply hidden h-full w-full md:flex md:flex-grow-0 md:justify-between md:mx-auto md:w-auto;
+}
+.nav-main ul {
+  @apply my-0 w-full list-none p-0 md:flex md:justify-between;
+}
+
+header input[type="checkbox"] {
+  @apply hidden;
+}
+
+a.navButton {
+  @apply hidden md:flex;
+}
+a.navButtonOverride {
+  @apply flex;
+}
+.navButton {
+  @apply flex cursor-pointer flex-col font-normal text-white lg:p-3 md:p-2;
+}
+.navButton:before,
+.navButton:after {
+  @apply p-[2px] content-[""];
+}
+.navButton:hover {
+  @apply text-white;
+}
+.navButton:hover:after {
+  @apply bg-yellow-primary;
+}
+
+label[for="ProductsSubMenu"],
+label[for="MQTTSubMenu"],
+label[for="SolutionsSubMenu"],
+label[for="DevelopersSubMenu"],
+label[for="LearnSubMenu"],
+label[for="CompanySubMenu"] {
+  @apply md:hidden;
+}
+
+#ProductsSubMenu:checked + label:after,
+#MQTTSubMenu:checked + label:after,
+#SolutionsSubMenu:checked + label:after,
+#DevelopersSubMenu:checked + label:after,
+#LearnSubMenu:checked + label:after,
+#CompanySubMenu:checked + label:after {
+  @apply bg-yellow-primary;
+}
+
+#ProductsSubMenu:checked ~ .subMenu,
+#MQTTSubMenu:checked ~ .subMenu,
+#SolutionsSubMenu:checked ~ .subMenu,
+#DevelopersSubMenu:checked ~ .subMenu,
+#LearnSubMenu:checked ~ .subMenu,
+#CompanySubMenu:checked ~ .subMenu {
+  @apply block;
+}
+
+.nav-main > ul > li:hover .subMenu {
+  @apply md:left-0 md:mx-auto md:flex md:w-full;
+}
+
+.subMenu {
+  @apply hidden flex-grow transition-opacity duration-300 md:absolute md:z-[2000];
+}
+
+.subMenu > ul {
+  @apply w-[90%] md:left-0 md:w-auto;
+}
+.subMenu > ul.subMenu-company {
+  @apply xl:w-[540px] lg:w-[575px] md:w-[600px] md:bg-none;
+}
+.subMenu > ul.subMenu-company > li {
+  @apply flex md:mr-1 md:bg-grey-primary;
+}
+
+.subMenu > ul > li {
+  @apply md:flex md:w-[160px] md:flex-col md:bg-grey-primary md:p-4;
+}
+.subMenu > ul > li > ul {
+  @apply md:flex md:flex-grow md:flex-col md:justify-start;
+}
+.subMenu > ul > li > ul > li {
+  @apply w-full;
+}
+
+.subMenu a {
+  @apply block font-normal text-white;
+}
+
+.subMenu__header a.subMenu_link {
+    font-weight: bold;
+    height: 34px;
+    margin-top: -0.25rem
+}
+
+a.subMenu_link {
+  @apply flex flex-col font-normal text-white md:text-black;
+}
+
+a.subMenu_link:before,
+a.subMenu_link:after {
+  @apply p-[2px] content-[""];
+}
+a.subMenu_link:hover:after {
+  @apply bg-yellow-primary;
+}
+
+.subMenu__header {
+  @apply m-0 mt-4 mb-4 inline-flex p-0 font-bold leading-8 text-white md:mt-0 md:text-black;
+}
+
+/*
+.subMenu__header:after {
+  @apply ml-4 pb-1 align-bottom content-subMenuChevron;
+}
+*/
+.subMenu__header ul {
+  @apply mb-4 ml-4;
+}
+
+.subMenu li.subMenu__cta-block {
+  @apply hidden bg-black md:flex;
+}
+.subMenu li.subMenu__cta-block p {
+  @apply m-0 flex-grow text-lg;
+}
+.subMenu li.subMenu__cta-block p,
+.subMenu li.subMenu__cta-block h1 {
+  @apply text-white;
+
+}
+.subMenu li.subMenu__cta-block img {
+  @apply w-20;
+}
+.subMenu li.subMenu__cta-block a {
+  @apply text-black text-center;
+}
+.subMenu li.subMenu__cta-block a:hover {
+  @apply text-yellow-primary text-center;
+}
+.subMenu li.subMenu__cta-block .btn-white-outline {
+  padding: 5px 0px;
+}
+
+/* Remove chevron */
+.subMenu__cta-block .subMenu__header:after {
+  @apply content-[""];
+}
+
+.header__cta-icons.mobile {
+  @apply hidden;
+}
+
+.header__cta-icons {
+  @apply w-full flex-grow mr-5 md:ml-0 md:w-auto md:flex-grow-0;
+}
+.header__cta-icons ul {
+  @apply my-0 xs:flex xs:flex-row xs:gap-2 md:flex md:gap-4;
+}
+
+.header__cta-icons li {
+  @apply flex-grow text-sm font-normal text-white xs:py-0 md:flex-grow-0;
+}
+.header__cta-icons li a {
+  @apply flex items-center bg-center bg-no-repeat py-2 text-xs font-normal text-white transition-colors duration-200 ease-in-out;
+}
+.header__cta-icons li a:hover {
+  @apply text-yellow-primary underline;
+}
+
+.header__cta-icons li a:hover svg path,
+.header__cta-icons li a:hover svg line,
+.header__cta-icons li a:hover svg polyline,
+.header__cta-icons li a:hover svg rect,
+.header__cta-icons li a:hover svg circle {
+  @apply stroke-yellow-primary;
+}
+.header__cta-icons svg {
+  @apply mt-1 mr-3 h-[23px] w-[30px] xs:mr-2 md:mr-0;
+}
+.header__cta-icons svg path,
+.header__cta-icons svg line,
+.header__cta-icons svg polyline,
+.header__cta-icons svg rect,
+.header__cta-icons svg circle {
+  @apply stroke-white;
+}
+
+#mobileNavToggle ~ label[for="mobileNavToggle"] svg {
+  @apply fill-white hover:cursor-pointer md:hidden ;
+}
+
+#mobileNavToggle:checked ~ .nav-main {
+  @apply flex;
+}
+
+#mobileNavToggle ~ label[for="mobileNavToggle"] svg path:nth-child(1) {
+  animation: topPathAnimationReset 1s ease forwards;
+}
+#mobileNavToggle ~ label[for="mobileNavToggle"] svg path:nth-child(2) {
+  animation: middlePathAnimationReset 1s ease forwards;
+}
+#mobileNavToggle ~ label[for="mobileNavToggle"] svg path:nth-child(3) {
+  animation: bottomPathAnimationReset 1s ease forwards;
+}
+
+#mobileNavToggle:checked ~ label[for="mobileNavToggle"] svg path:nth-child(1) {
+  animation: topPathAnimation 1s ease forwards;
+}
+#mobileNavToggle:checked ~ label[for="mobileNavToggle"] svg path:nth-child(2) {
+  animation: middlePathAnimation 1s ease forwards;
+}
+#mobileNavToggle:checked ~ label[for="mobileNavToggle"] svg path:nth-child(3) {
+  animation: bottomPathAnimation 1s ease forwards;
+}
+.header-yellow-btn {
+    width: 107px;
+    background: #FFC000;
+    border-radius: 44px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 0.5rem;
+    transition: all 0.25s;
+    border: 1px solid #ffc000;
+    cursor: pointer;
+}
+
+.header-yellow-btn:hover {
+    background: #333;
+    text-decoration: none;
+    color: #ffc000;
+}
+
+@keyframes topPathAnimation {
+  0% {
+    rotate: 0deg;
+    transform: scaleX(1) translateX(0) translateY(0);
+  }
+  100% {
+    rotate: 45deg;
+    transform: scaleX(4) translateX(-10px) translateY(-8px);
+  }
+}
+
+@keyframes topPathAnimationReset {
+  100% {
+    rotate: 0deg;
+    transform: scaleX(1) translateX(0) translateY(0);
+  }
+  0% {
+    rotate: 45deg;
+    transform: scaleX(4) translateX(-10px) translateY(-8px);
+  }
+}
+
+@keyframes middlePathAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes middlePathAnimationReset {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomPathAnimation {
+  0% {
+    rotate: 0deg;
+    transform: scaleX(1) translateX(0) translateY(0);
+  }
+  100% {
+    rotate: -45deg;
+    transform: scaleX(2) translateX(-10px) translateY(0);
+  }
+}
+
+@keyframes bottomPathAnimationReset {
+  100% {
+    rotate: 0deg;
+    transform: scaleX(1) translateX(0) translateY(0);
+  }
+  0% {
+    rotate: -45deg;
+    transform: scaleX(2) translateX(-10px) translateY(0);
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .header__cta-icons.desktop {
+    @apply hidden;
+  }
+  .header__cta-icons.mobile {
+     @apply flex ml-[50%] mr-0;
+  }
+}
+
+@media screen and (max-width: 873px){
+  .header__cta-icons.mobile {
+     @apply flex ml-[40%];
+  }
+}
+
+@media screen and (max-width: 767px){
+  .header__cta-icons {
+    @apply mr-0;
+  }
+ .branding {
+    @apply mr-0;
+ }
+ .header__cta-icons.mobile {
+    @apply hidden;
+ }
+}

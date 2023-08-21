@@ -1,0 +1,11 @@
+{  
+    "name": {
+        "firstName":"Shashank", 
+        "lastName": "Sharma"
+    },
+    "image": "/img/blog/author-ss.png",
+    "description": "Shashank Sharma is a product marketing manager at HiveMQ. He is passionate about technology and enabling developer-centric workflows. He has previous experience in application software tooling, autonomous driving, and numerical computing.",
+    "links": {
+        "email": "shashank.sharma@hivemq.com"
+    }
+}

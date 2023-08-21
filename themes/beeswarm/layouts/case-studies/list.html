@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section id="blog-list">
+        <h1>HiveMQ Case Studies</h1>
+        <div class="post-preview">
+        {{ range .Pages }}
+        {{ partial "list-overview-item" . }}
+        {{ end }}
+        </div>
+</section>
+{{ end }}

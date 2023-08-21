@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Christian",
+        "lastName": "Meinerding"
+    },
+    "image": "/img/blog/author-cm.jpg",
+    "description": "Christian is CEO and Co-founder at HiveMQ.",
+    "links": {
+        "linkedin": "https://www.linkedin.com/in/christian-g%C3%B6tz-0b515873/?originalSubdomain=de",
+        "twitter": "https://twitter.com/goetzchr"
+    }
+}

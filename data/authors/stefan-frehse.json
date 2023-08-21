@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Stefan",
+        "lastName": "Frehse"
+    },
+    "image": "/img/blog/author-sf.jpg",
+    "description": "Stefan is Engineering Manager at HiveMQ.",
+    "links": {
+        "email": "stefan.frehse@hivemq.com"
+    }
+}

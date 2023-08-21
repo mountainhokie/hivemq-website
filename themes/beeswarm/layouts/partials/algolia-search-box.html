@@ -1,0 +1,16 @@
+{{ $.Scratch.Add "additional_header_content" `<link rel="stylesheet" href="/vendor/algolia/algolia-netlify.css">` }}
+{{ $.Scratch.Add "additional_header_content" `<script type="text/javascript" src="/vendor/algolia/algolia-netlify.js"></script>` }}
+
+<!-- FIXME: Injected into head -->
+{{ $.Scratch.Get "additional_header_content" | safeHTML }}
+
+<div id="algolia-search"></div>
+<script defer type="text/javascript">
+  algoliasearchNetlify({
+    appId: "{{ .Site.Params.algolia.algolia_appId }}",
+    apiKey: "{{ .Site.Params.algolia.algolia_apiKey }}",
+    siteId: "{{ .Site.Params.algolia.algolia_netlifySiteId }}",
+    branch: "{{ .Site.Params.algolia.algolia_branchName }}",
+    selector: "div#algolia-search",
+  });
+</script>

@@ -1,0 +1,37 @@
+<section class="popup-layer popup-form-standard" id="ebook-download-form">
+<div class="popup-form-standard-container" id="ebook-download-form-container">
+   <img src="/img/svg/fa-times.svg" id="close-ebook" style="float: right; height: 20px; width: 20px; position: relative; top: -8px; right: -15px; cursor: pointer;" />
+   <div id="ebook-form-layer-header">
+      <div style="min-width: 125px; margin-right: 10px;">
+         <img src="/img/mqtt-ebook-cover.jpg" class="ebook-banner" id="mqtt-ebook-cover-form-layer" />
+      </div>
+      <div>
+         <h3 style="font-size: 18px; line-height: 20px;">Get the MQTT Essentials eBook</h3>
+         <p style="font-size: 14px; line-height: 16px;">72 pages of MQTT education and learning for beginners and experts alike.</p>
+      </div>
+   </div>
+   <hr>
+   <div class="hubspot-form">
+      <!--[if lte IE 8]>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <![endif]-->
+      <script charset="utf-877" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+      <script>
+      hbspt.forms.create({
+      portalId: "5867930",
+      formId: "9f28c35b-5d5c-4228-a585-f62f4c947a76"
+      });
+      </script>
+   </div>
+</div>
+</section>
+
+<script>
+   $(".ebook-banner").click(function(){
+      $("#ebook-download-form").show(100, function(){
+         $("#close-ebook").click(function(){
+            $("#ebook-download-form").hide(100)
+            })
+      });
+   });
+</script>

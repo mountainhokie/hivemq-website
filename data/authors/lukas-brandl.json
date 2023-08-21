@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Lukas",
+        "lastName": "Brandl"
+    },
+    "image": "/img/blog/author-lukas-brandl.png",
+    "description": "Lukas Brandl is Senior Software Engineer at HiveMQ. He is with HiveMQ for more than a decade and plays a key role in product development and product engineering.",
+    "links": {
+        "email": "lukas.brandl@hivemq.com"
+    }
+}

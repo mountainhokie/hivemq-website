@@ -1,0 +1,2033 @@
+#intro-product-page {
+  margin: 0 0 50px 0;
+}
+
+/* Styles for Editions start */
+#edition-comparison {
+  width: 100%;
+}
+
+#edition-comparison .clean-gray-table {
+  width: 70%;
+  margin: 0 15%;
+}
+
+#edition-comparison .clean-gray-table .col:not(.col1) {
+  text-align: center;
+  box-sizing: border-box;
+}
+#edition-comparison .clean-gray-table .col.col1 {
+  text-align: left;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+/* Editions Tooltips */
+.tooltip {
+  position: relative;
+  border-bottom: 1px dotted black;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tooltip .tooltiptext {
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1rem;
+    position: absolute;
+    bottom: 100%;
+    left: -10%;
+    z-index: 1;
+    max-width: 300px;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  display: block;
+}
+/* Editions Tooltips end */
+/* Styles for Editions end */
+/* Styles for Features Start */
+#feature-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-center;
+  margin: 50px 0 -100px 0;
+  padding: 50px 10% 50px;
+}
+
+.feature-section {
+  background-image: url("/img/feature-cat.jpg");
+  background-size: cover;
+  color: #000;
+  width: 44%;
+  display: block;
+  outline: none;
+  clear: both;
+  margin: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 8px #afafaf;
+}
+
+.feature-category {
+  color: #003e6e;
+  height: 60px;
+}
+
+.feature-category h3 {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.feature-category img {
+  height: 40px;
+  float: left;
+  background-color: #003e6e;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.feature-section ul {
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+
+.feature-section ul li {
+  list-style-type: none;
+  padding: 3px 5px;
+}
+.feature-section ul li::before {
+  content: url('/img/arrow-right-black.png');
+  position: relative;
+  top: 2px;
+}
+
+.feature-section ul li:nth-child(odd) {
+  list-style-type: none;
+  background-color: rgba(0,062,110,0.1);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .feature-section ul li:nth-child(odd) {
+    list-style-type: none;
+    background-color: #afafaf;
+  }
+}
+
+.feature-section a {
+  color: #003e6e;
+}
+/* Styles for Features End */
+
+/* Control Center Start */
+#control-center section {
+  margin: 50px 0;
+}
+
+/* Control Center End */
+
+.clean-gray-table.ext-table tr,
+.clean-gray-table.ext-table td,
+.clean-gray-table.ext-table .table-head,
+.clean-gray-table.ext-table .table-subhead {
+  text-align: left;
+}
+
+.clean-gray-table.ext-table .table-head {
+  padding: 20px 0 20px 35px;
+}
+
+/*********************************/
+/* Styles for Marketplace Start */
+
+/* Marketplace Extension Overview Start */
+#marketplace-intro {
+  margin: 40px auto 50px;
+}
+
+#marketplace {
+  padding: 50px;
+  background: #dfdfdf; /* Old browsers */
+  background: -moz-linear-gradient(top, #dfdfdf 0%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #dfdfdf 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #dfdfdf 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfdfdf', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  margin-bottom: -100px;
+}
+
+#marketplace-description {
+  width: 100%;
+  text-align: center;
+}
+
+#extension-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 5% 50px 5%;
+}
+
+.extension-card {
+  margin: 25px;
+  background-color: #fff;
+  width: 340px;
+  height: 385px;
+  padding: 2px;
+  font-weight: 400;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.2rem;
+  box-shadow: 2px 2px 5px #afafaf;
+ }
+
+.extension-card h3,
+.ext-short,
+.ext-params {
+  padding: 0 10px;
+ }
+
+.extensioncard-cover {
+  height: 160px;
+  background-position-y: -40px;
+  width: 100%;
+  display: block;
+  margin: 0 0 10px 0;
+ }
+.ext-short {
+  margin: 0 0 1rem 0;
+}
+.ext-card-upper {
+  height: 335px;
+}
+.ext-params {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1rem;
+}
+.ext-learn-more {
+  position: relative;
+  top: -18px;
+  left: 230px;
+  padding: 0px;
+  color: #0060aa;
+  font-weight: 700;
+  border: none;
+  background: #fff;
+}
+/* Marketplace Extension Overview End */
+
+/* Single Extension Page Start */
+ #extension-content {
+  margin: 0 auto;
+  width: 75%;
+  padding: 50px 5% 100px;
+  background-color: #fff;
+  color: #000;
+ }
+
+#extension-content .header-extensions-h1 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+}
+#extension-content .header-extensions-h2 {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 300;
+  margin-top: 0;;
+  color: #000;
+}
+
+ .extensions-page-cover {
+  float: right;
+  margin-left: 20px;
+ }
+
+ .extension-details {
+  margin-top: 20px;
+}
+
+ .extension-details .btn-grey-outline {
+  min-width: unset;
+  padding: 5px 10px;
+  margin: 0 5px 5px 0;
+}
+
+.extension-text {
+  width: 80%;
+}
+
+.section-border-bottom {
+    border-bottom: 1px dashed #afafaf;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+#download-extension {
+    padding: 25px 0 50px 0;
+}
+.extension-download-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.extension-video {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 5%;
+    margin-bottom: 2rem;
+}
+
+.extension-resources {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 25px;
+}
+/* Single Extension Page End */
+/* Standalone Extensions Start */
+
+.standalone-extension-header {
+  display: flex;
+  justify-items: space-between;
+ }
+
+.standalone-extension-header figure img {
+  min-width: 340px;
+  margin: 0;
+}
+.standalone-extension-ctas a {
+    margin: 0 15px 0 0;
+}
+.hs-form input[type=text], .hs-form input[type=tel], .hs-form input[type=email], .hs-form textarea, .hs-form select {
+    width: 218px;
+}
+/* Standalone Extensions End */
+ table {
+   margin: 2rem 0;
+   border-collapse: collapse;
+ }
+
+ tr, td {
+   padding: 10px;
+   border-collapse: collapse;
+   border: 1px solid #ddd;
+ }
+
+ th, thead {
+   padding: 15px;
+   background-color: #cfcfcf;
+   border: 1px solid #fff;
+ }
+
+ .chroma tr,
+ .chroma td,
+ .chroma th,
+ .chroma thead {
+   border: none;
+ }
+
+/* Styles for Marketplace End */
+/*********************************/
+
+/* Styles for Downloads Start */
+
+#download-boxes {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: -75px;
+  margin-bottom: -100px;
+  width: 90%;
+  padding: 25px 5% 100px;
+  background: rgb(199,210,219);
+  background: -moz-linear-gradient(0deg, rgba(199,210,219,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(199,210,219,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(0deg, rgba(199,210,219,1) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c7d2db",endColorstr="#ffffff",GradientType=1);
+}
+.download-box {
+  text-align: center;
+  font-size: 18px;
+  width: 70%;
+  padding: 0 15%;
+}
+
+.download-box h2 {
+    height: 4rem;
+    margin-top: 0;
+}
+
+.download-box button {
+  margin: 20px 0 20px;
+  line-height: 1.25rem;
+  height: 75px;
+}
+
+.download-box-logo {
+  width: 140px;
+}
+
+.download-box-logo.hivemq-cloud-logo {
+  margin-bottom: 24px;
+}
+
+.download-box-logo.hivemq-logo {
+  margin-bottom: 50px;
+}
+
+#cloud-box {
+  border-right: 4px dotted #003e6e;
+}
+#hivemq-installation-details {
+  font-size: 14px; 
+  line-height: 1.25rem;
+  text-align: left;
+  padding-left: 20%;
+}
+
+#download-details {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  margin-bottom: -100px;
+}
+/* Styles for Downloads End */
+
+/* Styles for customers */
+#client-grid {
+  width: 85%;
+  padding: 0 7.5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.client-grid-logo {
+  flex-basis: 19%;
+  margin: 10px 3%;
+}
+
+.client-grid-overlay {
+  background-color: #333;
+  opacity: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color:#fff;
+  z-index: 10;
+  padding: 10px;
+  margin-top: -200px;
+  padding-top: 160px;
+  height: 40px;
+  text-align: center;
+  transition: all;
+  -webkit-transition: all;
+  transition-duration: 0.5s;
+}
+
+.client-grid-overlay:hover {
+  opacity: 0.9;
+}
+
+/* Styles for customers end */
+
+/* Styles for Case Studies Start */
+.case-study {
+  width: 100%;
+  vertical-align: top;
+  margin-top: 50px;
+}
+
+.case-study-structure {
+  width: 17.5%;
+  margin-left: 10%;
+  float: left;
+}
+
+.case-study-shortbox {
+  text-align: left;
+  font-size: 0.8rem;
+  line-height: 1.15rem;
+  padding: 15px 15px 5px 15px;
+  border-radius: 5px;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+  border: 1px solid #c5c5c5;
+  box-shadow: 2px 2px 10px #dcdcdc;
+}
+
+.case-study-shortbox h2 {
+  margin-bottom: 15px;
+  line-height: 22px;
+  font-size: 20px;
+}
+
+.case-study-shortbox h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.case-study-shortbox ul {
+  margin-top: 0;
+  padding-inline-start: 15px;
+}
+
+.case-study-content {
+  width: 47.5%;
+  margin: 0 10% 0 32.5%;
+  line-height: 30px;
+}
+
+.all-cs-btn {
+  margin: 50px 0 0 32.5%;
+}
+.case-study-download-form {
+    margin-top: 25px;
+}
+.case-study-download-form input[type=text],
+.case-study-download-form input[type=email] {
+    width: 85%;
+}
+/* Styles for Case Studies End */
+
+/* Download HiveMQ Page Start */
+#aside-download-hivemq-form {
+  background-color: #e2e9ef;
+  padding-bottom: 25px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: 2px 2px 5px #999;
+  font-size: 14px;
+  line-height: 1.25rem;
+}
+#aside-download-hivemq-form ul {
+  margin-left: -20px;
+}
+#download-hivemq-form {
+    top: -80px;
+}
+/* Download HiveMQ Page End */
+
+/* AWS / Docker */
+.ami-list {
+  width: 100%;
+}
+
+.ami-list .ami {
+  display: inline-block;
+  text-align: center;
+}
+
+.ami {
+  width: 28%;
+  float: left;
+  margin: 1%;
+  padding: 10px 10px 30px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.ami .btn-white-outline {
+  min-width: 160px;
+}
+
+.popup-tip-container {
+  position: fixed;
+  bottom: 85px;
+  right: 35px;
+  display: none;
+  text-align: center;
+}
+
+.popup-tip {
+  background-color: #fff;
+  border: 1px solid #ffc000;
+  display: block;
+  padding: 35px 10px 15px;
+  width: 140px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #9f9f9f;
+  transition: 0.4s;
+}
+
+.popup-tip:hover {
+  background-color: #ffc000;
+}
+
+.popup-tip-logo {
+  width: 60px;
+  position: relative;
+  top: 35px;
+}
+
+.close-popup-tip {
+  float: right; 
+  height: 20px; 
+  width: 20px; 
+  position: fixed; 
+  bottom: 185px; 
+  right: 30px; 
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 10px;
+}
+/* AWS / Docker End */
+
+/* ************** */
+/* Pricing Page */
+/* ************** */
+
+.pricing-visual {
+    width: 100%;
+    max-width: 1600px;
+    height: 236px;
+    position: relative;
+    top: 0px;
+    background-position: center;
+    overflow: hidden;
+}
+
+.pricing-visual > .header-headlines {
+    top: 36px;
+}
+.pricing-h1 {
+    font-size: 65px;
+    text-align: center;
+    line-height: 3rem;
+}
+.pricing-h2 {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+#pricing-tabs {
+    position: relative;
+    top: -40px;
+    left: 50%;
+    margin-left: -282px;
+    width: 564px;
+    height: 88px;
+    background: #F1EEEE;
+    border-radius: 10px;
+    display: flex;
+    padding: 4px 4px 0 4px;
+}
+
+#pricing-tabs h2 {
+    font-size: 30px;
+    margin: 8px 0 -10px 0;
+    line-height: 30px;
+}
+
+.tablinks {
+    width: 268px;
+    height: 70px;
+    background: #F1EEEE;
+    border-radius: 10px;
+    margin: 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.tab-active {
+    background: #FFF;
+}
+
+#on-prem-pricing-tab:hover,
+#cloud-pricing-tab:hover {
+    background: #fff;
+}
+#cloud-pricing-content,
+#broker-pricing-content {
+    width: 100%;
+    margin: 0 auto;
+}
+.centered-pricing-headlines {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.centered-pricing-headlines h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 15px 0 0 0;
+}
+.centered-pricing-headlines h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 5px 0;
+}
+/* Pricing Boxes */
+#cloud-pricing-boxes,
+#broker-pricing-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 60px auto 100px;
+    justify-content: center;
+    gap: 2.5%;
+}
+.default-pricing-box {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.default-pricing-box-top {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    box-sizing: border-box;
+}
+.default-pricing-box-middle {
+    background: #EDF2F6;
+    padding: 15px 20px 10px;
+    margin: -20px 0 0 -20px;
+    box-sizing: border-box;
+}
+
+.default-pricing-box-bottom {
+    background: #EDF2F6;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding: 10px 20px;
+    margin: -20px 0 0 -20px;
+    box-sizing: border-box;
+}
+
+.default-pricing-box h2 {
+    font-size: 19px;
+    margin-bottom: 0;
+}
+.default-pricing-box .underline {
+    border-bottom: 4px solid #ffc000;
+    width: 25px;
+    text-align: left;
+}
+.default-pricing-box p {
+    font-size: 15px;
+    margin-top: 0;
+    font-weight: 300;
+    line-height: 1.25rem;
+}
+.default-pricing-box h3 {
+    font-size: 15px;
+    margin-top: 0;
+    font-weight: 300;
+    color: #000;
+}
+.default-pricing-box h4 {
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: 600;
+    color: #003e6e;
+}
+.default-pricing-box ul {
+  margin: 0.5rem 0 1rem 0;
+  padding: 0 0 0 1rem;
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.default-pricing-box ul li::before {
+  content: "\2022";
+  color: #ffc000;;
+  font-size: 22px;
+  font-weight: bold;
+  display: inline-block;
+  width: .8em;
+  position: relative;
+  top: 3px;
+  margin-left: -.8em;
+}
+
+.pricing-btn-blue {
+    height: 35px;
+    background: #003E6E;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s;
+    padding: 0 10px;
+    border: 1px solid #003e6e;
+}
+.pricing-btn-blue:hover {
+    background: #EDF2F6;;
+    color: #003e6e;
+}
+.details-small-font {
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 13px;
+    position: relative;
+    top: -4px;
+}
+/* Recommended pricing */
+.default-pricing-box.recommended-pricing {
+    margin-top: 0;
+    border: 2px solid #ffc000;
+}
+.default-pricing-box.recommended-pricing.cloud {
+    height: 551px;
+}
+
+.recommended-pricing-bar {
+    background: #ffc000;
+    padding: 0;
+    margin: 0;
+    height: 22px;
+    text-align: center;
+    letter-spacing: 0.285em;
+    color: #333333;
+    font-size: 12px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    position: relative;
+    top: -20px;
+    left: -22px;
+}
+
+.default-pricing-box-top.recommended-pricing {
+    border-radius: 0;
+}
+
+.pricing-btn-yellow {
+    height: 38px;
+    padding: 0 12px;
+    background: #FFC000;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s;
+    border: 1px solid #FFC000;
+}
+.pricing-btn-yellow:hover {
+    background: #000;
+    color: #ffc000;
+    border: 1px solid #003e6e;
+}
+
+/* Features Table */
+#cloud-feature-comparison {
+    margin-bottom: 150px;
+}
+
+#compare-features {
+    width: 80%;
+    margin: 0 auto;
+    min-width: 500px;
+}
+
+.compare-features-row {
+    display: grid;
+    text-align: center;
+    line-height: 1.25rem;
+}
+.compare-features-row.cloud-table {
+    grid-template-columns: 3fr 2fr 2fr 2fr 2fr;
+}
+.compare-features-row.broker-table {
+    grid-template-columns: 3fr 2fr 2fr 2fr;
+}
+
+.compare-features-row p:nth-child(1) {
+    text-align: left;
+}
+
+.compare-features-row.tablehead,
+.compare-features-row.tablehead p:nth-child(4),
+.compare-features-row.tablehead p:nth-child(5){
+    font-weight: 700;
+    font-size: 16px;
+    background: #fff !important;
+}
+.compare-features-row.rowhead {
+    font-weight: 500;
+    font-size: 20px;
+    max-height: 3rem;
+    border-top: 1px solid #dcdcdc;
+}
+#compare-features .svg-icon {
+    height: 20px;
+}
+#compare-features .note {
+    font-size: 12px;
+    font-weight: 300;
+}
+/* ************** */
+/* Cloud Pricing */
+/* ************** */
+
+.default-pricing-box.cloud {
+    width: 280px;
+    height: 510px;
+}
+
+.default-pricing-box-top.cloud {
+    width: 280px;
+    height: 175px;
+}
+
+.default-pricing-box-middle.cloud {
+    width: 280px;
+    height: 300px;
+}
+
+.default-pricing-box-bottom.cloud {
+    width: 280px;
+    height: 55px;
+}
+.recommended-pricing-bar.cloud {
+    width: 280px;
+}
+.default-pricing-box.recommended-pricing.cloud {
+    height: 551px;
+}
+.default-pricing-box-top.recommended-pricing.cloud {
+    height: 190px;
+}
+
+.default-pricing-box-top.recommended-pricing.cloud,
+.default-pricing-box-middle.recommended-pricing.cloud,
+.default-pricing-box-bottom.recommended-pricing.cloud {
+    width: 276px;
+}
+
+/* ************** */
+/* Broker pricing */
+/* ************** */
+#broker-pricing-content {
+    display: none;
+}
+
+.default-pricing-box.broker {
+    width: 346px;
+    height: 485px;
+}
+
+.default-pricing-box-top.broker {
+    width: 346px;
+    height: 150px;
+}
+
+.default-pricing-box-middle.broker {
+    width: 346px;
+    height: 300px;
+}
+
+.default-pricing-box-bottom.broker {
+    width: 346px;
+    height: 55px;
+}
+
+.recommended-pricing-bar.broker {
+    width: 370px;
+}
+.default-pricing-box.recommended-pricing.broker {
+    width: 370px;
+    height: 541px;
+}
+.default-pricing-box-top.recommended-pricing.broker {
+    width: 366px;
+    height: 160px;
+}
+.default-pricing-box-middle.recommended-pricing.broker {
+    width: 366px;
+    height: 320px;
+}
+.default-pricing-box-bottom.recommended-pricing.broker {
+    width: 366px;
+    height: 55px;
+}
+/* Cloud and Broker Elements */
+.fullwidth-box {
+    margin: 0 auto;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    gap: 5%
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fullwidth-box.blue {
+    background: #003e6e;
+    width: 90%;
+    padding: 50px 10% 50px 10%;
+}
+.fullwidth-box.black {
+    background: #000;
+    width: 100%;
+    padding: 50px 15% 50px 15%;
+}
+
+.fullwidth-box button,
+.fullwidth-box button:hover {
+    box-shadow: none;
+}
+
+#customer-quote-row {
+    width: 90%;
+    margin: 50px auto 75px;
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+}
+.customer-quote-box {
+    width: 300px;
+    height: 360px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.customer-quote-box > .upper {
+    padding: 20px;
+    height: 260px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.customer-quote-box > .lower {
+    background: #EDF2F6;
+    padding: 5px 20px 5px;;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.customer-quote-box h4 {
+    font-size: 16px;
+    margin: 20px 0 0 0;
+
+}
+.customer-quote-box .customer-title {
+    font-size: 14px;
+    margin: 0;
+}
+#contact-sales-form-container {
+    width: 560px;
+}
+/* HiveMQ Swarm Page */
+.swarm-header {
+  height: 550px;
+  margin-top: -60px;
+  text-align: center;
+  background-position-x: 50%;
+}
+.download-swarm-btn {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  width: 290px;
+  margin-left: -145px;
+  line-height: 1.2rem;
+}
+.download-swarm-btn:hover,
+.download-swarm-btn {
+  box-shadow: none;
+}
+#swarm-intro-wrap {
+  margin: -175px 10% 25px;
+  width: 80%;
+  padding: 50px 5% 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+#swarm-intro {
+  display: flex;
+  margin-bottom: 50px;
+}
+#swarm-logo-intro {
+  width: 300px;
+  padding: 0 50px 0 0;
+  align-self: baseline;
+}
+#swarm-architecture {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#swarm-feature-list {
+  display: grid;
+  grid-template-columns: 42.5% 42.5%;
+  column-gap: 10%;
+  align-items: center;
+  font-size: 18px;
+}
+#swarm-features {
+  padding-top: 10px;
+}
+
+.swarm-feature {
+  margin-bottom: 60px;
+  justify-self: start;
+}
+.swarm-feature img {
+  height: 120px;
+  width: 100%;
+}
+
+.swarm-feature.img-left {
+  justify-self: flex-end;
+}
+.swarm-resources {
+  width: 60%;
+}
+
+#swarm-quote,
+#swarm-quote-mobile {
+    color: #89989f;
+    padding: 10px 10px 0 10px;
+    border: 1px solid #89989f;
+    border-radius: 5px;
+}
+
+#swarm-quote {
+    width: 250px;
+    position: relative;
+    top: 275px;
+    float: right;
+    right: 40px;
+    font-size: 15px;
+}
+
+#swarm-quote-mobile {
+    display: none;
+}
+
+/* Changelog */
+.changelog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.changelogtiles {
+    border: 1px solid #afafaf;
+    margin: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    line-height: 12px;
+}
+.changelogtiles .date {
+    font-size: 12px;
+    font-style: italic;
+    margin: 10px 0 0 0;
+}
+
+.changelogtiles h1 {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 6px 0;
+}
+
+.changelogtiles .release-description {
+    margin: 12px 0 12px 0;
+}
+/* HiveMQ Cloud Page Start */
+#cloud-header {
+    width: 100%;
+    max-width: 1680px;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: auto 420px;
+}
+
+#cloud-headlines {
+    padding: 60px 0 0 10%;
+}
+
+#cloud-header h1 {
+    font-size: 45px;
+    line-height: 115%;
+}
+#cloud-header h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+#cloud-header h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+#cloud-header button {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+#cloud-customer-quote {
+    background: #EDF2F6;
+    padding: 50px 10%;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    align-items: center;
+    gap: 5%;
+}
+#paxton-logo {
+      mix-blend-mode: multiply;
+      filter: contrast(1);
+      border-left: 2px solid #333;
+      padding-left: 20px;
+}
+#cloud-feature-tiles {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 50px 10% 150px;
+    gap: 10%;
+}
+.feature-tile-cloud {
+    width: 250px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13.3148px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 35px;
+}
+.feature-tile-cloud h2 {
+    font-size: 18px;
+    margin: 2rem 0;
+}
+.feature-tile-cloud.bottom-y {
+    border-bottom: 18px solid #FFC000;
+}
+.feature-tile-cloud.bottom-blue {
+    border-bottom: 18px solid #003e6e;
+}
+.feature-tile-cloud.bottom-black {
+    border-bottom: 18px solid #000;
+}
+#cloud-customer-gallery img {
+    width: 180px;
+      mix-blend-mode: multiply;
+      filter: contrast(1);
+}
+#cloud-customer-gallery {
+    width: calc(100% - 50px);
+    padding: 25px;
+    text-align: center;
+    background: #edf2f6;
+}
+#cloud-customer-gallery h2 {
+   font-weight: 300;
+   font-size: 20;
+   color: #AEAEAE;
+}
+#cloud-logo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* HiveMQ Cloud Page End */
+
+/* Responsive Rules */
+@media screen and (max-width: 1500px ){
+  #swarm-quote {
+      display: none;
+  }
+  #swarm-quote-mobile {
+      display: block;
+      margin: 25px 15% 35px;
+  }
+}
+
+@media screen and (max-width: 1280px ){
+  /* Features Page */
+  #feature-details {
+    padding: 25px 5%;
+  }
+
+  .feature-section {
+    width: 40%;
+    margin: 20px 1%;
+  }
+
+  /* Marketplace Page */
+  .plugin-card {
+    width: 42%;
+    height: 285px;
+  }
+  .plugincard-cover {
+    float: left;
+    height: 120px;
+    margin: 0 49% 10px 0;
+  }
+  .customer-story-card {
+    width: 20%;
+  }
+  .client-grid-logo {
+    flex-basis: 27%;
+    margin: 10px 3%;
+  }
+  #extension-list {
+    justify-content: center;
+    padding: 50px 2%;
+  }
+
+  .extension-card {
+    margin: 10px;
+  }
+  .extension-text {
+    width: 90%;
+  }
+  #extension-content {
+    width: 80%;
+  }
+  .standalone-extension-header figure img {
+    min-width: 260px;
+  }
+  /* Downloads */
+  #download-boxes {
+    margin-top: -50px;
+  }
+  .download-box {
+     width: 75%;
+     padding: 0 12.5%;
+   }
+  /* Styles for Downloads End */
+  /* Pricing */
+    .pricing-visual {
+        max-width: 1280px;
+        height: 190px;
+    }
+    .pricing-visual > .header-headlines {
+        top: 36px;
+    }
+    .pricing-h1 {
+        font-size: 55px;
+        line-height: 2rem;
+    }
+    #pricing-tabs {
+        position: relative;
+        top: -40px;
+        left: 50%;
+        margin-left: -260px;
+        width: 520px;
+        height: 80px;
+    }
+    #pricing-tabs h2 {
+        font-size: 26px;
+    }
+    #pricing-tabs p {
+        font-size: 18px;
+        margin-top: 0.5rem;
+    }
+    .tablinks {
+        width: 250px;
+        height: 65px;
+    }
+    /* ************** */
+    /* Cloud Pricing */
+    /* ************** */
+    #cloud-pricing-boxes {
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .default-pricing-box.cloud,
+    .default-pricing-box-top.cloud,
+    .default-pricing-box-middle.cloud,
+    .default-pricing-box-bottom.cloud,
+    .recommended-pricing-bar.cloud,
+    .default-pricing-box-top.recommended-pricing.cloud {
+        width: 250px;
+    }
+    .default-pricing-box-bottom.recommended-pricing.cloud,
+    .default-pricing-box-middle.recommended-pricing.cloud {
+        width: 246px;
+    }
+    .default-pricing-box.cloud {
+        height: 530px;
+    }
+
+    .default-pricing-box-top.cloud {
+        height: 175px;
+    }
+
+    .default-pricing-box-middle.cloud {
+        height: 320px;
+    }
+
+    .default-pricing-box-bottom.cloud {
+        height: 55px;
+    }
+    .default-pricing-box.recommended-pricing.cloud {
+        height: 570px;
+    }
+    .default-pricing-box-top.recommended-pricing.cloud {
+        height: 190px;
+    }
+    #compare-features {
+        width: 80%;
+    }
+  /*  Swarm Page */
+  .swarm-header {
+    height: 450px;
+  }
+  #swarm-intro-wrap {
+    margin: -100px 5% 50px;
+    width: 90%;
+  }
+  .download-swarm-btn {
+    top: 280px;
+  }
+  /* Case Studies */
+  .case-study-structure {
+    margin-left: 5%;
+    width: 20%;
+    margin-right: 25px;
+  }
+ .case-study-content {
+     width: 70%;
+     margin: 0 25% 0 15%;
+ }
+ /* Editions */
+ #edition-comparison .clean-gray-table {
+   width: 80%;
+   margin: 0 10%;
+ }
+   /* HiveMQ Cloud Page page */
+   #cloud-header {
+       grid-template-columns: auto 360px;
+   }
+
+   #cloud-headlines {
+       padding: 30px 0 10px 10%;
+   }
+
+   #cloud-header h1 {
+       font-size: 40px;
+   }
+   #cloud-header h2 {
+       font-size: 24px;
+   }
+   #cloud-header h3 {
+       font-size: 18px;
+       font-weight: 300;
+   }
+
+  #cloud-feature-tiles {
+       width: 90%;
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       margin: 50px 4% 150px;
+       gap: 4%;
+   }
+   .feature-tile-cloud{
+    width: 220px;
+   }
+}
+
+@media screen and (max-width: 1200px ){
+    /* ************** */
+    /* Cloud Pricing */
+    /* ************** */
+    .default-pricing-box.cloud,
+    .default-pricing-box-top.cloud,
+    .default-pricing-box-middle.cloud,
+    .default-pricing-box-bottom.cloud,
+    .recommended-pricing-bar.cloud,
+    .default-pricing-box-top.recommended-pricing.cloud {
+        width: 216px;
+    }
+
+    .default-pricing-box-middle.recommended-pricing.cloud,
+    .default-pricing-box-bottom.recommended-pricing.cloud {
+        width: 212px;
+    }
+    .default-pricing-box.cloud {
+        height: 581px;
+    }
+
+    .default-pricing-box-top.cloud {
+        height: 190px;
+    }
+
+    .default-pricing-box-middle.cloud {
+        height: 360px;
+    }
+
+    .default-pricing-box-bottom.cloud {
+        height: 55px;
+    }
+    .default-pricing-box.recommended-pricing.cloud {
+        height: 621px;
+    }
+   .default-pricing-box-middle.recommended-pricing.cloud {
+        height: 370px;
+   }
+   /* ************** */
+   /* Broker pricing */
+   /* ************** */
+   .default-pricing-box.broker,
+   .default-pricing-box-top.broker,
+   .default-pricing-box-middle.broker,
+   .default-pricing-box-bottom.broker {
+       width: 280px;
+   }
+
+   .default-pricing-box-top.broker {
+       height: 150px;
+   }
+
+   .default-pricing-box-middle.broker {
+       height: 300px;
+   }
+
+   .default-pricing-box-bottom.broker {
+       height: 55px;
+   }
+
+   .recommended-pricing-bar.broker {
+       width: 320px;
+   }
+   .default-pricing-box.recommended-pricing.broker {
+       width: 320px;
+       height: 541px;
+   }
+   .default-pricing-box-top.recommended-pricing.broker,
+   .default-pricing-box-middle.recommended-pricing.broker,
+   .default-pricing-box-bottom.recommended-pricing.broker {
+       width: 316px;
+   }
+}
+
+@media screen and (max-width: 1024px ){
+  .ami {
+    width: 40%;
+  }
+  .copytext-pic {
+    width: 100%;
+    min-width: 350px;
+  }
+  #customer-stories {
+    margin-top: 0px;
+  }
+  .customer-story-card {
+    width: 22%;
+    font-size: 15px;
+    margin: 10px;
+  }
+  #hivemq-keyfeatures {
+    width: 90%;
+    margin: 0 5%;
+    flex-direction: column;
+  }
+  /* Features page */
+  .feature-section {
+    width: 90%;
+    margin: 20px 1%;
+  }
+  /* Styles for Case Studies Start */
+  .case-study-structure {
+    width: 30%;
+    margin: 0 5% 20px 10%;
+    float: left;
+  }
+  .case-study-content {
+    width: auto;
+    margin: 0 10%;
+  }
+  /* Download Page */
+  #download-boxes {
+    display: flex;
+    flex-flow: column;
+    margin-top: 0;
+  }
+  .download-box {
+  padding-bottom: 50px;
+  }
+
+  #cloud-box {
+    border-bottom: 2px dashed #999;
+    border-right: none;
+  }
+
+  /* Styles for Case Studies Start */
+  #client-grid {
+    width: 90%;
+    margin: 0 5% 0 0;
+  }
+  .client-grid-logo {
+    flex-basis: 27%;
+    margin: 20px 2%;
+  }
+  .client-grid-overlay {
+    margin-top: -200px;
+    padding-top: 160px;
+    height: 40px;
+  }
+  /*Pricing Page*/
+    .pricing-visual {
+        max-width: 1024px;
+        height: 152px;
+    }
+    .pricing-visual>.header-headlines {
+        top: 20px;
+    }
+    .pricing-h1 {
+        font-size: 45px;
+    }
+    .pricing-h2 {
+        font-size: 18px;
+    }
+    #pricing-tabs {
+        top: -20px;
+        transform: scale(0.8);
+    }
+    #cloud-pricing-boxes {
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .default-pricing-box {
+        margin-bottom: 25px;
+    }
+
+    .default-pricing-box.cloud,
+    .default-pricing-box-top.cloud,
+    .default-pricing-box-middle.cloud,
+    .default-pricing-box-bottom.cloud,
+    .recommended-pricing-bar.cloud,
+    .default-pricing-box-top.recommended-pricing.cloud {
+        width: 320px;
+    }
+    .default-pricing-box-bottom.recommended-pricing.cloud,
+    .default-pricing-box-middle.recommended-pricing.cloud {
+        width: 316px;
+    }
+    .default-pricing-box.cloud {
+        height: 500px;
+    }
+
+    .default-pricing-box-top.cloud {
+        height: 175px;
+    }
+
+    .default-pricing-box-middle.cloud {
+        height: 290px;
+    }
+
+    .default-pricing-box-bottom.cloud {
+        height: 55px;
+    }
+    .default-pricing-box.recommended-pricing.cloud {
+        height: 530px;
+    }
+    .default-pricing-box-middle.recommended-pricing.cloud {
+        height: 279px;
+    }
+    .default-pricing-box-top.recommended-pricing.cloud {
+        height: 190px;
+    }
+    #compare-features {
+        width: 94%;
+    }
+
+    .fullwidth-box.blue,
+    .fullwidth-box.black {
+        width: 100%;
+        padding: 40px 5% 40px 5%;
+    }
+    #customer-quote-row {
+        width: 80%;
+        margin: 50px auto 75px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .customer-quote-box {
+        width: 100%;
+        height: 210px;
+        margin-bottom: 50px;
+    }
+    .customer-quote-box > .upper {
+        padding: 20px;
+        height: 130px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        gap: 5%;
+    }
+
+    .customer-quote-box > .lower {
+        height: 80px;
+    }
+  /*Pricing Page End*/
+  /* HiveMQ Swarm Page */
+  .swarm-header {
+    height: 340px;
+  }
+  .download-swarm-btn {
+    top: 300px;
+  }
+  #swarm-logo-intro {
+    width: 250px;
+  }
+  #swarm-intro-wrap {
+    margin: 0 5% 20px;
+    width: 90%;
+    padding: 50px 0 0 0;
+  }
+  #swarm-architecture {
+    width: 80%;
+  }
+  .swarm-resources {
+    width: 80%;
+  }
+  #swarm-quote-mobile {
+    text-align: center;
+    margin: 50px 10% 25px;
+  }
+  #edition-comparison .clean-gray-table {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .tooltip .tooltiptext {
+      left: 10px;
+  }
+  /* Extension page */
+  .standalone-extension-header figure img {
+    display: none;
+  }
+
+ /* HiveMQ Cloud Page page */
+ #cloud-header {
+     grid-template-columns: auto 300px;
+ }
+
+ #cloud-headlines {
+     padding: 10px 0 10px 10%;
+ }
+
+ #cloud-header h1 {
+     font-size: 36px;
+ }
+ #cloud-header h2 {
+     font-size: 20px;
+ }
+ #cloud-header h3 {
+     font-size: 16px;
+ }
+
+#cloud-feature-tiles {
+     width: 90%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+ .feature-tile-cloud{
+    min-width: 220px;
+    margin: 25px;
+ }
+ #cloud-customer-quote {
+    padding: 50px 5%;
+ }
+
+}
+
+/* Styles for Case Studies End */
+
+@media screen and (max-width: 768px ){
+  /* Download HiveMQ Page */
+  #download-hivemq-form {
+      top: 25px;
+  }
+
+  #get-hivemq-header-cta {
+    width: 100%;
+    justify-content: center;
+    top: 0;
+  }
+  .ami-list {
+    width: 60%;
+    padding: 0 20%;
+  }
+  .ami {
+    width: 100%;
+    margin: 15px auto 10px;
+  }
+  #extension-content {
+    margin: 0px auto;
+    top: 60px;
+    width: 90%;
+    padding: 50px 5%;
+  }
+  .extension-text {
+    width: 80%;
+  }
+/* Customers */
+  #client-grid {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .client-grid-logo {
+    flex-basis: 40%;
+    margin: 10px 5%;
+  }
+  .client-grid-overlay {
+    margin-top: -190px;
+    padding-top: 140px;
+    height: 40px;
+  }
+  .customer-story-card {
+    width: 33%;
+    height: 300px;
+  }
+  .story-link {
+    top: 250px;
+  }
+
+/* Styles for Case Studies Start */
+  .case-study-structure {
+    width: 80%;
+    margin: 0 10% 50px;
+    float: left;
+  }
+
+  .case-study-content {
+    width: auto;
+    margin: 0 10%;
+  }
+  /* Styles for Case Studies End */
+  /* Kafka Solution */
+  .clean-gray-table.kafka-table tr, 
+  .clean-gray-table.kafka-table td {
+    padding: 12px;
+  }
+  /* Product Page */
+  #intro-product-page {
+    margin: -20px 0 50px 0;
+  }
+  #swarm-feature-list {
+    display: block;
+    font-size: 16px;
+  }
+  .swarm-feature{
+    margin: 15px;
+  }
+  .swarm-feature.img-left{
+    display: none;
+  }
+  .swarm-header {
+    margin-top: -40px;
+    height: 270px;
+  }
+  .swarm-header .header-headlines{
+    top: 50px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .download-swarm-btn {
+    top: 280px;
+    padding: 5px;
+    width: 250px;
+    margin-left: -125px;
+  }
+  #swarm-intro {
+    margin: 0 2.5% 20px;
+    width: 95%;
+  }
+  #swarm-logo-intro {
+    display: none;
+  }
+  #swarm-architecture {
+    width: 97.5%;
+    margin: 0 auto;
+  }
+  /*Pricing Page*/
+  .pricing-visual {
+      max-width: 768px;
+      height: 114px;
+  }
+  .pricing-visual>.header-headlines {
+      top: 20px;
+  }
+  .pricing-h1 {
+      font-size: 36px;
+      line-height: 1rem;
+  }
+  .pricing-h2 {
+      font-size: 18px;
+  }
+  #pricing-tabs {
+      flex-direction: column;
+      left: calc(50% - 130px);;
+      margin: 0;
+      width: 260px;
+      height: 160px;
+      top: 5px;
+      transform: scale(0.8);
+  }
+  .centered-pricing-headlines {
+    margin: 25px auto 50px;
+    }
+  .centered-pricing-headlines h2 {
+      font-size: 24px;
+  }
+  .centered-pricing-headlines h3 {
+      font-size: 18px;
+      margin: 0;
+  }
+  #cloud-pricing-boxes, #broker-pricing-boxes {
+      margin: 0 auto 100px;
+  }
+  /* Editions Page */
+  #edition-comparison .clean-gray-table {
+    display: contents;
+  }
+  #edition-comparison .clean-gray-table th {
+    font-size: 12px;
+  }
+  .tooltip:hover .tooltiptext {
+    display: none;
+  }
+  /* Single Extension Page */
+  .extension-download-form {
+      display: flex;
+      flex-direction: column;
+  }
+  .extension-video,
+  .extension-resources {
+      display: block;
+  }
+  /* HiveMQ Cloud Page */
+   #cloud-header {
+       display: block;
+   }
+   #cloud-header .hero-graphic {
+    display: none;
+   }
+   #cloud-customer-quote {
+       display: flex;
+       gap: 40px;
+       flex-direction: column;
+       padding: 2rem 10%;
+   }
+   #paxton-img {
+        align-self: start;
+   }
+}
+@media screen and (max-width: 600px){
+  .swarm-header {
+    background-color: #003e6e;
+  }
+  .swarm-header .header-headlines {
+    left: 0;
+    top: 45px;
+  }
+  .swarm-header .header-headlines .white-h2 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .download-swarm-btn {
+      top: 250px;
+    }
+  .customer-quote-box {
+    width: 100%;
+    height: 310px;
+    margin-bottom: 50px;
+    font-size: 15px;
+  }
+ .customer-quote-box .quotation-mark {
+    height: 20px;
+ }
+
+  .customer-quote-box > .upper {
+    height: 230px;
+  }
+
+  .customer-quote-box > .lower {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 480px ){
+  .plugin-icon {
+    margin: 10px 75% 10px 0;
+  }
+  .plugin-card {
+    width: 87.5%;
+    height: 285px;
+  }
+  .plugincard-cover {
+    transform: scale(0.8);
+    margin: -10px 20px 0 0;
+    float: none;
+  }
+  .plugin-card h3,
+  .plugin-card .ext-type,
+  .plugin-card .ext-short {
+    margin-left: 0px;
+  }
+  .plugin-card .ext-short {
+    margin: 0px;
+  }
+  .ami-list {
+    width: 80%;
+    padding: 0 10%;
+  }
+  .ami {
+    width: 100%;
+    margin: 15px 0 10px -2.5%;
+  }
+  #pr-tel {
+    width: 45%;
+  }
+  #cs-tel {
+    width: 45%;
+  }
+  .customer-story-card {
+    width: 75%;
+    height: 325px;
+  }
+  .customer-story-logo {
+    width: 65%;
+  }
+  #customer-stories {
+    width: 85%;
+    padding: 10px 7.5% 50px;
+  }
+  .story-link {
+    top: 270px;
+  }
+  #featured-customers .master-hl,
+  #featured-customers .master-sub {
+    margin-left: 5%;
+  }
+  .client-grid-overlay,
+  .client-grid-overlay :hover {
+    display: none;
+  }
+}

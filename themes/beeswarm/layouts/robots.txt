@@ -1,0 +1,23 @@
+{{ $baseUrl := .Site.BaseURL }}
+{{ if (eq  (string $baseUrl) (string "https://www.hivemq.com")) }}
+User-Agent: *
+Disallow: /snapshots/
+Disallow: /releases/
+Disallow: /docs/*/extensions-javadoc/
+Disallow: /docs/*/customization-javadoc/
+Disallow: /downloads/hivemq-*-benchmark.pdf
+Disallow: /downloads/*-mqtt-on-kubernetes.pdf
+Disallow: /downloads/*-energy-industry-with-mqtt.pdf
+Disallow: /downloads/iiot-*.pdf
+Disallow: /downloads/hivemq-*-connected-car.pdf
+Disallow: /downloads/hivemq-*-mqtt-essentials.pdf
+Disallow: /downloads/*-manufacturing-industry.pdf
+{{ range where .Data.Pages "Params.noindex" true }}
+Disallow: {{ .RelPermalink }}
+{{ end }}
+{{ else }}
+User-Agent: *
+Disallow: /
+{{ end }}
+
+Host: www.hivemq.com

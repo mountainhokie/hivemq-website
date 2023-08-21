@@ -1,0 +1,39 @@
+<div class="case-study">
+<article class="case-study-structure">
+<section class="case-study-shortbox">
+<h2>{{ .Get `customer` }}</h2>
+<hr>
+<h4>Location:</h4>
+{{ .Get `location` }}<br />
+<hr>
+<h4>Application:</h4>
+{{ .Get `application` }}<br />
+{{ if isset .Params "key-challenge1"}}<div id="keychallenges">
+<hr>
+<h4>Key Challenges:</h4>
+<ul>
+{{ if isset .Params "key-challenge1"}}<li>{{ .Get `key-challenge1`}}</li>{{ end }}
+{{ if isset .Params "key-challenge2"}}<li>{{ .Get `key-challenge2`}}</li>{{ end }}
+{{ if isset .Params "key-challenge3"}}<li>{{ .Get `key-challenge3`}}</li>{{ end }}
+{{ if isset .Params "key-challenge4"}}<li>{{ .Get `key-challenge4`}}</li>{{ end }}
+</ul>
+</div>
+{{ end }}
+{{ if isset .Params "result1"}}<div id="results">
+<hr>
+<h4>Results:</h4>
+<ul>
+{{ if isset .Params "result1"}}<li>{{ .Get `result1`}}</li>{{ end }}
+{{ if isset .Params "result2"}}<li>{{ .Get `result2`}}</li>{{ end }}
+{{ if isset .Params "result3"}}<li>{{ .Get `result3`}}</li>{{ end }}
+{{ if isset .Params "result4"}}<li>{{ .Get `result4`}}</li>{{ end }}
+</ul>
+</div>
+{{ end }}
+</section>
+</article>
+<article class="case-study-content">{{ .Inner | markdownify }}</article>
+<div class="all-cs-btn">
+    <a href="/customers/" title="See All Customer Stories"><img src="/img/svg/fa-grid.svg" style="height: 18px; position: relative; top: 2px;"> See All Customer Stories</a>
+</div>
+</div>

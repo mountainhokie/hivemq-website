@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Kamiel",
+        "lastName": "Straatman"
+    },
+    "image": "/img/blog/author-ks.jpg",
+    "description": "Kamiel is part of Solutions Engineering team at HiveMQ. Based out of the Netherlands, Kamiel is an IoT enthusiast with many years of experience working in the data center domain and Azure & AWS cloud architectures.",
+    "links": {
+        "email": "kamiel.straatman@hivemq.com"
+    }
+}

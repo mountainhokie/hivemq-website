@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section id="blog-list">
+    <h1>Blog Posts with Category "{{ .Title }}"</h1>
+    <div id="blog-sub-bar">
+        {{ partial "blog-category-filter" . }}
+        {{ partial "algolia-search-box" . }}
+    </div>
+    <div class="clearfix"></div>
+    <div class="post-preview">
+    <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
+    {{ range .Pages }}
+    {{ partial "list-overview-item" . }}
+    {{ end }}
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,82 @@
+<div class="webinar-abstract">
+{{ .Inner | markdownify }}
+<br/><br/>
+<div class="about-speaker">
+{{ if .Page.Params.speaker2 }}
+<h2>About the Speakers</h2>
+{{ else }}
+<h2>About the Speaker</h2>
+{{ end }}
+<div class="portrait-and-bio">
+<img src="/img/{{ .Get `speaker1-portrait` }}" alt="Portrait of Speaker: {{ .Get `speaker1` }}" title="Speaker: {{ .Get `speaker1` }}" class="webinar-speaker-portrait" />
+<article class="speaker-info">
+{{ .Get "speaker1-bio" }}
+<div style="height: 10px; display:block;">&nbsp;</div>
+{{ if isset .Params "speaker1mail" }}
+<img src="/img/svg/fa-envelope.svg" class="fa-icon" style="height: 16px; width: 27px; position: relative; top: 2px;" alt="LinkedIn icon"><a href="mailto:{{ .Get `speaker1mail` }}"> Email Contact</a>
+{{ end }}
+{{ if isset .Params "speaker1linkedin" }}
+<img src="/img/svg/fa-linkedin-social.svg" class="fa-icon" style="height: 18px; width: 27px; position: relative; top: 2px;" alt="LinkedIn icon"><a href="{{ .Get `speaker1linkedin` }}" target="_blank"> {{ .Get "speaker1" }} on LinkedIn</a>
+{{ end }}
+</article>
+</div>
+{{ if isset .Params "speaker2" }}
+<hr size="1" style="margin-top: 10px; margin-bottom: 15px;">
+<div class="portrait-and-bio">
+<img src="/img/{{ .Get `speaker2-portrait` }}" alt="Portrait of Speaker: {{ .Get `speaker2` }}" title="Speaker: {{ .Get `speaker2` }}" class="webinar-speaker-portrait" />
+<article class="speaker-info">
+{{ .Get "speaker2-bio" }}
+<div style="height: 10px; display:block;">&nbsp;</div>
+{{ if isset .Params "speaker2mail" }}
+<img src="/img/svg/fa-envelope.svg" class="fa-icon" style="height: 16px; width: 27px; position: relative; top: 2px;" alt="LinkedIn icon"><a href="mailto:{{ .Get `speaker2mail` }}"> Email Contact</a>{{ end }}
+{{ if isset .Params "speaker2linkedin" }}
+<img src="/img/svg/fa-linkedin-social.svg" class="fa-icon" style="height: 18px; width: 27px; position: relative; top: 2px;" alt="LinkedIn icon"><a href="{{ .Get `speaker2linkedin` }}" target="_blank"> {{ .Get "speaker2" }} on LinkedIn</a>
+{{ end }}
+</article>
+</div>
+{{ end }}
+{{ if isset .Params "speaker3" }}
+<hr size="1" style="margin-top: 10px; margin-bottom: 15px;">
+<div class="portrait-and-bio">
+<img src="/img/{{ .Get `speaker3-portrait` }}" alt="Portrait of Speaker: {{ .Get `speaker3` }}" title="Speaker: {{ .Get `speaker3` }}" class="webinar-speaker-portrait" />
+<article class="speaker-info">
+{{ .Get "speaker3-bio" }}
+{{ if isset .Params "speaker3mail" }}
+<img src="/img/svg/fa-envelope.svg" class="fa-icon" style="height: 16px; width: 27px; position: relative; top: 2px; margin-top: 15px;" alt="LinkedIn icon"><a href="mailto:{{ .Get `speaker3mail` }}"> Email Contact</a>
+{{ end }}
+{{ if isset .Params "speaker3linkedin" }}
+<img src="/img/svg/fa-linkedin-social.svg" class="fa-icon" style="height: 18px; width: 27px; position: relative; top: 2px;" alt="LinkedIn icon"><a href="{{ .Get `speaker3linkedin` }}" target="_blank"> {{ .Get "speaker3" }} on LinkedIn</a>
+{{ end }}
+</article>
+</div>
+{{ end }}
+{{ if isset .Params "speaker4" }}<hr size="1" style="margin-top: 10px; margin-bottom: 15px;">
+<div class="portrait-and-bio">
+<img src="/img/{{ .Get `speaker4-portrait` }}" alt="Portrait of Speaker: {{ .Get `speaker4` }}" title="Speaker: {{ .Get `speaker4` }}" class="webinar-speaker-portrait" />
+<article class="speaker-info">
+{{ .Get "speaker4-bio" }}
+{{ if isset .Params "speaker4mail" }}
+<img src="/img/svg/fa-envelope.svg" class="fa-icon" style="height: 16px; width: 27px; position: relative; top: 2px; margin-top: 15px;" alt="LinkedIn icon"><a href="mailto:{{ .Get `speaker4mail` }}"> Email Contact</a>
+{{ end }}
+{{ if isset .Params "speaker4linkedin" }}
+<img src="/img/svg/fa-linkedin-social.svg" class="fa-icon" style="height: 18px; width: 27px; position: relative; top: 2px;" alt="LinkedIn icon"><a href="{{ .Get `speaker4linkedin` }}" target="_blank"> {{ .Get "speaker4" }} on LinkedIn</a>
+{{ end }}
+</article>
+</div>
+{{ end }}
+{{ if isset .Params "speaker5" }}<hr size="1" style="margin-top: 10px; margin-bottom: 15px;">
+<div class="portrait-and-bio">
+<img src="/img/{{ .Get `speaker5-portrait` }}" alt="Portrait of Speaker: {{ .Get `speaker5` }}" title="Speaker: {{ .Get `speaker5` }}" class="webinar-speaker-portrait" />
+<article class="speaker-info">
+{{ .Get "speaker5-bio" }}
+{{ if isset .Params "speaker5mail" }}
+<img src="/img/svg/fa-envelope.svg" class="fa-icon" style="height: 16px; width: 27px; position: relative; top: 2px; margin-top: 15px;" alt="LinkedIn icon"><a href="mailto:{{ .Get `speaker5mail` }}"> Email Contact</a>
+{{ end }}
+{{ if isset .Params "speaker5linkedin" }}
+<img src="/img/svg/fa-linkedin-social.svg" class="fa-icon" style="height: 18px; width: 27px; position: relative; top: 2px;" alt="LinkedIn icon"><a href="{{ .Get `speaker5linkedin` }}" target="_blank"> {{ .Get "speaker5" }} on LinkedIn</a>
+{{ end }}
+</article>
+</div>
+{{ end }}
+</div>
+</div>

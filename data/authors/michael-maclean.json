@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Michael",
+        "lastName": "Maclean"
+    },
+    "image": "/img/blog/author-mm.jpg",
+    "description": "Michael Maclean is a developer based in Scotland, with a variety of interests including scalability, embedded systems and IoT. He maintains and contributes to a number of open source projects including Mosquitto-PHP and other PHP extensions.",
+    "links": {
+        "website": "https://mastodon.social/@mgdm"
+    },
+    "isGuestAuthor": "true"
+}

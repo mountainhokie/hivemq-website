@@ -1,0 +1,9 @@
+<section>
+  <article class="partner-box-wrapper">
+     {{ range .Site.Data.partners_complete }}
+           <a href="{{ .url }}" target="_blank"><img src="/img/partners/{{ .img }}" class="partner-box"></a>
+     {{ end }}
+  </article>
+    <article style="width: 100%; text-align: center;"><img src="/img/partners/hivemq-certified-partner.png" alt="HiveMQ Certified Partner" title="HiveMQ Certified Partner"></article>
+</section>
+

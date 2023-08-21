@@ -1,0 +1,74 @@
+<section class='{{ .Params.headerClass }}' id='masthead' >
+      <script type="text/javascript">
+            <!-- set initial header image -->
+            function headerImg(){
+                  var w = window.innerWidth;
+                  var header = {{ .Params.headerImg }}
+                  if (header == null ) {
+                        document.getElementById('masthead').style.backgroundImage.hidden;
+                  } else if (w <= 600 ){
+                        document.getElementById('masthead').style.backgroundImage.hidden;
+                  } else if (w < 768 ) {
+                        document.getElementById('masthead').style.backgroundImage = "url('/img/{{ .Params.headerImg }}-768.jpg')";
+                  } else if (w < 1024 ) {
+                        document.getElementById('masthead').style.backgroundImage = "url('/img/{{ .Params.headerImg }}-1024.jpg')";
+                  } else if (w < 1280) {
+                        document.getElementById('masthead').style.backgroundImage = "url('/img/{{ .Params.headerImg }}-1280.jpg')";
+                  } else {
+                        document.getElementById('masthead').style.backgroundImage = "url('/img/{{ .Params.headerImg }}-1600.jpg')";
+                  }
+            }
+            headerImg();
+            <!-- update header image when browser is resized -->
+            function checkScreen(){
+                  var blogURL = window.location.href.indexOf("/blog");
+                  if ( blogURL == -1 ) {
+                        var checkMobile = window.matchMedia('screen and (max-width: 599px)');
+                        var checkSmall = window.matchMedia('screen and (min-width: 600px) and (max-width: 767px)');
+                        var checkTablet = window.matchMedia('screen and (min-width: 768px) and (max-width: 1023px)');
+                        var checkDesktop = window.matchMedia('screen and (min-width: 1024px) and (max-width: 1279px');
+                        var checkHD = window.matchMedia('screen and (min-width: 1280px)');
+                        checkMobile.addListener(function(e){
+                              if(e.matches) {
+                                    document.getElementById('masthead').style.backgroundImage.hidden;
+                              }
+                        });
+                        checkSmall.addListener(function(e){
+                              if(e.matches) {
+                                    document.getElementById('masthead').style.backgroundImage = "url('/img/{{ .Params.headerImg }}-768.jpg')";
+                        }
+                        });
+                        checkTablet.addListener(function(e){
+                              if(e.matches) {
+                                    document.getElementById('masthead').style.backgroundImage = "url('/img/{{ .Params.headerImg }}-1024.jpg')";
+                        }
+                        });
+                        checkDesktop.addListener(function(e){
+                              if(e.matches) {
+                                    document.getElementById('masthead').style.backgroundImage = "url('/img/{{ .Params.headerImg }}-1280.jpg')";
+                        }
+                        });
+                        checkHD.addListener(function(e){
+                              if(e.matches) {
+                              document.getElementById('masthead').style.backgroundImage = "url('/img/{{ .Params.headerImg }}-1600.jpg')";
+                              }
+                        });
+                  }
+            }
+            checkScreen();
+            </script>
+      <div class="header-headlines">
+            {{ if isset .Params "headerh1" }} 
+                  <h1 class='{{ .Params.headerh1class }}'>{{ .Params.headerh1 }}</h1>
+            {{ end }}
+            {{ if isset .Params "headerlogo" }} 
+                  <div><img src="{{ .Params.headerlogo }}" alt="{{ .Params.headerlogo_alt }}" class='{{ .Params.headerlogoclass }} header-logo'></div>
+            {{ end }}
+            {{ if isset .Params "headerh2" }} 
+                  <h2 class='{{ .Params.headerh2class }}'>{{ .Params.headerh2 }}</h2>
+            {{ end }}
+            {{ if isset .Params "headercta" }}
+                  <a href="{{ .Params.headerCTA_URL }}"><button id="header-cta" class="btn-white-outline">{{ .Params.headerCTA }}</button></a>
+            {{ end }}
+      </div>
+</section>

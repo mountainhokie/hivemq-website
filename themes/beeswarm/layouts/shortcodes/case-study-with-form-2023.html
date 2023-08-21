@@ -1,0 +1,62 @@
+<div class="case-study">
+<article class="case-study-structure">
+<section class="case-study-shortbox">
+{{ if isset .Params "customer"}}
+<h2>{{ .Get `customer` }}</h2>
+<hr>
+{{ end }}
+{{ if isset .Params "key-challenge1"}}
+<div id="keychallenges">
+<h4>Project Scope:</h4>
+<ul>
+{{ if isset .Params "key-challenge1"}}<li>{{ .Get `key-challenge1`}}</li>{{ end }}
+{{ if isset .Params "key-challenge2"}}<li>{{ .Get `key-challenge2`}}</li>{{ end }}
+{{ if isset .Params "key-challenge3"}}<li>{{ .Get `key-challenge3`}}</li>{{ end }}
+{{ if isset .Params "key-challenge4"}}<li>{{ .Get `key-challenge4`}}</li>{{ end }}
+</ul>
+</div>
+{{ end }}
+{{ if isset .Params "result1"}}<div id="results">
+<hr>
+<h4>Key Wins:</h4>
+<ul>
+{{ if isset .Params "result1"}}<li>{{ .Get `result1`}}</li>{{ end }}
+{{ if isset .Params "result2"}}<li>{{ .Get `result2`}}</li>{{ end }}
+{{ if isset .Params "result3"}}<li>{{ .Get `result3`}}</li>{{ end }}
+{{ if isset .Params "result4"}}<li>{{ .Get `result4`}}</li>{{ end }}
+</ul>
+</div>
+{{ end }}
+</section>
+<div style="width: 100%; text-align: center; margin-top: 30px;">
+    <button class="btn-grey-outline cs-download-button">Download Case Study</button>
+</div>
+<script>
+$(document).ready(function(){
+    $(".case-study-download-form").hide();
+  $(".cs-download-button").click(function(){
+    $(".case-study-download-form").fadeIn(500);
+    $(".cs-download-button").hide();
+  });
+});
+</script>
+<div class="case-study-download-form">
+<h3>Download Case Study</h3>
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+hbspt.forms.create({
+region: "na1",
+portalId: "5867930",
+formId: "{{ .Get `formid` }}"
+});
+</script>
+</div>
+</article>
+<article class="case-study-content">{{ .Inner | markdownify }}</article>
+<div class="all-cs-btn">
+    <a href="/customers/" title="See All Customer Stories"><img src="/img/svg/fa-grid.svg" style="height: 18px; position: relative; top: 2px;"> See All Customer Stories</a>
+</div>
+</div>

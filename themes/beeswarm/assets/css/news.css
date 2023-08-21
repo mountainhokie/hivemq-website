@@ -1,0 +1,260 @@
+/* Styles for News Overview i.e. list.html START */
+#news-list {
+  width: 90%;
+  margin: -30px 0 -125px 0;
+  padding: 20px 5% 100px 5%;
+  background-color: #ccc;
+}
+
+.news-list-preview {
+  background-color: #fff;
+  box-shadow: 3px 3px 8px #999;
+  margin: 0 0 25px 0;
+  padding: 20px;
+  overflow: auto;
+}
+
+.news-overview-poster img {
+  width: 450px;
+  margin-right: 25px;
+  float: left;
+}
+
+.news-overview-content {
+  margin-left: 35%;
+  margin-right: 5%;
+}
+
+.news-overview-details {
+  font-size: 12px;
+  font-style: italic;
+} 
+
+.pagination {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pagination li {
+  display: inline;
+}
+
+.pagination li a {
+  padding: 0 5px;
+  color: #313131;
+}
+
+.pagination .active a {
+  background-color: #ffc000;
+  color: #fff;
+}
+
+/* Styles for News Overview END */
+
+/* Styles for News Single Template  */
+
+p, div ~ p {
+  margin: 1rem 0 1rem;
+}
+
+.blogpost {
+   width: 80%;
+   margin: 50px auto;
+   position: relative;
+   top: 60px;
+   background-color: #fff;
+   box-shadow: 2px 2px 10px #999;
+}
+
+.blog-content {
+   padding: 00px 15% 50px 15%;
+   position: relative;
+   top: 50px;
+   font-size: 18px;
+   line-height: 32px;
+}
+
+.blog-content h1, h2 {
+   color: #ffC000;
+}
+
+.blog-content h1 {
+   font-weight: 300;
+   font-size: 30px;
+   line-height: 1.15em;
+}
+
+.blog-content h2 {
+   font-weight: 600;
+   font-size: 22px;
+   margin-top: 1.5em;
+   color: #333;
+}
+
+.blog-content h3 {
+   font-weight: 700;
+   font-size: 20px;
+   margin-top: 1.5em;
+}
+
+.blog-content h4 {
+   font-weight: 400;
+   font-size: 18px;
+   margin-top: 1.5em;
+}
+
+.blogtext {
+   border-bottom: 1px dashed #999;
+   padding-bottom: 25px;
+}
+.blogtext table, 
+.blogtext table th,
+.blogtext table td {
+  border: 1px solid #ccc;
+  border-collapse: collapse; 
+}
+
+.blogtext th {
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: #444;
+  color: #fff;
+}
+
+#back-to-newslist a {
+   font-size: 14px;
+}
+
+.blog-content > .blog-title {
+   font-weight: 400;
+}
+
+h2.blog-details {
+   font-size: 14px;
+   margin: 0;
+   color: #000;
+   font-style: italic;
+}
+
+.blog-content blockquote {
+   font-size: 14px;
+   line-height: 20px;
+   color: #000;
+   letter-spacing: 0.05em;
+   padding: 10px 20px;
+   background-color: rgb(253, 243, 212);
+   margin-left: 0;
+}
+
+.floating-icon-50 {
+  float: left;
+  margin: 25px 10px 0 0;
+  width: 50px;
+  height: 50px;
+}
+
+table tr td {
+  vertical-align: top;
+  padding: 15px;
+}
+
+.blog-content table h2, .blog-content table h3 {
+  margin-top: 0;
+}
+
+.blog-content table img {
+  margin: 0;
+}
+
+.news-content-pic {
+   width: 50%;
+   float: left;
+   margin: 0.5rem 2rem 1rem 0;
+}
+
+
+@media screen and (max-width: 1280px){
+   .blogpost {
+      width: 100%;
+      margin: 0 auto;
+   }
+   .blog-content {
+      padding: 0 10% 100px;
+   }
+   #back-to-overview {
+      position: relative;
+      top: 15px;
+      left: 2%;
+      margin-bottom: 50px;
+   }
+   .news-content-pic {
+      width: 35%;
+   }
+   
+}
+
+@media screen and (max-width: 1024px){
+   #back-to-overview {
+      position: relative;
+      top: 15px;
+      left: 2%;
+      margin-bottom: 50px;
+   }
+   .overview-poster img {
+      width: 47.5%;
+      margin-right: 2.5%;
+      float: left;
+   }
+    .overview-content {
+      width: 45%;
+      margin-left: 52%;
+   }
+   .news-content-pic {
+         width: 40%;
+   }
+}
+
+@media screen and (max-width: 768px){
+   .blogpost {
+      width: 100%;
+      margin: 0 auto;
+   }
+   .blog-content {
+      padding: 0 5% 100px;
+   }
+   #back-to-overview {
+      position: relative;
+      top: 15px;
+      left: 2%;
+      margin-bottom: 50px;
+   }
+   .overview-poster img {
+      width: 100%;
+      float: none;
+    }
+    .overview-content {
+      width: 100%;
+      margin-left: 0%;
+  }
+  .news-content-pic {
+      width: 65%;
+      margin-right: 35%;
+   }
+}
+
+@media screen and (max-width: 600px){
+   #news-list {
+      margin-top: -100px;
+   }
+}
+
+@media screen and (max-width: 480px){
+  .news-content-pic {
+      width: 90%;
+      margin: 25px 5%;
+      float: none;
+   }
+}

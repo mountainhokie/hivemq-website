@@ -1,0 +1,5 @@
+<article class="partner-box-wrapper">
+{{ range .Site.Data.partners_sorted.technology }}
+    <a href="{{ .url }}" target="_blank"><img src="/img/partners/{{ .img }}" class="partner-box"></a>
+{{ end }}
+</article>

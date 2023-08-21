@@ -1,0 +1,33 @@
+{
+  "name": "hivemq-website",
+  "version": "1.0.0",
+  "description": "Website deployment, algolia indexing module",
+  "main": "index.js",
+  "scripts": {
+    "dev-all": "npm run build:css && concurrently \"npm:dev:css\" \"npm:dev:hugo-all\"",
+    "dev": "npm run build:css && concurrently \"npm:dev:css\" \"npm:dev:hugo\"",
+    "dev:css": "npx tailwindcss -i themes/beeswarm/assets/css/input.css -o themes/beeswarm/static/css/output.css -w",
+    "dev:hugo": "hugo server --gc --watch --bind 0.0.0.0",
+    "dev:hugo-all": "hugo server --gc -D -F --watch --bind 0.0.0.0",
+    "build:css": "NODE_ENV=production npx tailwindcss -i themes/beeswarm/assets/css/input.css -o themes/beeswarm/static/css/output.css -m",
+    "build:hugo": "hugo",
+    "build": "npm run build:css && npm run build:hugo"
+  },
+  "packageManager": "npm@9.6.6",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hivemq/hivemq-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hivemq/hivemq-website/issues"
+  },
+  "homepage": "https://github.com/hivemq/hivemq-website#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "tailwindcss": "^3.3.2"
+  }
+}

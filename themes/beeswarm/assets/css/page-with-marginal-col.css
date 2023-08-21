@@ -1,0 +1,248 @@
+.page-with-margin-col {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    grid-column-gap: 5%;
+    width: 100%;
+    padding: 50px 2.5% 50px 10%;
+    box-sizing: border-box;
+}
+
+/** Buyers Guide **/
+.page-with-margin-col .col-content-left {
+    width: 100%;
+}
+
+.page-with-margin-col .col-margin-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#six-principles-buyers-guide img {
+    height: 60px;
+    width: 60px;
+    margin: 0 25px 0 0;
+}
+
+#six-principles-buyers-guide {
+    display: grid;
+    grid-template-columns: 60px 1fr 60px 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    padding: 25px 0;
+    align-items: center;
+}
+
+#six-principles-buyers-guide h3,
+#six-principles-buyers-guide p {
+    margin: 0;
+}
+
+#six-principles-buyers-guide p {
+    padding-right: 7.5%;
+}
+
+#callout-200mio {
+    background-image: url('/img/svg/hexagon-y.svg');
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 330px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 75px;
+    box-sizing: border-box;
+    float: right;
+    margin: 15px -200px 2rem 50px;
+}
+
+#callout-200mio h3 {
+    font-size: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #333;
+}
+
+#data-driven-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    grid-gap: 5%;
+    border-radius: 12px;
+    padding: 15px 25px 15px 50px;
+    margin: 1rem 25px
+    width: 55%;
+}
+
+#data-driven-benefits h2 {
+    text-align: right;
+}
+
+.download-banner-desktop {
+    border: 1px solid #afafaf;
+    background: #fff;
+    width: 200px;
+    padding: 0 10px 20px 10px;
+    border-radius: 5px;
+    position: sticky;
+    top: 10%;
+    text-align: center;
+}
+
+.download-banner-mobile {
+    display: none;
+}
+
+.download-banner-mobile .whitepaper-cover {
+    margin-right: 15px;
+}
+
+.download-banner-mobile .buyers-guide-cover {
+    margin: 0 20px 2rem 10px;
+    height: 120px;
+}
+.download-banner-mobile h3 {
+    margin: 0;
+}
+
+.buyers-guide-download-form,
+.whitepaper-download-form {
+    display: none;
+    border: 1px solid #afafaf;
+    background: #fff;
+    text-align: left;
+    padding: 15px;
+    width: 325px;
+    position: sticky;
+    top: 10%;
+    margin-top: 25px;
+}
+
+.buyers-guide-download-form .closer,
+.buyers-guide-download-form .closer-mobile,
+.whitepaper-download-form .closer,
+.whitepaper-download-form .closer-mobile {
+    height: 18px;
+    float: right;
+    display: none;
+}
+
+#infinity-loop {
+    max-width: 700px;
+}
+.whitepaper-conclusion section {
+   padding: 20px 50px 40px 50px;
+   background: rgba(0,0,0, 0.70);
+   border: 1px solid #fff;
+   border-radius: 10px;
+}
+
+.whitepaper-conclusion {
+   background-size: cover;
+   background-position: center center;
+   padding: 100px 20%;
+   text-align: center;
+   color: #fff;
+   margin-bottom: -100px;
+}
+/* Backgrounds for Whitepapers */
+#conclusion-manufacturing {
+   background-image: url("/img/manufacturing-industry40.jpg");
+}
+#conclusion-logistics {
+   background-image: url("/img/logistics-whitepaper-contact-bg.jpg");
+}
+#conclusion-energy {
+   background-image: url("/img/energy-whitepaper-contact-bg.jpg");
+}
+#conclusion-pharma {
+  background-image: url("/img/pharma-whitepaper-contact-bg.jpg");
+}
+#conclusion-chemical {
+  background-image: url("/img/chemical-whitepaper-contact-bg.jpg");
+}
+#automomotive-manufacturing-solution {
+  background-image: url("/img/auto-manufacturing-contact-bg.jpg");
+}
+
+#connected-car-conclusion {
+   background-image: url("/img/automotive-city.jpg");
+}
+
+/* Responsive */
+@media screen and (max-width: 1280px) {
+    body {
+        background: 99ffcc;
+    }
+    .page-with-margin-col {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        width: 100%;
+        padding: 50px 10%;
+    }
+    #callout-200mio {
+        float: left;
+        margin: 0 5% 1rem 0;
+    }
+    #six-principles-buyers-guide {
+        grid-template-columns: 60px 1fr 60px 1fr;
+        grid-column-gap: 15px;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .page-with-margin-col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 50px 5%;
+        box-sizing: border-box;
+    }
+
+    .buyers-guide-download-form,
+    .whitepaper-download-form {
+        display: none;
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        width: 350px;
+        margin-left: -180px;
+        border: 1px solid #afafaf;
+        background-color: #fff;
+        padding: 10px 10px 10px 20px;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(51,51,51,0.4);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(51,51,51,0.4);
+        box-shadow: 5px 5px 5px 0px rgba(51,51,51,0.4);
+    }
+    .download-banner-desktop {
+        display: none;
+    }
+    .download-banner-mobile {
+        border: 1px solid #afafaf;
+        background: #fff;
+        border-radius: 5px;
+        display: flex;
+        text-align: left;
+        padding: 10px 10px 15px;
+        width: 50%;
+        float: right;
+        margin: 0 0 1rem 2.5%;
+    }
+    #six-principles-buyers-guide {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+        padding: 25px 0;
+        align-items: center;
+    }
+    .whitepaper-conclusion {
+       padding: 50px 5%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .download-banner-mobile {
+        float: none;
+        width: 90%;
+    }
+}

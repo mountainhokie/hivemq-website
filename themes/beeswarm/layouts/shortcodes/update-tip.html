@@ -1,0 +1,8 @@
+<section style="margin-top: {{ .Get `margin-top` }}; margin-bottom: {{ .Get `margin-bottom` }}">
+   <div class="update-tip">
+      <img src="/img/svg/fa-star.svg" style="height: 18px; width: 18px; position: relative; top: 3px;" alt="star-icon"> Update 
+   </div>
+   <article class="update-tip-content">
+      {{ .Inner | markdownify }}
+   </article>
+</section>

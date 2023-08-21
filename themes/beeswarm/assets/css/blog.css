@@ -1,0 +1,729 @@
+/* Styles for individual posts  */
+p, div ~ p {
+   margin: 1rem 0 1rem;
+ }
+
+ .blogpost {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+ }
+
+ .blog-content {
+    padding: 20px 15% 50px 15%;
+    font-size: 18px;
+    line-height: 32px;
+ }
+
+ .blog-content h1, h2 {
+    color: #ffC000;
+ }
+
+ .blog-content h1 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.15em;
+ }
+
+ .blog-content h2 {
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 2em;
+ }
+
+ .blog-content .master-h2 {
+    color: #000;
+ }
+ 
+ .blog-content h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 1.5em;
+ }
+
+ .blog-content h4 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 1.5em;
+ }
+
+ .blog-content h5 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 1.5em;
+    text-transform: uppercase;
+ }
+
+ .blog-text-img {
+    width: 40%;
+    margin: 1rem 1rem 1rem 0;
+    float: left;
+ }
+
+ .blogtext table,
+ .blogtext table th,
+ .blogtext table td {
+   border: 1px solid #ccc;
+   border-collapse: collapse;
+ }
+
+ .blogtext th {
+   font-weight: 400;
+   font-size: 26px;
+   margin-top: 2em;
+}
+
+.blog-content h3 {
+   font-weight: 700;
+   font-size: 22px;
+   margin-top: 1.5em;
+}
+
+.blog-content h4 {
+   font-weight: 700;
+   font-size: 20px;
+   margin-top: 1.5em;
+}
+
+.blog-content h5 {
+   font-weight: 400;
+   font-size: 18px;
+   margin-top: 1.5em;
+}
+
+.blog-float-img {
+   width: 35%;
+   margin: 1rem 1rem 1rem 0;
+   float: left;
+}
+
+.blogtext table,
+.blogtext table th,
+.blogtext table td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.blogtext th {
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: #444;
+  color: #fff;
+}
+
+.blogtext .code-example {
+   font-family: monospace;
+   font-size: 1rem;
+   line-height: 1.75em;
+   background-color:#f0f0f0;
+   padding: 10px;
+}
+
+.blog-poster img {
+   width: 100%;
+   margin-bottom: -7px;
+}
+
+.blog-feature-icon {
+   position: relative;
+   top: 20px;
+}
+
+#back-to-overview {
+   margin: 35px 0 0 0;
+   float: left;
+}
+
+#share-buttons-mobile {
+   display: none;
+   position: relative;
+   top: 0;
+   left: 0;
+}
+
+#share-buttons-desktop {
+   display: block;
+}
+
+.share-buttons {
+   position: absolute;
+   top: 570px;
+   left: 2.5%;
+}
+
+.share-buttons a {
+   display: block;
+   transform: scale(1.0);
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+}
+
+#share-buttons-mobile a {
+   display: inline;
+}
+
+.share-buttons a:hover {
+   transform: scale(1.1);
+}
+
+.share-buttons img {
+   width: 36px ;
+   height: 36px;
+}
+
+#back-to-overview a {
+    font-size: 12px;
+}
+
+.author-pic {
+    float: left;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+ .blog-content > .blog-title {
+    font-weight: 400;
+ }
+
+
+.blog-details {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.25rem;
+    margin: 0;
+    color: #000;
+    font-style: italic;
+ }
+
+ .floating-icon-100 {
+   float: left;
+   margin: 0 3rem 0.5rem 0;
+   width: 100px;
+ }
+
+ .floating-icon-75 {
+   float: left;
+   margin: 0 3rem 0.5rem 0;
+   width: 75px;
+ }
+
+ .floating-icon-50 {
+   float: left;
+   margin: 25px 10px 0 0;
+   width: 50px;
+   height: 50px;
+ }
+
+ table tr td {
+   vertical-align: top;
+   padding: 15px;
+ }
+
+ table.code-comment, 
+ table.code-comment tr,
+ table.code-comment td  {
+    margin-top: 0;
+    border: 0;
+    padding: 5px 15px;
+ }
+ 
+ .code-comment {
+    font-size: 0.85rem;
+    color: #60a0b0;
+ }
+ .blog-content table h2, .blog-content table h3 {
+   margin-top: 0;
+ }
+
+ .blog-content table img {
+   margin: 0;
+ }
+
+ .blog-sidenav {
+   float: right;
+   font-size: 15px;
+   line-height: 28px;
+   border: 1px solid #999;
+   border-radius: 4px;
+   background-color: #000;
+   color: #fff;
+   padding: 0;
+   margin: 1rem -155px 0px 25px;
+}
+
+.blog-sidenav.mobile-only {
+   margin: 0 auto 50px;
+   display: none;
+}
+
+ .blog-sidenav ul {
+   background-color: #ffc000;
+   margin: 0;
+   padding: 0;
+   border-bottom-left-radius: 3px;
+   border-bottom-right-radius: 3px;
+}
+
+.blog-sidenav ul li {
+   border-bottom: 1px solid #666;
+   display: block;
+   cursor: pointer;
+   color: #fff;
+   padding: 0px 10px;
+   transition: 0.3s;
+}
+
+.blog-sidenav ul li a {
+   color: #333;
+   display: block;
+}
+
+.blog-sidenav ul li:last-child {
+   border-bottom: none;
+}
+
+.blog-sidenav ul li:hover {
+  background-color: #333;
+  color: #ffc000;
+}
+
+.blog-sidenav ul li:hover a {
+   color: #ffc000;
+}
+
+.blog-content hr {
+   width: 75%;
+   margin-left: 0;
+}
+
+.authorbox {
+   border: 1px solid rgb(215, 215, 215);
+   margin: 25px 0 35px 0;
+   border-radius: 5px;
+   padding: 0 5% 10px 2%;
+ }
+
+ .authorbox-pic {
+   float: left;
+   margin-top: 25px;
+ }
+
+ .authorbox-description {
+   margin-left: 120px;
+ }
+
+ .authorbox h3 {
+   margin: 25px 0 0 0;
+   font-size: 22px;
+   color: #ffC000;
+ }
+
+ .authorbox h4 {
+   margin: 15px 0 0 0;
+   font-size: 18px;
+   color: #000;
+   font-weight: 400;
+   width: 275px;
+}
+
+.authorbox .fa-icon {
+   margin-right: 3px;
+   position: relative;
+   top: 2px;
+ }
+
+ .newsletter-blog-extra {
+    background: #eeeeee;
+    text-align: center;
+    margin-top: 25px;
+    padding: 0 10px;
+ }
+
+ #mc_embed_signup {
+    background: #eeeeee;
+    text-align: center;
+ }
+
+ #mc-embedded-subscribe,
+ #mc-blog-embedded-subscribe {
+    margin: 5px 0 20px 0;
+ }
+
+ #mce-EMAIL {
+    margin: 10px;
+    font-weight: 400;
+    width: 275px;
+ }
+
+ #signup-consent {
+    font-size: 10px;
+ }
+
+ #disqus_thread {
+    margin-top: 50px;
+ }
+
+ .real-world-post-logos {
+    width: 175px;
+    float: right;
+    margin: -25px 0 0 25px !important;
+ }
+
+ #workshop-form .hs-form-radio-display {
+   float: left;
+   margin-right: 10px;
+   margin-bottom: 25px;
+ }
+
+ #workshop-agenda-table tr td:first-of-type {
+   min-width: 108px;
+}
+
+#workshop-agenda-table table {
+   margin: 0;
+}
+
+#table-iot-cloud-platform {
+   border: 0;
+   margin: 0;
+   line-height: 1.5rem;
+}
+
+#table-iot-cloud-platform .col1 {
+   width: 30%;
+   border: 1px solid #afafaf;
+   border-collapse: collapse;
+}
+
+#table-iot-cloud-platform .col {
+   width: 20%;
+   text-align: center;
+   border: 1px solid #afafaf;
+   border-collapse: collapse;
+}
+
+#table-iot-cloud-platform .col.icon {
+   padding-top: 18px;
+}  
+
+.footnote {
+   font-size: 0.85rem; 
+   margin-top: 25px; 
+   line-height: 1.1rem;
+}
+
+.banner-blog-post-bottom,
+.essentials-video,
+.youtube-video {
+   width: 450px;
+   height: 250px;
+   background-color: #000;
+   border: 2px solid #000;
+}
+
+.banner-blog-post-bottom > section {
+    margin: 25px 50px 5px 25px;
+}
+
+.banner-blog-post-bottom > section > h1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    margin: 15px 0;
+    display: table;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.35rem;
+    color: #000;
+}
+
+.banner-blog-post-bottom > section > p {
+    line-height: 1.35rem;
+}
+
+.banner-blog-post-bottom > .large-yellow-btn {
+    box-shadow: none;
+    margin-top: 0;
+}
+
+.banner-blog-post-bottom {
+    background-position: 50% 50%;
+}
+.banner-blog-post-bottom.sparkplug-ebook {
+    background-image: url("/img/blog/banner-bg-sparkplug-essentials-500x275.jpg");
+    color: #000;
+}
+
+.banner-blog-post-bottom.sparkplug-opcua {
+    background-image: url("/img/blog/banner-bg-sparkplug-opcua-500x275.jpg");
+    color: #fff;
+}
+
+.banner-blog-post-bottom.hivemq-cloud {
+    background-image: url("/img/blog/banner-bg-hivemq-cloud-500x275.jpg");
+}
+
+.banner-blog-post-bottom.mqtt-essentials-ebook {
+    background-image: url("/img/blog/banner-bg-mqtt-essentials-500x275.jpg");
+    color: #fff;
+}
+
+/* Keep survey element in MQTT6 Blog behind cookie consent banner */
+.smcx-embed {
+   z-index: 0 !important;
+}
+
+/* A/B Testing */
+.sparklug-ebook-blog-post-banner {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 40%;
+    float: right;
+    margin: 0 -50px 15px 25px;
+}
+.sparklug-ebook-blog-post-banner h3 {
+    font-size: 16px;
+    margin: 0;
+}
+.sparklug-ebook-blog-post-banner p {
+    font-size: 14px;
+    line-height: 1.25rem;
+}
+
+.mqtt-ebook-ticker {
+    width: 100%;
+    background: linear-gradient(90deg,rgba(0,0,0,1) 0%,rgba(0,62,110,1) 100%);
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 0 20px 20%;
+    line-height: 1.25em;
+    box-shadow: 0 4px 5px #9f9f9f;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    cursor: pointer;
+    display: none;
+    font-size: 16px;
+}
+
+.mqtt-ebook-ticker:hover {
+    background: rgb(0,62,110);
+    background: linear-gradient(90deg, rgba(0,62,110,1) 0%, rgba(71,147,205,1) 100%);
+}
+.mqtt-ebook-ticker h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.mqtt-essentials-header {
+    margin: 65px 0 -7px 0;
+}
+
+.mqtt-ebook-ticker button {
+    padding: 10px 25px;
+    margin-left: 50px;
+    color: #ffc000;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.simple-bottom-banner {
+    width: 100%;
+    border-top: 1px solid #000;
+    display: flex;
+}
+.simple-bottom-banner p {
+    margin-bottom: 0;
+}
+.simple-bottom-banner h4,
+.simple-bottom-banner button {
+    margin-top: 5px;
+}
+.simple-bottom-banner .cover {
+    margin: 15px 25px;
+}
+
+.youtubevideo {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Responsive rules */
+@media screen and (max-width: 1550px){
+    .banner-blog-post-bottom,
+    .essentials-video {
+       width: 360px;
+       height: 230px;
+       background-color: #000;
+       border: 3px solid #000;
+    }
+    .banner-blog-post-bottom > section {
+        margin: 15px 25px 5px 15px;
+    }
+
+    .banner-blog-post-bottom > section > h1 {
+        font-size: 20px;
+        line-height: 1.25rem;
+    }
+
+    .banner-blog-post-bottom > section > p {
+        font-size: 16px;
+        line-height: 1.25rem;
+    }
+}
+@media screen and (max-width: 1280px){
+   .blogpost {
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+   }
+
+   #back-to-overview {
+      margin: 35px 0 0 20px;
+   }
+   .sparklug-ebook-blog-post-banner {
+       margin: 0 0 15px 25px;
+   }
+   .mqtt-ebook-ticker {
+       padding: 20px 0 20px 15%;
+   }
+}
+
+@media screen and (max-width: 1024px){
+   .blogpost {
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+   }
+   .blog-content {
+      padding: 0 5%;
+   }
+   #back-to-overview {
+      margin: 0 0 0 15px;
+      float: none;
+   }
+   .blog-sidenav {
+      font-size: 14px;
+      margin: 0 0 0 25px;
+   }
+   .blog-sidenav ul li {
+      height: 28px;
+      padding: 0px 5px;
+   }
+   #share-buttons-desktop {
+      display: none;
+   }
+   #share-buttons-mobile {
+      display: inline;
+   }
+   .video-and-banner .flex-50-right,
+   .video-and-banner .flex-50-left {
+        margin: 0;
+   }
+   .banner-blog-post-bottom,
+   .essentials-video,
+   .youtube-video {
+       width: 500px;
+       height: 275px;
+   }
+    .banner-blog-post-bottom, {
+     padding: 75px 150px 10px 25px;
+   }
+   .banner-blog-post-bottom > section {
+       margin: 25px 50px 25px 25px;
+   }
+
+   .banner-blog-post-bottom > section > h1 {
+       font-size: 21px;
+       line-height: 1.35rem;
+   }
+
+   .banner-blog-post-bottom > section > p {
+       font-size: 18px;
+       line-height: 1.35rem;
+   }
+
+      #essentials-img {
+          display: none;
+      }
+      .mqtt-essentials-header {
+          margin: 65px 0 -7px 0;
+         height: 350px;
+         width: 100%;
+         display: block;
+         background-image: url('/img/blog/mqtt-essentials-header-1024.jpg');
+         background-size: cover;
+      }
+   .mqtt-ebook-ticker {
+       padding: 10px 0 10px 5%;
+       font-size: 15px;
+       flex-direction: column;
+       align-items: flex-start;
+   }
+   .mqtt-ebook-ticker button {
+       padding: 10px 25px;
+       margin: 10px;
+   }
+}
+
+@media screen and (max-width: 768px){
+   .blogpost .blog-poster {
+      position: relative;
+      top: -55px;
+   }
+   .authorbox-pic {
+      float: none;
+      margin: 10px auto;
+      display: block;
+   }
+   .authorbox-description {
+      margin-left: 20px;
+   }
+   .real-world-post-logos {
+      width: 150px;
+   }
+   .blog-sidenav {
+      display: none;
+   }
+   .blog-sidenav.mobile-only {
+      width: 60%;
+      margin: 0 20% 10px 20%;
+      float: none;
+      display: block;
+   }
+   .sparklug-ebook-blog-post-banner {
+       width: 92.5%;
+       float: none;
+       margin: 25px 0px;
+   }
+   .mqtt-essentials-header {
+         margin: 60px 0 -7px 0;
+        height: 300px;
+        width: 100%;
+   }
+}
+
+@media screen and (max-width: 680px){
+   .essentials-video,
+   .banner-blog-post-bottom {
+      display: none;
+   }
+  .youtube-video {
+     width: 100%;
+     height: 100%;
+  }
+}
+
+@media screen and (max-width: 480px){
+   .blog-sidenav.mobile-only {
+      width: 100%;
+      margin: 0 0 10px 0;
+   }
+
+}

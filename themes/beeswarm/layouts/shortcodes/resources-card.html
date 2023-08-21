@@ -1,0 +1,9 @@
+<div class="resources-card">
+      <a href="{{ .Get `link` }}"><img src="{{ .Site.BaseURL }}{{ .Get `poster` }}" ></a> 
+      <div class="resources-info"> 
+            <a href="{{ .Get `link` }}"><h3>{{ .Get `title` }}</h3></a> 
+            <p>{{ .Inner | markdownify }}</p>
+            <br/>
+            <a href="{{ .Get `link` }}" alt="{{ .Get `title` }}" title="{{ .Get `title` }}"><button class="med-cta">{{ .Get `button-label` }}</button></a>
+      </div>
+</div>

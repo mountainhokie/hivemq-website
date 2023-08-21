@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Michael",
+        "lastName": "Walter"
+    },
+    "image": "/img/blog/author-mw.jpg",
+    "description": "Michael is a Software Tester at HiveMQ. His main focus is to maintain/improve the quality of the HiveMQ products. In addition he is working on the automation of system tests.",
+    "links": {
+        "email": "michael.walter@hivemq.com"
+    }
+}

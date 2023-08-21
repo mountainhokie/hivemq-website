@@ -1,0 +1,9 @@
+<div id="client-grid">
+{{ range sort .Site.Data.customerlist "img" }}
+   <div class="client-grid-logo">
+      <img src="/img/customer-logos/{{ .img }}" title="{{ .title }}" alt="{{ .title }}"/>
+      <div class="client-grid-overlay">{{ .title }}</div>
+   </div>
+{{ end }}
+</div>
+<div class="clearfix"></div>

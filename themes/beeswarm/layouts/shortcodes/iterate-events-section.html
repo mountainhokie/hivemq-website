@@ -1,0 +1,28 @@
+<section id="events-page">
+<article id="event-list">
+{{ range where .Site.RegularPages.ByDate "Section" "event-list"  }}
+<div class="event-item">
+      <div class="event-date">
+            {{ .Params.event_date }}<br/>
+            <hr>
+            {{ .Params.event_year }}
+      </div>
+      <figure class="event-logo" style="background-image:url('{{ .Params.poster }}');">
+      </figure>
+      <div class="event-details">
+            <h2>{{ .Params.event_title }}</h2>
+            <h5>{{ .Params.event_location }}</h5>
+            <hr>
+            {{ with .Params.event_attendees }}<b>HiveMQ Attendees:</b> {{ . }} <br/>{{ end }}
+            {{ with .Params.event_speaker }}<b>HiveMQ Speaker:</b> {{ . }} <br/>{{ end }}
+            {{ with .Params.event_speakers }}<b>HiveMQ Speakers:</b> {{ . }} <br/>{{ end }}
+            {{ .Content }}<br/><br/>
+            <p class="event-cta">
+                  <img src="/img/svg/fa-circle-arrow-right-y.svg" class="fa-icon"> <a href="{{ .Params.event_website }}" target="_blank" rel="nofollow">&nbsp;&nbsp;Event website</a>
+            </p>
+            <br/>
+      </div>
+</div>
+      {{ end }}
+</article>
+</section>

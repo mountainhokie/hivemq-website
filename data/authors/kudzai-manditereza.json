@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Kudzai",
+        "lastName": "Manditereza"
+    },
+    "image": "/img/blog/author-km.png",
+    "description": "Kudzai is a Developer Advocate at HiveMQ and the Founder of <a href='http://industry40.tv/' target='_blank'>Industry40.tv</a>. He is the host of an IIoT Podcast and is involved in Industry4.0 research and educational efforts.",
+    "links": {
+        "email": "kudzai.manditereza@hivemq.com",
+        "linkedin": "https://www.linkedin.com/in/kudzaimanditereza/"
+    }
+}

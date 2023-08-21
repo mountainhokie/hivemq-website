@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Nick",
+        "lastName": "O’Leary"
+    },
+    "image": "/img/blog/author-nol.jpg",
+    "description": "Nick is an Emerging Technology Specialist at IBM where he gets to do interesting things with interesting technologies. He has been involved with MQTT for 10 years, working on both client and server implementations, as well as production solutions. He is a member of the OASIS MQTT Technical Committee.",
+    "links": {
+        "website": "http://knolleary.net"
+    },
+    "isGuestAuthor": "true"
+}

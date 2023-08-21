@@ -1,0 +1,9 @@
+{
+    "name": {
+        "firstName": "Ian",
+        "lastName": "Craggs"
+    },
+    "image": "/img/blog/author-ic.jpg",
+    "description": "Ian Craggs works for IBM, and has been involved with MQTT for more than 10 years. He wrote the IBM MQTT server Really Small Message Broker which became the inspiration for the Eclipse Mosquitto project. He contributed C client libraries to the Eclipse Paho project at its onset and is now the project leader.",
+    "isGuestAuthor": "true"
+}

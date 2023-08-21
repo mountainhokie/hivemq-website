@@ -1,0 +1,9 @@
+{
+    "name": {
+        "firstName": "John L.",
+        "lastName": "Singleton"
+    },
+    "image": "/img/blog/author-john-s.jpg",
+    "description": "John L. Singelton is the founder of LoveLight USA.",
+    "isGuestAuthor": "true"
+}

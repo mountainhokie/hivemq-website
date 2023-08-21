@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Anja",
+        "lastName": "Helmbrecht-Schaar"
+    },
+    "image": "/img/blog/author-ahs.jpg",
+    "description": "Anja works as Senior MQTT & Architectural Consultant at HiveMQ. Anja supports customers with the application-specific implementation of HiveMQ extensions as well as the introduction and integration of HiveMQ into their system landscape.",
+    "links": {
+        "email": "contact@hivemq.com"
+    }
+}

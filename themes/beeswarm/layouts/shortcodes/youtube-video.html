@@ -1,0 +1,10 @@
+<div id="iframe-container"></div>
+<script>
+   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      // true for mobile device
+      } else if ( window.innerWidth <= 600 ){
+      } else {
+      // false for not mobile device
+      document.getElementById("iframe-container").innerHTML = '<iframe class="youtube-video" src="{{ .Get `src` }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube video"></iframe>';
+   }
+</script>

@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Jens",
+        "lastName": "Deters"
+    },
+    "image": "/img/portraits/portrait-jens-deters.jpg",
+    "description": "Jens Deters started with (home-) computing about 25 years ago. During the last 15 years he owned several roles in the IT & Telecommunication sector (Software Developer, Trainer, Consultant, Project Manager and Product Manager). His major passion is still developing software. Today he works as a Senior IT Consultant and at codecentric in Germany. He regularly blogs about his projects to contribute to the JavaFX- and IoT-Community <a href=\"https://mqttfx.jensd.de/\" target=\"_blank\">MQTT.fx</a>. Jens is also member of the NetBeans Dream Team.",
+    "links": {
+        "website": "http://www.jensd.de"
+    },
+    "isGuestAuthor": "true"
+}

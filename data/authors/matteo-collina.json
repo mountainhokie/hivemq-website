@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Matteo",
+        "lastName": "Collina"
+    },
+    "image": "/img/blog/author-mc.jpg",
+    "description": "Matteo is a code pirate and mad scientist. He spends most of his days programming in node.js, but in the past he worked with Ruby, Java and Objective-C. He recently got a Ph.D. with a thesis titled \"Application Platforms for the Internet of Things\". Now he is a Software Architect at <a href=\"http://nearform.com/\" rel=\"nofollow\">nearForm</a>, where he consults for the top brands in world. Matteo is also the author of the Node.js MQTT Broker, <a href=\"http://mosca.io/\" rel=\"nofollow\" >Mosca</a> and of the <a href=\"http://levelgraph.io/\" rel=\"nofollow\">LevelGraph</a> database. Matteo spoke at several international conferences: NodeSummit, Nodeconf.eu, LXJS, Distill by Engine Yard, and JsDay to name a few. He is also co-author of the book \"Javascript: Best Practices\" edited by FAG, Milan. In the summer he loves sailing the <i>Sirocco</i>.",
+    "links": {
+        "linkedin": "https://www.linkedin.com/in/matteocollina"
+    },
+    "isGuestAuthor": "true"
+}

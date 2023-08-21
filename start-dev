@@ -1,0 +1,68 @@
+#!/bin/sh
+
+set -euo pipefail
+
+NODE_VERSION="20.3.1"
+HUGO_VERSION="0.115.0"
+
+ask_install() {
+    app_to_install=$1
+    if ! command -v brew &> /dev/null
+    then
+        echo "'brew' command could not be found."
+        echo "Please check https://brew.sh to help installation."
+        exit 1;
+    fi
+    read -p "Do you want to install $app_to_install now? (y/N)" yn
+    case $yn in
+      [yY]* ) brew install "$app_to_install"; break;;
+      * ) echo "Aborting, since $app_to_install is not installed."; exit 1;;
+    esac
+}
+
+if ! command -v hugo &> /dev/null
+then
+    echo "'hugo' command could not be found."
+    echo "It can be installed locally through 'brew install hugo'."
+    ask_install "hugo"
+fi
+
+if ! hugo version | grep "v${HUGO_VERSION}" &> /dev/null
+then
+    echo "WARNING:"
+    echo "Expecting hugo version '${HUGO_VERSION}'."
+    echo "Not using this version can lead to unexpected results in dev."
+fi
+
+if ! command -v node &> /dev/null
+then
+    echo "'node' command could not be found."
+    echo "It can be installed locally through 'brew install node'."
+    ask_install "node"
+fi
+
+if ! node --version | grep "v${NODE_VERSION}" &> /dev/null
+then
+    echo "WARNING:"
+    echo "Expecting node version '${NODE_VERSION}'."
+    echo "Not using this version can lead to unexpected results in dev."
+fi
+
+if ! command -v corepack &> /dev/null
+then
+    echo "'corepack' command could not be found."
+    echo "It can be installed locally through 'brew install corepack'."
+    ask_install "corepack"
+fi
+
+corepack enable
+npm install
+
+maybe_all=${1:-}
+
+if [ -n "$maybe_all" ] && [ "$maybe_all" == "all" ]
+then
+  npm run dev-all
+else
+  npm run dev
+fi

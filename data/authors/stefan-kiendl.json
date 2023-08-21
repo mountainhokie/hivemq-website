@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Stefan",
+        "lastName": "Kiendl"
+    },
+    "image": "/img/blog/author-sk.png",
+    "description": "Stefan Kiendl is a seasoned technology executive with extensive experience in software engineering and cloud computing. Currently, he serves as the Director of Cloud Engineering at HiveMQ. Stefan’s previous experience includes holding various technology leadership roles at BMW, Vodafone, NTT DATA and Continental, where he contributed to the development and launch of several innovative products and services. He is passionate about systems thinking, innovative architecture, mentoring startups, and supporting entrepreneurs to succeed in the technology industry.",
+    "links": {
+        "email": "stefan.kiendl@hivemq.com"
+    }
+}

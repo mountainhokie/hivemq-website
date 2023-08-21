@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Peter",
+        "lastName": "Giacomo Lombardo"
+    },
+    "image": "/img/blog/author-peter-giacomo-lombardo.png",
+    "description": "Peter is a Staff Software Engineer at HiveMQ leading the effort to create best-of-breed MQTT & Sparkplug clients for the great HiveMQ community and beyond.",
+    "links": {
+        "github": "https://github.com/pglombardo",
+        "linkedin": "https://www.linkedin.com/in/peterlombardo/"
+    }
+}

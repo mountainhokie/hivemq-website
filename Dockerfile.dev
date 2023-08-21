@@ -1,0 +1,17 @@
+FROM node:20.3.1 as builder
+
+ENV HUGO_VERSION 0.115.0
+ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux-64bit
+ENV PATH=/usr/local/hugo:${PATH}
+RUN mkdir -p /usr/local/hugo/
+RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}.tar.gz -O /usr/local/hugo/${HUGO_BINARY}.tar.gz
+RUN tar xzf /usr/local/hugo/${HUGO_BINARY}.tar.gz -C /usr/local/hugo/
+RUN rm /usr/local/hugo/${HUGO_BINARY}.tar.gz
+
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN corepack enable && corepack prepare
+
+RUN npm install
+
+CMD [ "hugo" ]

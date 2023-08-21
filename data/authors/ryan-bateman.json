@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Ryan",
+        "lastName": "Bateman"
+    },
+    "image": "/img/blog/author-rb.jpg",
+    "description": "Ryan is a technologist and product leader who's worked for 20 years in mobile, IoT, and web technology. He is the Senior Product Manager for Tools & Extensions at HiveMQ.",
+    "links": {
+        "email": "ryan.bateman@hivemq.com"
+    }
+}

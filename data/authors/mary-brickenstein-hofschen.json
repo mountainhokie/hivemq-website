@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Mary",
+        "lastName": "Brickenstein-Hofschen"
+    },
+    "image": "/img/blog/author-mbh.jpg",
+    "description": "Mary is a technical writer at HiveMQ. She enjoys providing precise information that helps HiveMQ users get things done.",
+    "links": {
+        "email": "mary.hofschen@hivemq.com"
+    }
+}

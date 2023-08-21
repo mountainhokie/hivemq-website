@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article>
+  <div class="blog-content">
+      <div id="back-to-newslist"><img src="/img/svg/fa-circle-arrow-left.svg" style="height: 16px; position: relative; top: 4px;"><a href="/news/"> Overview</a></div>
+        <h1 class="blog-title">{{ .Page.Params.Title }}</h1>
+        <section class="blogtext">
+        {{ .Content }}
+      </section>
+        {{ partial "section-nav" . }}
+  </div>
+</article>
+<div class="clearfix" style="height: 25px;"></div>
+{{ end }}

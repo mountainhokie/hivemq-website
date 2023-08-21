@@ -1,0 +1,1322 @@
+.header-paragraph-white {
+   color: #fff;
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 1.5rem;
+   width: 50%;
+}
+.solution-header {
+    width: 100%;
+    background: rgb(204,204,204);
+    background: -moz-linear-gradient(180deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#afafaf",endColorstr="#ffffff",GradientType=1);
+    display: flex;
+    justify-content: space-between;
+}
+.solution-headlines {
+     width: 60%;
+     padding: 100px 0 0 5%;
+}
+.solutionHeaderH1 {
+    font-weight: 700;
+    font-size: 2.75rem;
+    line-height: 110%;
+    color: #003e6e;
+}
+.solutionHeaderH2 {
+    color: #333333;
+    font-weight: 300;
+    font-size: 1.5rem;
+
+}
+.solution-header,
+.solutionHeaderGraphic {
+     height: 360px;
+}
+
+#solutions-overview {
+   width: 65%;
+   margin: 0 25% 50px 10%;
+   font-size: 18px;
+}
+
+.solutions-content {
+   padding: 0 25% 0 10%;;
+}
+
+.solutions-bottom {
+   padding: 50px 20% 50px 10%;;
+   margin: 50px 0 -100px;
+}
+.intersection-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Styles for Solutions Overview Start */
+#solutions-intro {
+   padding: 50px 0;
+}
+
+#solutions-cards {
+   background-color: #e2e9ef;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding: 50px 5% 100px;
+   margin-bottom: -100px;
+}
+
+.solutions-card {
+   background-color: #fff;
+   flex-basis: 27%;
+   margin: 12px;
+   padding: 0 0 25px 0;
+   border: 1px solid #afafaf;
+   border-radius: 5px;
+   box-shadow: 3px 3px 5px #999;
+   text-align: center;
+   transition: all ease-in-out 0.35s;
+}
+
+.solutions-card:hover {
+   box-shadow: 7px 7px 14px #666;
+}
+
+.solutions-card > p {
+   padding: 0 20px;
+}
+
+#solutions-overview section {
+   margin-bottom: 50px;
+}
+
+#solutions-overview h2 {
+   font-size: 36px;
+   line-height: 2.5rem;
+}
+
+#solutions-overview h3 {
+   font-size: 22px;
+   line-height: 1.5rem;
+   margin-top: 0;
+}
+
+section {
+   border: 0;
+   outline: none;
+}
+
+.solutions-textbox {
+   align-items: center;
+   padding: 25px 15% 25px 5%;
+   width: 50%;
+   box-sizing: border-box;
+}
+
+.solutions-textbox-left {
+   padding: 0 0 25px 10%;
+}
+
+.solutions-colored-section-img {
+   margin-bottom: -7px;
+   text-align: center;
+}
+
+#connected-car-preview {
+   width: 450px;
+   height: 255px;
+   margin: 20px 10%;
+}
+
+#solutions-section2 {
+   align-items: center;
+}
+
+#solutions-section3 {
+   padding: 25px 0;
+   text-align: center;
+}
+
+#solution-customers {
+   padding: 1px;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 5%;
+   justify-content: center;
+   align-content: center;
+}
+
+.solutions-customer-logo {
+   flex-basis: 15%;
+   margin: 0.5%;
+   padding: 0;
+   box-sizing: border-box;
+   border: 1px solid #e2e9ef;
+   text-align: center;
+}
+
+#solutions-section4 .solutions-textbox {
+   font-size: 15px;
+   line-height: 24px;
+}
+
+#solutions-sections4-img {
+   padding-top: 0;
+}
+
+.solutions-form {
+   width: 50%;
+   margin: 0 25%;
+   text-align: center;
+}
+
+.solutions-form .hubspot-form {
+   margin: 50px;
+   text-align: left;
+}
+.solutions-form .actions {
+   text-align: center !important;
+}
+
+.solutions-cs a,
+.solutions-cs a:visited {
+   color: #000;
+   font-weight: 300;
+}
+
+.solutions-cs a:hover,
+.solutions-cs a:focus {
+   color: #0060aa;
+   font-weight: 300;
+}
+
+/* Styles for Solutions Overview End */
+
+/* Styles for Connected Car Page Start */
+.solutions-section1 {
+   display: none;
+}
+
+#automotive-solutions-section2 {
+   padding: 25px 0;
+}
+
+#automotive-cs-list {
+   display: flex;
+   justify-items: flex-start;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 80%;
+   padding: 25px 10%;
+}
+
+.automotive-cs {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   text-align: left;
+   padding-bottom: 0;
+   padding-top: 0;
+   width: 45%;
+   margin: 0 2.5%;
+   box-sizing: border-box;
+}
+
+.automotive-cs:not(.last-row) {
+   border-bottom: 1px solid #e2e9ef;
+}
+
+.automotive-cs .solutions-cs-logo {
+   width: 150px;
+   margin-right: 100px;
+   flex-basis: 100%;
+}
+
+.automotive-cs p {
+   flex-basis: 100%;
+}
+
+.solutions-customer-logo.automotive {
+   flex-basis: 12%;
+}
+
+#connected-car-conclusion {
+   background-image: url("/img/automotive-city.jpg");
+   padding: 100px 20%;
+   text-align: center;
+   color: #fff;
+}
+/* Styles for Connected Car Page End */
+
+/* Styles for Kafka Solution Start */
+#ks-section01 {
+   width: 70%;
+   margin: 75px 15% 0 15%;
+   font-size: 18px;
+   line-height: 36px;
+   box-sizing: border-box;
+}
+
+#ks-section02 {
+  margin: 75px 15% 50px 15%;
+}
+
+#ks-section03 {
+  background-color: #F2F2F2;
+}
+
+#ks-section04 {
+  width: 60%;
+  margin: 35px auto;
+}
+#ks-section05 {
+   background-color: #F2F2F2;
+   padding: 25px 7.5% 100px;
+   margin-bottom: -100px;
+ }
+/* Styles for Kafka Solution End */
+
+/* Styles for Security Start */
+ .security-section03 {
+   width: 90%;
+   padding: 35px 5% 150px;
+   margin: 0 auto -100px;
+   background-color: #d5dcdf;
+ }
+ 
+ .security-section03 .clean-gray-table {
+   background: #fff;
+ }
+ 
+ .clean-gray-table .fa-icon.fa-book {
+   width: 18px;
+   position: relative;
+   top: 2px; 
+ }
+/* Styles for Security End */
+
+/* Styles for Logistics Start */
+#logistics-section-vda {
+   align-items: center;
+}
+
+#logistics-box-left {
+   width: 45%;
+   text-align: left;
+   padding: 50px 5%;
+}
+
+#logistics-section4 #logistics-box-left {
+   background-color: #fff;
+   padding-left: 10%;
+   box-sizing: border-box;
+}
+
+#logistics-box-right {
+   width: 50%;
+   text-align: left;
+   padding-right: 5%;
+}
+#logistics-customers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#logistics-customers .solutions-customer-logo {
+  flex-basis: 25%;
+}
+/* Styles for Logistics End */
+
+.whitepaper-conclusion section {
+   padding: 20px 50px 40px 50px;
+   background: rgba(0,0,0, 0.70);
+   border: 1px solid #fff;
+   border-radius: 10px;
+}
+
+.whitepaper-conclusion {
+   background-size: cover;
+   background-position: center center;
+   padding: 100px 20%;
+   text-align: center;
+   color: #fff;
+}
+
+#pdf-box-aside {
+   border: 1px solid #999;
+   padding: 10px 5px;
+   float: right;
+   width: 150px;
+   margin: 0 -220px 10px 10px;
+   text-align: center;
+}
+/* Styles for Manufacturing Start */
+#manufacturing-customers p {
+   text-align: center;
+   width: 80%;
+   margin: 0 auto 25px;
+}
+.solutions-customer-logo.manufacturing {
+    flex-basis: 25%;
+}
+/* Styles for Manufacturing End */
+/* Styles for Kubernetes */
+#kubernetes-resources {
+   margin-top: 50px;
+}
+
+#kubernetes-resources .flex-twothirds {
+   flex-basis: 62%;
+   text-align: center;
+}
+
+#kubernetes-resources .fa-icon {
+   height: 24px;
+   position: relative;
+   top: 5px;
+   margin-right: 5px;
+}
+
+/* Sparkplug Page */
+#sparkplug-landscape {
+    border: 5px solid #afafaf;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+
+#sparkplug-landscape > section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#sparkplug-landscape-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 20px;
+}
+
+#sparkplug-landscape-header p {
+    display: flex;
+    align-items: center;
+}
+
+#sparkplug-landscape-title {
+    width: 40%;
+    max-width: 375px;
+}
+
+.sparkplug-landscape-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: #cfcfcf;
+    padding: 10px 5px 5px 5px;
+}
+.landscape-row-title {
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 10px 10px 10px;
+    flex-basis: 12%;
+    min-width: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sparkplug-landscape-row > a img {
+     background-color: #fff;
+     width: 135px;
+     margin: 0 4px;
+     border: 1px solid #999;
+     padding: 0 5px;
+ }
+ .sparkplug-landscape-row.larger-logos > a img {
+     padding: 20px 0;
+ }
+
+ .whitepaper-side {
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 0 15px 15px 15px;
+    width: 75%;
+    text-align: center;
+    margin-top: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+ }
+
+ .whitepaper-side .closer {
+    height: 18px;
+    width: 18px;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+ }
+
+.whitepaper-side .input {
+     display: flex;
+  }
+
+ .whitepaper-download-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+ .whitepaper-download-form {
+    text-align: left;
+ }
+.download-form-visible {
+    width: 350px;
+    margin: 0 25px 15px -100px;
+    text-align: left;
+ }
+/* Sparkplug Page End */
+
+/* Styles for Automotive Manufacturing Start End */
+.automotive-manufacturing-solution-h1 {
+    padding: 15px 6%;
+    background: #ffc000;
+    display: inline-flex;
+    color: #000;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, .35);
+    position: relative;
+    left: -6%;
+    top: -50px;
+}
+/* Styles for Automotive Manufacturing Page End */
+.solution-icon {
+    width: 64px;
+    height: 64px;
+}
+
+/* Amazon Kinesis Extension page */
+.kinesis-extension-features {
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
+    margin-bottom: 2rem;
+}
+
+.kinesis-extension-features img {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.kinesis-extension-features .feature-head {
+    background: #dfdfe5;
+    display: flex;
+    padding: 5px 5px 5px 10px;
+}
+
+#amazon-kinesis-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin-bottom: 25px
+}
+
+/* AWS Solutions Page */
+#iot-data-stream-table {
+    display: grid;
+    grid-template-columns: 75px 1fr 75px 1fr;
+    align-items: center;
+}
+#iot-data-stream-table p {
+    padding-right: 15%;
+}
+
+.ctaarea {
+    margin: 50px 0;
+}
+
+.ctaarea a {
+    margin: 5px;
+}
+
+#amazon-kinesis-features article {
+    padding: 25px 25px 25px 50px;
+}
+
+#arkea-quote {
+  float: left;
+  position: relative;
+  left: -10%;
+  background: #efefef;
+  font-weight: bold;
+  padding: 15px;
+  width: 30%;
+  margin: 0 -2.5% 5rem 0;
+}
+
+/* Azure Solution */
+#id {
+    placeholder: value;
+}
+
+
+#hivemq-keyfeatures {
+  width: 60%;
+  margin: -40px 20% 0 20%;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.keyfeature {
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+.keyfeature-left {
+  width: 45%;
+  margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyfeature-right {
+  width: 45%;
+  margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxestext {
+    color: #fff;
+    padding: 20px 10px;
+    line-height: 18px;
+}
+
+.col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}
+
+.firstcol {
+    border-right: 2px solid #ccc;
+     display: table-cell;
+     vertical-align: middle;
+}
+
+.secondcol {
+    padding-left: 30px;
+}
+
+.hiveyellow {
+    font-weight: bold;
+    color: #ffc000;
+}
+
+.firstp a {
+    text-decoration: underline;
+    color: #000;
+}
+
+.line a {
+    text-decoration: underline;
+    color: #000;
+}
+
+.centeredcontent {
+    text-align: center;
+}
+
+.azureimage {
+    width: 50%;
+    max-width: 720px;
+}
+
+.infographic {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.yellowbutton {
+    background: #ffc000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #202020;
+    border: 1px solid #000;
+}
+
+.yellowbutton:hover {
+    color: #ffc100;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: #202020;
+    border: 1px solid #000;
+    text-decoration: none;
+}
+
+.yellowbutton a {
+    text-decoration: none;
+}
+
+.yellowbutton a:hover {
+    text-decoration: none;
+}
+
+.chess {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+}
+
+.chesssection {
+    margin-bottom: 60px;
+}
+
+.bottommargin {
+    margin-bottom: 60px;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin-bottom: 30px;
+  flex-direction: row;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-item {
+  padding: 5px;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  max-width: 30%;
+}
+
+.flex-item img{
+    margin-top: 20px;
+    width: 80%;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.logosarea {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.whytitle {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    color: #ffc000;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+    display: flex;
+    gap: 60px;
+    flex-direction: row;
+}
+
+.clmn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.firstclmn {
+    flex: 1 1 30%;
+    min-width: 300px;
+}
+
+.secondclmn {
+    flex: 2 1 55%;
+}
+
+.thirdclmn {
+    flex: 1 1 15%;
+}
+
+.secondclmn h2 {
+    margin-top: 60px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.child1 {
+    width: 50%;
+}
+
+.child2 {
+    width: 50%;
+}
+
+.trapezoid {
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+       background-color: #003258;
+       height: 300px;
+       color: #fff;
+       margin-top: 60px;
+       padding: 40px;
+       font-size: 18px;
+}
+
+.trapezoid a {
+       color: #fff;
+}
+
+.get-started-btn {
+    height: 150px;
+    background-color: rgba(0,0,0,.6);
+    margin-top: 100px;
+}
+
+.get-started-box {
+    width: 360px;
+    height: 250px;
+    margin: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 40%);
+    text-align: center;
+    background-position: 50%;
+}
+
+.get-started-box.azure-box {
+    width: 30%;
+    margin: 10px 14px;
+}
+
+.get-started-box.gcp-box {
+    width: 30%;
+    margin: 10px 14px;
+}
+
+.topbox {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 15px;
+}
+.bottombox {
+    min-height: 200px;
+    background-color: #E8EEF1;
+}
+
+.azuremq {
+    background-color: #E8EEF1;
+    min-height: 320px;
+}
+
+.azuremq img {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.azurebutton {
+    margin-top: 20px;
+}
+
+.azureform {
+    width: 25%;
+}
+
+.get-started-top-bar {
+    background: #333;
+    color: #fff;
+    margin-top: 0px;
+}
+
+.get-started-top-bar p {
+    margin-top: 0;
+    text-align: left;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 15px 20px;
+}
+
+.number {
+    color: #333;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px 12px;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.margin-top {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1280px){
+    /* General */
+    .solution-headlines {
+         width: 70%;
+         padding: 70px 0 0 5%;
+    }
+    .solutionHeaderH1 {
+        font-size: 2.5rem;
+    }
+    .solutionHeaderH2 {
+        font-size: 1.25rem;
+    }
+    .solution-header,
+    .solutionHeaderGraphic {
+         height: 320px;
+    }
+
+   .solutions-card {
+      flex-basis: 35%;
+   }
+   .solutions-textbox {
+      padding: 25px 5% 25px 5%;
+   }
+   .solutions-customer-logo {
+      flex-basis: 18%;
+   }
+/* Styles for Logistics Start */
+   #logistics-section3 {
+      text-align: center;
+      padding-top: 15px;
+   }
+   #logistics-section3 .flex-50-50-borderless {
+      flex-direction: column;
+   }
+   #logistics-box-left {
+      width: 90%;
+   }
+   #logistics-box-right {
+      width: 90%;
+      max-width: 1024px;
+   }
+   #pdf-box-aside {
+      margin: 0 -120px 10px 25px;
+   }
+   /* Styles for Logistics End */
+
+   /* Kafka Solution and Security page */
+   #ks-section04 {
+      width: 70%;
+      margin: 35px auto;
+   }
+   /* Sparkplug Page */
+   #diagram-sparkplug-architecture {
+      width: 80%;
+   }
+    .pdf-box-aside-with-form {
+       left: 150px;
+       margin: 0 25px 15px -125px;
+   }
+}
+
+@media screen and (max-width: 1024px){
+    /* General */
+    .solution-headlines {
+         width: 75%;
+         padding: 70px 0 0 5%;
+    }
+    .solutionHeaderH1 {
+        font-size: 2.25rem;
+        line-height: 100%;
+    }
+    .solutionHeaderH2 {
+        font-size: 1.05rem;
+        line-height: 125%;
+    }
+    .solution-header {
+         height: 275px;
+    }
+    .solutionHeaderGraphic {
+         height: 250px;
+    }
+   .header-paragraph-white {
+      display: none;
+   }
+   /* Styles for Solutions Overview Start */
+   #solutions-cards {
+      flex-wrap: wrap;
+   }
+   .solutions-card {
+      flex-basis: 45%;
+   }
+   .solutions-form {
+      width: 90%;
+      margin: 0 5%;
+      text-align: center;
+   }
+   /* Styles for Solutions Overview End */
+   .solutions-textbox {
+      width: 80%;
+      margin: 5%;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   #solution-customers {
+      width: 80%;
+      margin: 0 10%;
+      justify-content: center;
+   }
+   /* Styles for Automotive Page Start */
+   #automotive-solutions-section2 {
+      margin-top: 0;
+   }
+   #connected-car-conclusion {
+      padding: 50px 10%;
+   }
+   #pdf-box-aside {
+      margin: 0 0 10px 25px;
+   }
+   #pdf-description {
+      position: absolute;
+      width: 22%;
+      margin-top: -60px;
+      margin-left: 5%;
+    }
+   /* Styles for Automotive Page End */
+   /* Styles for Manufacturing Start */
+   .solutions-customer-logo.automotive,
+   .solutions-customer-logo.manufacturing {
+      flex-basis: 28%;
+   }
+    .solutions-customer-logo {
+      flex-basis: 30%;
+      text-align: center;
+   }
+   /* Styles for Manufacturing End */
+   /* Styles for Kubernetes */
+   #kubernetes-resources .flex-twothirds {
+      flex-basis: 100%;
+      padding-bottom: 25px;
+   }
+    /* Kafka Solution and Security page */
+   #ks-section01 {
+      width: 70%;
+      margin: 0 15%;
+      padding: 50px 0;
+   }
+   #ks-section01 div {
+      margin-bottom: 1.5rem;
+   }
+   #ks-section03 {
+      flex-direction: column;
+      width: 90%;
+      padding: 50px 5%;
+   }
+   #ks-section04 {
+      width: 80%;
+      margin: 35px auto;
+   }
+   .automotive-cs {
+      flex-direction: column;
+      align-items: flex-end;
+      width: 40%;
+      margin: 25px 5% 0;
+   }
+   .pdf-box-aside-with-form {
+      left: 100px;
+      margin: 0 25px 15px -75px;
+  }
+  /* Styles for Automotive Manufacturing Start End */
+  .automotive-manufacturing-solution-h1 {
+      padding: 15px;
+      top: 125px;
+      width: 90%;
+      left: 0;
+  }
+  /* Styles for Automotive Manufacturing Page End */
+  /* Amazon Kinesis */
+  #iot-data-stream-table {
+    grid-template-columns: 75px 1fr;
+  }
+  #arkea-quote {
+    float: none;
+    left: 0;
+    width: 100%;
+  }
+  .kinesis-extension-features {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .kinesis-extension-features article {
+    margin-bottom: 25px;
+  }
+  #amazon-kinesis-features article {
+      padding: 25px;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+    /* General */
+    .solution-headlines {
+         width: 80%;
+         padding: 70px 0 0 5%;
+    }
+    .solutionHeaderH1 {
+        font-size: 2rem;
+        line-height: 100%;
+    }
+    .solutionHeaderH2 {
+        font-size: 1.05rem;
+        line-height: 125%;
+    }
+    .solution-header {
+         height: 250px;
+    }
+    .solutionHeaderGraphic {
+         height: 200px;
+    }
+   /* Styles for Solutions Overview Start */
+   #solutions-cards {
+      flex-direction: column;
+      align-items: center;
+   }
+   .solutions-card {
+      width: 400px;
+   }
+   .solutions-form {
+      width: 95%;
+      margin: 0 2.5%;
+      text-align: center;
+   }
+   /* Styles for Solutions Overview End */
+   #solution-customers {
+      width: 90%;
+      margin: 0 5%;
+   }
+   /* Styles for Logistics End */
+   #ks-section01,
+   #ks-section02,
+   #ks-section04 {
+      width: 90%;
+      margin: 25px 5%;
+   }
+   .solutions-customer-logo,
+   .solutions-customer-logo.automotive {
+      flex-basis: 45%;
+   }
+   /* Styles for Automotive */
+   #automotive-cs-list {
+      flex-direction: column;
+      width: 100%;
+   }
+   .automotive-cs {
+      width: 80%;
+      margin: 0;
+   }
+   /* Sparkplug Page */
+   #diagram-sparkplug-architecture {
+      width: 90%;
+   }
+   #sparkplug-landscape-header {
+    flex-direction: column;
+    padding: 15px 0 5px 0;
+   }
+   #sparkplug-landscape-title {
+       width: 60%;
+       min-width: 375px;
+   }
+  .pdf-box-aside-with-form {
+     left: 10px;
+     margin: 0 25px 15px 15px;
+  }
+  #conclusion-logistics {
+     padding: 100px 5%;
+  }
+    /* Styles for Automotive Manufacturing Start End */
+    .automotive-manufacturing-solution-h1 {
+        padding: 15px;
+        top: 0px;
+        width: 90%;
+        left: 0;
+    }
+    /* Styles for Automotive Manufacturing Page End */
+    #amazon-kinesis-features {
+        grid-template-columns: 1fr;
+    }
+
+    .whitepaper-conclusion {
+            background-size: cover;
+            background-position: 50%;
+            padding: 100px 10%;
+            text-align: center;
+            color: #fff;
+    }
+}
+@media screen and (max-width: 600px){
+ /* General */
+    .solution-headlines {
+         width: 90%;
+         padding: 70px 5% 0 5%;
+    }
+    .solutionHeaderGraphic {
+         display: none;
+    }
+   .automotive-manufacturing-solution-h1 {
+        background: transparent;
+        color: #fff;
+        box-shadow: none;
+   }
+    .col {
+       display: block;
+       width: 100%;
+     }
+
+     .firstcol {
+         border-right: none;
+         border-bottom: 2px solid #ccc;
+     }
+
+     .secondcol {
+       padding-left: 0;
+     }
+
+     .azureimage {
+         width: 100%;
+     }
+
+     .azuremq img {
+         width: 35%;
+         margin-top: 20px;
+     }
+
+     .azuremq a {
+       display: block;
+   }
+
+     .flex-item {
+       max-width: 100%;
+     }
+
+     .flex-container {
+         flex-direction: column;
+     }
+
+     .thirdclmn {
+       display: none;
+     }
+
+     .column {
+         flex-direction: column;
+     }
+
+     .parent {
+        flex-direction: column;
+        padding: 30px;
+        gap: 0;
+     }
+
+     .child1 {
+       width: 100%;
+     }
+
+     .child2 {
+       width: 100%;
+     }
+
+     .secondclmn h2 {
+         margin-top: 0px;
+         padding: 0px 30px;
+     }
+
+     .get-started-boxes {
+         width: 90%;
+         justify-content: space-between;
+     }
+
+     .azureform {
+         width: 100%;
+     }
+
+     .get-started-box.gcp-box {
+         width: 85%;
+         margin: 10px 14px;
+     }
+
+   }
+}
+
+@media screen and (max-width: 480px){
+   #connected-car-conclusion {
+      padding: 30px 5%;
+   }
+   #pdf-box-aside {
+      width: 120px;
+      margin: 0 10px 10px 25px;
+   }
+   #connected-car-preview {
+      width: 374px;
+      height: 210px;
+      margin: 15px 5%;
+   }
+   #ks-section03-l,
+   #ks-section03-r {
+     background-color: transparent;
+     box-shadow: none;
+     padding: 0;
+   }
+   .solutions-card {
+      width: 90%;
+   }
+   .automotive-manufacturing-solution-h1 {
+        background: transparent;
+        color: #fff;
+   }
+}

@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Peter",
+        "lastName": "Jüntgen"
+    },
+    "image": "/img/blog/author-pj.png",
+    "description": "Peter Jüntgen is the Director of Solutions Engineering at HiveMQ. Before joining HiveMQ, he was Director of Technical Sales EMEA at Instana. Throughout his career, he held several roles across companies, such as codecentric AG, Huawei Technologies, OBI Smart Technologies, etc. – with a strong technical focus on solutions designed for connecting people, things, and services. Working in technical sales allows him and his team to learn about customer requirements and create valuable solutions for both the prospects and the HiveMQ customers.",
+    "links": {
+        "email": "peter.juentgen@hivemq.com",
+        "linkedin": "https://www.linkedin.com/in/peter-j%C3%BCntgen-b8777563/"
+    }
+}

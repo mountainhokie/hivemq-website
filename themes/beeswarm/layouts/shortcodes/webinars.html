@@ -1,0 +1,11 @@
+{{ range sort .Site.Data.webinars "id" "desc" }}
+<div class="data-box">
+   <h5 style="padding-top: 32px;">{{ .release }}</h5>
+   <div class="data-info" style="padding-top: 6px;">
+      <span style="font-size: 12px;">Presented by:<b> {{ .speaker }}</b></span>
+      <p style="margin-top: 0; font-size: 16px; font-weight: bold;">{{ .title }} <br/>
+      <img src="/img/svg/fa-circle-arrow-right-b.svg" style="width: 20px; margin-right: 5px; position: relative; top: 4px;"><a href="{{ .url }}" target="_blank">Watch</a>
+      </p>
+   </div>
+</div>
+{{ end }}

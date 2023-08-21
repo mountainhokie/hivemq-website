@@ -1,0 +1,9 @@
+<section class="changelog">
+{{ range (site.GetPage "releases").Pages }}
+<div class="changelogtiles">
+      <p class="date">{{ dateFormat "2006, January 2" .Page.Params.date }}</p>
+      <h1>{{ .Title }}</h1>
+      <p class="release-description">See this <a href="{{ .RelPermalink }}">Release Blog Post</a></p>
+</div>
+{{end}}
+</section>

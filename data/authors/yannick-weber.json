@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Yannick",
+        "lastName": "Weber"
+    },
+    "image": "/img/blog/author-yw.jpg",
+    "description": "Yannick is a Senior Software Engineer and one of the core members of HiveMQ's product development team. He is focusing on quality development of HiveMQ's many tools and extensions. In addition, he is the maintainer of the <a href='https://www.testcontainers.org/modules/hivemq/'>HiveMQ module in the testcontainers-java project</a>.",
+    "links": {
+        "email": "yannick.weber@hivemq.com"
+    }
+}

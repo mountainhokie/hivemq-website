@@ -1,0 +1,13 @@
+{
+    "name": {
+        "firstName": "Paolo",
+        "lastName": "Patierno"
+    },
+    "image": "/img/blog/author-pp.jpg",
+    "description": "Senior Software Engineer and Microsoft MVP for Windows Embedded / Internet of Things who has been working on Microsoft technologies since 2006 with all .Net Frameworks (Micro, Compact and Desktop); he has been developing on embedded and mobile systems (based on Windows CE, WindowsPhone/Android and RTOS) since 2010, using C/C++, C# and Java. Focused on IoT and M2M communication. Member of DotNetCampania, TinyCLR.it and Embedded101 communities. Technical writer and owner of some open source projects on CodePlex and GitHub",
+    "links": {
+        "email": "ppatierno@live.com",
+        "website": "http://mvp.microsoft.com/en-US/MVP/Paolo%20Patierno-5000734"
+    },
+    "isGuestAuthor": "true"
+}

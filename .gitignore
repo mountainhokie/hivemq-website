@@ -1,0 +1,9 @@
+public
+.DS_Store
+.idea
+*.iml
+resources/_gen/*
+node_modules
+.env
+.vscode/
+themes/beeswarm/static/css/output.css

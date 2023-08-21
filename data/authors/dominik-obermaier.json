@@ -1,0 +1,13 @@
+{  
+    "name": {
+        "firstName":"Dominik", 
+        "lastName": "Obermaier"
+    },
+    "image": "/img/blog/author-do.jpg",
+    "description": "Dominik Obermaier is co-founder and CTO at HiveMQ.",
+    "links": {
+        "email": "dominik.obermaier@hivemq.com",
+        "twitter": "https://twitter.com/dobermai",
+        "linkedin": "https://de.linkedin.com/in/dobermai"
+    }
+}

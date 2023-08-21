@@ -1,0 +1,9 @@
+<div style="width: 100%; text-align:center; margin: 25px 0 75px 0; padding-top: 25px; font-size: 14px;">
+   {{ if .NextInSection }}
+      <img src="/img/svg/fa-circle-arrow-left.svg" style="height: 16px; width:16px; position: relative; top: 3px;" alt="newer posts"> <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} </a>
+    {{ end }}
+    {{ if and .PrevInSection .NextInSection }} <br/> {{ end }}
+    {{ if .PrevInSection }}
+      <a href="{{ .PrevInSection.Permalink }}"> {{ .PrevInSection.Title }}</a> <img src="/img/svg/fa-circle-arrow-right.svg" style="height: 16px; width:16px; position: relative; top: 3px;" alt="older posts">
+    {{ end }}
+</div>

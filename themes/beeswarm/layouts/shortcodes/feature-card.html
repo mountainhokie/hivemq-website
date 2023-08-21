@@ -1,0 +1,4 @@
+<article class="feature-card">
+      <img src="{{ .Get `icon` }}" class="feature-icon" /><h3>{{ .Get `feature-headline` }}</h3>
+      {{ .Inner | markdownify }}
+</article>

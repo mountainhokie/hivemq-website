@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Florian",
+        "lastName": "Limpöck"
+    },
+    "image": "/img/blog/author-fl.jpg",
+    "description": "Florian Limpöck has been a software engineer at HiveMQ since 2013. He is interested in distributed systems, the MQTT protocol, random numbers, and his dog, Karl, with whom he shares an apartment in Landshut, Germany, the birthplace of HiveMQ.",
+    "links": {
+        "email": "florian.limpoeck@hivemq.com"
+    }
+}

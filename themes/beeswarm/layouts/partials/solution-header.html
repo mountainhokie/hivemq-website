@@ -1,0 +1,11 @@
+<section class="solution-header">
+    <div class="solution-headlines">
+        {{ if isset .Params "solution_header" }}
+        <h1 class="solutionHeaderH1">{{ .Params.solution_header }}</h1>
+        {{ end }}
+        {{ if isset .Params "solution_subheader" }}
+        <h2 class="solutionHeaderH2">{{ .Params.solution_subheader }}</h2>
+        {{ end }}
+    </div>
+    <img src="{{ .Params.headerImg }}" class="solutionHeaderGraphic">
+</section>

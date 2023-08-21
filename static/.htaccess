@@ -1,0 +1,365 @@
+RewriteEngine On
+
+#Remove trailing slash, NE = no encoding, L = last
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,NE,L]
+
+#maintenance mode allows only access from office
+#enabled when the following lines are uncommented
+#RewriteCond %{REMOTE_ADDR} !^80\.147\.158\.33$
+#RewriteCond %{REQUEST_URI} !/maintenance.(html|jpg)$ [NC]
+#RewriteRule .* /maintenance.html [R=302,L]
+
+Redirect 301 https://www.hivemq.de https://wwww.hivemq.com
+Redirect 301 /a-mqtt-broker-tailored-for-enterprises /blog/a-mqtt-broker-tailored-for-enterprises
+Redirect 301 /mqtt-sql-database /blog/mqtt-sql-database
+Redirect 301 /building-a-high-availability-mqtt-cluster /blog/building-a-high-availability-mqtt-cluster
+Redirect 301 /overview-of-mqtt-client-tools/ /blog/overview-of-mqtt-client-tools
+Redirect 301 /useful-hivemq-plugins-mqtt-access-log-plugin/ /blog/useful-hivemq-plugins-mqtt-access-log-plugin
+Redirect 301 /pt-2-hivemq-plugins-file-authentication-plugin /blog/pt-2-hivemq-plugins-file-authentication-plugin
+Redirect 301 /monitoring-hivemq-mqtt-broker-graphite-collectl /blog/monitoring-hivemq-mqtt-broker-graphite-collectl
+Redirect 301 /hivemq-1-4-released-native-websockets-support-open-source-plugin-sdk /blog/hivemq-1-4-released-native-websockets-support-open-source-plugin-sdk
+Redirect 301 /introducing-hivemq-deny-wildcard-plugin /blog/introducing-hivemq-deny-wildcard-plugin
+Redirect 301 /full-featured-mqtt-client-browser /blog/full-featured-mqtt-client-browser
+Redirect 301 /mqtt-over-websockets-with-hivemq /blog/mqtt-over-websockets-with-hivemq
+Redirect 301 /supporting-mqtt-client-identifiers-23-characters /blog/supporting-mqtt-client-identifiers-23-characters
+Redirect 301 /hivemq-on-windows-azure-mqtt-microsoft-cloud /blog/hivemq-on-windows-azure-mqtt-microsoft-cloud
+Redirect 301 /build-javascript-mqtt-web-application /blog/build-javascript-mqtt-web-application
+Redirect 301 /hivemq-monitoring-with-a-hosted-graphite-service /blog/hivemq-monitoring-with-a-hosted-graphite-service
+Redirect 301 /file-authentication-plugin-open-source /blog/file-authentication-plugin-open-source
+Redirect 301 /mqtt-message-log-plugin-released /blog/mqtt-message-log-plugin-released
+Redirect 301 /hivemq-mqtt-websockets-support-message-log-plugin-2-min /blog/hivemq-mqtt-websockets-support-message-log-plugin-2-min
+Redirect 301 /lightweight-authentication-authorization-mqtt-stormpath /blog/lightweight-authentication-authorization-mqtt-stormpath
+Redirect 301 /delete-mqtt-retained-messages-subtopics-recursively /blog/delete-mqtt-retained-messages-subtopics-recursively
+Redirect 301 /hivemq-2-1-0-hivemq-artifacts-maven-central /blog/hivemq-2-1-0-hivemq-artifacts-maven-central
+Redirect 301 /how-to-get-started-with-mqtt /blog/how-to-get-started-with-mqtt
+Redirect 301 /6-facts-why-its-worth-upgrading-to-mqtt-3-1-1 /blog/6-facts-why-its-worth-upgrading-to-mqtt-3-1-1
+Redirect 301 /seven-best-mqtt-client-tools /blog/seven-best-mqtt-client-tools
+Redirect 301 /mqtt-essentials-part-1-introducing-mqtt /blog/mqtt-essentials-part-1-introducing-mqtt
+Redirect 301 /mqtt-essentials-part2-publish-subscribe /blog/mqtt-essentials-part2-publish-subscribe
+Redirect 301 /mqtt-essentials-part-3-client-broker-connection-establishment /blog/mqtt-essentials-part-3-client-broker-connection-establishment
+Redirect 301 /mqtt-essentials-part-4-mqtt-publish-subscribe-unsubscribe /blog/mqtt-essentials-part-4-mqtt-publish-subscribe-unsubscribe
+Redirect 301 /mqtt-essentials-part-5-mqtt-topics-best-practices /blog/mqtt-essentials-part-5-mqtt-topics-best-practices
+Redirect 301 /mqtt-essentials-part-6-mqtt-quality-of-service-levels /blog/mqtt-essentials-part-6-mqtt-quality-of-service-levels
+Redirect 301 /mqtt-essentials-part-7-persistent-session-queuing-messages /blog/mqtt-essentials-part-7-persistent-session-queuing-messages
+Redirect 301 /mqtt-essentials-part-8-retained-messages /blog/mqtt-essentials-part-8-retained-messages
+Redirect 301 /mqtt-essentials-part-9-last-will-and-testament /blog/mqtt-essentials-part-9-last-will-and-testament
+Redirect 301 /mqtt-essentials-part-10-alive-client-take-over /blog/mqtt-essentials-part-10-alive-client-take-over
+Redirect 301 /mqtt-essentials-special-mqtt-over-websockets /blog/mqtt-essentials-special-mqtt-over-websockets
+Redirect 301 /mqtt-essentials-wrap-up /blog/mqtt-essentials-wrap-up
+Redirect 301 /announcing-the-mqtt-security-essentials /blog/announcing-the-mqtt-security-essentials
+Redirect 301 /announcing-mqtt-client-library-encyclopedia-blog-post-series /blog/announcing-mqtt-client-library-encyclopedia-blog-post-series
+Redirect 301 /introducing-the-mqtt-security-fundamentals /blog/introducing-the-mqtt-security-fundamentals
+Redirect 301 /mqtt-security-fundamentals-authentication-username-password /blog/mqtt-security-fundamentals-authentication-username-password
+Redirect 301 /mqtt-security-fundamentals-advanced-authentication-mechanisms /blog/mqtt-security-fundamentals-advanced-authentication-mechanisms
+Redirect 301 /mqtt-security-fundamentals-authorization /blog/mqtt-security-fundamentals-authorization
+Redirect 301 /mqtt-security-fundamentals-tls-ssl /blog/mqtt-security-fundamentals-tls-ssl
+Redirect 301 /mqtt-security-fundamentals-x509-client-certificate-authentication /blog/mqtt-security-fundamentals-x509-client-certificate-authentication
+Redirect 301 /mqtt-security-fundamentals-oauth-2-0-mqtt /blog/mqtt-security-fundamentals-oauth-2-0-mqtt
+Redirect 301 /mqtt-security-fundamentals-payload-encryption /blog/mqtt-security-fundamentals-payload-encryption
+Redirect 301 /mqtt-security-fundamentals-mqtt-message-data-integrity /blog/mqtt-security-fundamentals-mqtt-message-data-integrity
+Redirect 301 /mqtt-security-fundamentals-securing-mqtt-systems /blog/mqtt-security-fundamentals-securing-mqtt-systems
+Redirect 301 /mqtt-security-fundamentals-wrap-up /blog/mqtt-security-fundamentals-wrap-up
+Redirect 301 /mqtt-client-library-encyclopedia-eclipse-paho-java /blog/mqtt-client-library-encyclopedia-eclipse-paho-java
+Redirect 301 /mqtt-client-library-encyclopedia-mqtt-client-framework /blog/mqtt-client-library-encyclopedia-mqtt-client-framework
+Redirect 301 /mqtt-client-library-encyclopedia-m2mqtt /blog/mqtt-client-library-encyclopedia-m2mqtt
+Redirect 301 /mqtt-client-library-encyclopedia-paho-embedded /blog/mqtt-client-library-encyclopedia-paho-embedded
+Redirect 301 /mqtt-client-library-encyclopedia-paho-lua /blog/mqtt-client-library-encyclopedia-paho-lua
+Redirect 301 /mqtt-client-library-encyclopedia-mosquitto-php /blog/mqtt-client-library-encyclopedia-mosquitto-php
+Redirect 301 /single-license-detail /pricing
+Redirect 301 /single-instance-licenses /pricing
+Redirect 301 /support-forum /support
+Redirect 301 /mqtt-client-library-encyclopedia-arduino-pubsubclient /blog/mqtt-client-library-encyclopedia-arduino-pubsubclient
+Redirect 301 /downloads/releases/latest /downloads
+Redirect 301 /opensource/ /extensions
+Redirect 301 /paho/ /blog/mqtt-client-library-encyclopedia-eclipse-paho-java
+Redirect 301 /javascript/ /blog/build-javascript-mqtt-web-application
+Redirect 301 /mqtt-payload-encryption /blog/mqtt-security-fundamentals-payload-encryption
+Redirect 301 /6-facts-why-its-worth-upgrading-to-mqtt /blog/6-facts-why-its-worth-upgrading-to-mqtt-3-1-1
+Redirect 301 /blog/deploying-hivemq-cluster-with-docker /blog/hivemq-on-dockerhub
+Redirect 301 /blog/deploying-hivemq-with-docker /blog/hivemq-on-dockerhub
+Redirect 301 /try-out /downloads/
+Redirect 301 /download/ /downloads/
+Redirect 301 /product /hivemq/
+Redirect 301 /faq /mqtt-protocol/faq/
+Redirect 301 /mqtt/faq /mqtt-protocol/faq/
+Redirect 301 /developers/faq /mqtt-protocol/faq/
+Redirect 301 /enterprise-integrations/ /extensions
+Redirect 301 /extensions/plugins/security /extensions/
+Redirect 301 /extensions/plugins/monitoring /extensions/
+Redirect 301 /extensions/plugins/management /extensions/
+Redirect 301 /extensions/plugins/intregration /extensions/
+Redirect 301 /plugins /extensions/
+Redirect 301 /marketplace/ /extensions
+Redirect 301 /legal/ /imprint
+Redirect 301 /about/ /company
+Redirect 301 /resources/getting-started /docs/hivemq/latest/user-guide/getting-started.html#get-started
+Redirect 301 /developers/getting-started /docs/hivemq/latest/user-guide/getting-started.html#get-started
+Redirect 301 /resources/documentation /docs
+RedirectMatch 301 ^/resources/tutorials(|/)$ /developers
+RedirectMatch 301 ^/resources(|/)$ /developers/
+RedirectMatch 301 ^/editions(|/)$ /hivemq/editions
+Redirect 301 /developers/tutorials /developers/
+Redirect 301 /developer/ /developers/
+Redirect 301 /plugin/graphite-plugin /extensions/
+Redirect 301 /plugin/jmx-plugin /extensions
+Redirect 301 /plugin/influxdb-plugin /extension/influxdb-extension
+Redirect 301 /plugin/sys-topic-plugin /extensions
+Redirect 301 /plugin/jvm-metrics-plugin /extensions
+Redirect 301 /plugin/elastic-beam-plugin /extensions
+Redirect 301 /plugin/DNS-discovery-plugin /extension/dns-discovery-extension
+Redirect 301 /plugin/mqtt-message-log /extension/mqtt-message-log-extension
+Redirect 301 /plugin/s3-cluster-discovery-plugin /extension/s3-cluster-discovery-extension
+Redirect 301 /plugin/file-authentication /extension/file-rbac-extension
+Redirect 301 /plugin/awscloudwatch-plugin /extension/aws-cloudwatch-extension
+Redirect 301 /plugin/prometheus-plugin /extension/prometheus-extension
+Redirect 301 /plugin/delete-retained-messages-recursively-plugin /extensions
+Redirect 301 /blog/monitoring-your-hivemq-mqtt-broker-with-prometheus-and-grafana /blog/monitoring-hivemq-prometheus
+Redirect 301 /german-accelerator-deloitte-technology-fast-50 /blog/german-accelerator-deloitte-technology-fast-50
+Redirect 301 /blog/category/mqtt-toolbox /mqtt-toolbox
+Redirect 301 /blog/mqtt-essentials /mqtt-essentials
+Redirect 301 /blog/mqtt/ /mqtt/
+Redirect 301 /blog/hivemq/ /hivemq/
+Redirect 301 /blog/sparkplug-essentials-part-1-introduction /blog/mqtt-sparkplug-essentials-part-1-introduction
+Redirect 301 /whats-new-in-hivemq3 /blog/whats-new-in-hivemq-3
+Redirect 301 /whats-new-in-hivemq-3-1 /blog/whats-new-in-hivemq-3-1
+Redirect 301 /whats-new-in-hivemq-3-3 /blog/whats-new-in-hivemq-3-3
+Redirect 301 /whats-new-in-hivemq-3-4 /blog/whats-new-in-hivemq-3-4
+Redirect 301 /hivemq-3-is-now-available /blog/hivemq-3-is-now-available
+Redirect 301 /request-support /support
+Redirect 301 /clustering-hivemq-paper /developers
+Redirect 301 /tls-benchmarks /benchmarks
+Redirect 301 /features /hivemq/features
+Redirect 301 /hivemq/hivemq-cloud /mqtt-cloud-broker
+Redirect 301 /downloads/hivemq-swarm /downloads/hivemq
+Redirect 301 /sparkplug /solutions/technology/mqtt-sparkplug/
+Redirect 301 /solution /solutions
+Redirect 301 /hivemq-cloud /mqtt-cloud-broker/
+Redirect 301 /blog/mqtt-vs-rabbitmq-for-iot /blog/mqtt-vs-amqp-for-iot/
+Redirect 301 /cloud/integrations/confluent/ /extension/hivemq-kafka-extension/
+Redirect 301 /blog/extending-confluent-cloud-to-ingest-data-from-millions-of-iot-devices/ /blog/streaming-iot-data-and-mqtt-messages-to-apache-kafka/
+Redirect 301 /blog/seven-best-mqtt-client-tools/ /mqtt-toolbox/
+Redirect 301 /blog/overview-of-mqtt-client-tools/ /mqtt-toolbox/
+Redirect 301 /cloud/integrations/confluent/ /extension/hivemq-kafka-extension/
+# do not delete redirect below
+Redirect 301 /cloud/recommendations /mqtt-client-library-encyclopedia/
+## Tag redirects
+# special redirect for tags
+Redirect 301 /tag/mqtt-lens /blog/mqtt-toolbox-mqtt-lens/
+Redirect 301 /tag/mqtt-toolbox /mqtt-toolbox/
+Redirect 301 /tag/mqtt-inspector /blog/mqtt-toolbox-mqtt-inspector/
+Redirect 301 /tag/mqtt-tools /mqtt-toolbox/
+Redirect 301 /tag/mqtt-fx /blog/mqtt-toolbox-mqtt-fx-extras/
+Redirect 301 /tag/security /mqtt-security-fundamentals/
+Redirect 301 /tag/mqtt /tags/mqtt/
+Redirect 301 /tag/plugin /extensions/
+Redirect 301 /taxonomy/hivemq-release /tags/hivemq-release/
+Redirect 301 /taxonomy/hivemq /tags/hivemq/
+Redirect 301 /taxonomy/hivemq-upgrade /tags/hivemq-release/
+Redirect 301 /taxonomy/mqtt-client-library /tags/mqtt-client-library/
+Redirect 301 /taxonomy/mqtt-essentials /tags/mqtt-essentials/
+Redirect 301 /taxonomy/mqtt-security-fundamentals /tags/mqtt-security-fundamentals/
+Redirect 301 /taxonomy/mqtt-toolbox /tags/mqtt-toolbox/
+Redirect 301 /taxonomy/mqtt5-features-and-hidden-gems /tags/mqtt-5-essentials/
+Redirect 301 /tags/mqtt5-features-and-hidden-gems /tags/mqtt-5-essentials/
+Redirect 301 /blog/category/mqtt-5-features-and-hidden-gems /tags/mqtt-5-essentials/
+Redirect 301 /taxonomy/third-party /tags/third-party/
+# regex to redirect every other tag
+RedirectMatch 301 /tag/.* /mqtt-client-library-encyclopedia/
+
+Redirect 301 /documentations/getting-started/ /developers/getting-started
+Redirect 301 /documentations/getting-started-plugins/ /extensions
+Redirect 301 /blog/category/clustering-mqtt /blog/
+Redirect 301 /blog/mqtt/page /blog/
+Redirect 301 /blog/hivemq/page /blog/
+Redirect 301 /blog/mqtt/page /blog/
+Redirect 301 /blog/mqtt-security-fundamentals /mqtt-security-fundamentals
+Redirect 301 /blog/mqtt-client-library-encyclopedia/ /mqtt-client-library-encyclopedia
+Redirect 301 /plugin/s3-cluster-discovery-plugin/s3 /extension/s3-cluster-discovery-extension/
+Redirect 301 /blog/author/the-hivemq-team/page /blog
+Redirect 301 /wp-content/uploads/hivemq-product-sheet.pdf/ /downloads/hivemq-product-sheet-v3.pdf
+Redirect 301 /plugin/deny-root-wildcard-subscriptions/ /extension/deny-root-wildcard-subscriptions-extension/
+Redirect 301 /resources/getting-started-with-plugins/ /docs/hivemq/latest/extensions/introduction.html
+Redirect 301 /german-accelerator-deloitte-technology-fast-50/ /blog/german-accelerator-deloitte-technology-fast-50/
+Redirect 301 /papers-download/Clustering_HiveMQ.pdf /downloads/clustering_hivemq.pdf
+Redirect 301 /apply-mqtt-use-case-assessment /contact-sales/
+Redirect 301 /mqtt-use-case-assessment /contact-sales/
+Redirect 301 /payg-has-been-discontinued /pricing
+Redirect 301 /client /blog/mqtt-client-library-enyclopedia-hivemq-mqtt-client/
+Redirect 301 /blog/how-to-get-started-with-mqtt/embed /blog/how-to-get-started-with-mqtt/
+Redirect 301 /blog/mqtt-essentials-part-4-mqtt-pub /blog/mqtt-essentials-part-4-mqtt-publish-subscribe-unsubscribe/
+Redirect 301 /mqtt-toolbox/embed /mqtt-toolbox/
+Redirect 301 /mqtt5-features-and-hidden-gems /mqtt-5
+Redirect 301 /blog/mqtt-5-introduction-to-mqtt-5 /blog/mqtt5-essentials-part1-introduction-to-mqtt-5/
+Redirect 301 /blog/mqtt-5-foundational-changes-in-the-protocol /blog/mqtt5-essentials-part2-foundational-changes-in-the-protocol/
+Redirect 301 /blog/upgrade-to-mqtt5-now /blog/mqtt5-essentials-part3-upgrade-to-mqtt5-now/
+Redirect 301 /blog/mqtt5-session-message-expiry /blog/mqtt5-essentials-part4-session-and-message-expiry/
+Redirect 301 /blog/mqtt-5-features-client-feedback-negative-ack /blog/mqtt5-essentials-part5-client-feedback-negative-ack/
+Redirect 301 /feed /feed.xml
+Redirect 301 /careers /career
+Redirect 301 /hivemq/kafka-solution /solutions/technology/kafka-solution/
+Redirect 301 /hivemq/security /solutions/technology/security/
+Redirect 301 /request-cloud-demo /mqtt-cloud-broker/
+Redirect 301 /supported-versions https://hivemq.atlassian.net/servicedesk/customer/portal/1/article/831029609
+Redirect 301 /mqtt-protocol/faq /mqtt-essentials#faq
+Redirect 301 /downloads/download-10-mio-benchmark /benchmark-200-million
+Redirect 301 /benchmark-10-million /benchmark-200-million
+Redirect 301 /blog/mqtt-essentials-wrap-up /blog/mqtt-essentials-part-10-alive-client-take-over
+Redirect 301 /subscription-terms /legal-documents
+
+# Redirect Automotive Solution page
+RedirectMatch 301 ^/solutions/automotive(|/)$ /solutions/connected-cars
+
+# Redirect /hivemq
+RedirectMatch 301 ^/hivemq(|/)$ /hivemq/mqtt-broker
+
+# Redirect /cloud
+RedirectMatch 301 ^/cloud(|/)$ /mqtt-cloud-broker
+
+#Redirect /mqtt-protocol
+RedirectMatch 301 ^/mqtt-protocol(|/)$ /mqtt/mqtt-protocol/
+RedirectMatch 301 ^/mqtt(|/)$ /mqtt-essentials/
+
+## Documentation
+#TODO: These entries must be updated when a new minor version is released.
+Redirect 301 /docs/hivemq/latest /docs/hivemq/4.14
+Redirect 301 /docs/ese/latest /docs/ese/4.14
+Redirect 301 /docs/kafka/latest /docs/kafka/4.14
+Redirect 301 /docs/operator/latest /docs/operator/4.14
+Redirect 301 /docs/bridge/latest /docs/bridge/4.14
+Redirect 301 /docs/tracing/latest /docs/tracing/4.14
+Redirect 301 /docs/google-cloud-pubsub/latest /docs/google-cloud-pubsub/4.14
+Redirect 301 /docs/hivemq-amazon-kinesis-extension/latest /docs/hivemq-amazon-kinesis-extension/4.14
+Redirect 301 /docs/swarm/latest /docs/swarm/4.14
+
+# Documentation: Redirect non-specific urls to the latest documentations.
+# Here it is also important to include trailing slashes as there is no fallback to index files.
+RedirectMatch 301 ^/docs(|/)$ /docs/hivemq/latest
+RedirectMatch 301 ^/docs/hivemq(|/)$ /docs/hivemq/latest
+RedirectMatch 301 ^/docs/ese(|/)$ /docs/ese/latest
+RedirectMatch 301 ^/docs/kafka(|/)$ /docs/kafka/latest
+RedirectMatch 301 ^/docs/operator(|/)$ /docs/operator/latest
+RedirectMatch 301 ^/docs/bridge(|/)$ /docs/bridge/latest
+RedirectMatch 301 ^/docs/tracing(|/)$ /docs/tracing/latest
+RedirectMatch 301 ^/docs/google-cloud-pubsub(|/)$ /docs/google-cloud-pubsub/latest
+RedirectMatch 301 ^/docs/hivemq-amazon-kinesis-extension(|/)$ /docs/hivemq-amazon-kinesis-extension/latest
+RedirectMatch 301 ^/docs/swarm(|/)$ /docs/swarm/latest
+
+# Documentation: Redirect early access documentation to latest.
+Redirect 301 /docs/swarm/4.5 /docs/swarm/latest
+
+# Documentation: Old structure of the HiveMQ Cloud which was included in HiveMQ 4.2 and 4.3.
+Redirect 301 /docs/4.3/cloud /docs/hivemq-cloud
+Redirect 301 /docs/4.2/cloud /docs/hivemq-cloud
+Redirect 301 /docs/latest/cloud /docs/hivemq-cloud
+
+# Documentation: Old structure which was used for the documentations of HiveMQ 3.4, 4.0, 4.1, 4.2 and 4.3, ESE and Kafka
+RedirectMatch 301 ^/docs/4.[1-3]/enterprise-extensions/ese-getting-started.html /docs/ese/latest/enterprise-security-extension/ese-getting-started.html
+RedirectMatch 301 ^/docs/4.[1-3]/enterprise-extensions/ese-helper.html /docs/ese/latest/enterprise-security-extension/ese-helper.html
+RedirectMatch 301 ^/docs/4.[1-3]/enterprise-extensions/ese-intro.html /docs/ese/latest/enterprise-security-extension/ese-intro.html
+RedirectMatch 301 ^/docs/4.[1-3]/enterprise-extensions/ese.html /docs/ese/latest/enterprise-security-extension/ese.html
+Redirect 301 /docs/latest/enterprise-extensions/ese-getting-started.html /docs/ese/latest/enterprise-security-extension/ese-getting-started.html
+Redirect 301 /docs/latest/enterprise-extensions/ese-helper.html /docs/ese/latest/enterprise-security-extension/ese-helper.html
+Redirect 301 /docs/latest/enterprise-extensions/ese-intro.html /docs/ese/latest/enterprise-security-extension/ese-intro.html
+Redirect 301 /docs/latest/enterprise-extensions/ese.html /docs/ese/latest/enterprise-security-extension/ese.html
+RedirectMatch 301 ^/docs/4.[1-3]/enterprise-extensions/kafka.* /docs/kafka/latest
+Redirect 301 /docs/latest/enterprise-extensions/kafka.html /docs/kafka/latest
+Redirect 301 /docs/4.3/hivemq /docs/hivemq/latest/user-guide
+Redirect 301 /docs/4.2/hivemq /docs/hivemq/latest/user-guide
+Redirect 301 /docs/4.1/hivemq /docs/hivemq/latest/user-guide
+Redirect 301 /docs/4/hivemq /docs/hivemq/latest/user-guide
+Redirect 301 /docs/3.4/hivemq /docs/hivemq/3.4/user-guide
+Redirect 301 /docs/latest/hivemq /docs/hivemq/latest/user-guide
+Redirect 301 /docs/4.3 /docs/hivemq/latest
+Redirect 301 /docs/4.2 /docs/hivemq/latest
+Redirect 301 /docs/4.1 /docs/hivemq/latest
+Redirect 301 /docs/4 /docs/hivemq/latest
+Redirect 301 /docs/3.4 /docs/hivemq/3.4
+Redirect 301 /docs/latest /docs/hivemq/latest
+
+# Documentation: Old structure of the first HiveMQ 4 documentation.
+Redirect 301 /docs/control-center/latest /docs/hivemq/latest/control-center/
+Redirect 301 /docs/control-center /docs/hivemq/latest/control-center/
+Redirect 301 /docs/extensions/latest /docs/hivemq/latest/extensions/
+Redirect 301 /docs/extensions /docs/hivemq/latest/extensions/
+
+# Documentation: Redirect older HiveMQ versions to 3.4.
+Redirect 301 /docs/hivemq/3.3 /docs/hivemq/3.4/user-guide/
+Redirect 301 /docs/hivemq/3.2 /docs/hivemq/3.4/user-guide/
+Redirect 301 /docs/hivemq/3.1 /docs/hivemq/3.4/user-guide/
+Redirect 301 /docs/hivemq/3.0 /docs/hivemq/3.4/user-guide/
+RedirectMatch 301 /docs/hivemq/[1-2].* /docs/hivemq/3.4/user-guide/
+RedirectMatch 301 /docs/plugins/[1-3].* /docs/hivemq/3.4/plugins/
+RedirectMatch 301 /docs/web-ui/[1-3].* /docs/hivemq/3.4/web-ui/
+RedirectMatch 301 /docs/upgrade/[1-3].* /docs/hivemq/3.4/upgrade/
+
+# Documentation: Redirect HiveMQ 3 Docu without version to the newest strucutre.
+Redirect 301 /docs/plugins/latest /docs/hivemq/latest/extensions/
+Redirect 301 /docs/web-ui/latest /docs/hivemq/latest/control-center/
+Redirect 301 /docs/upgrade/latest /docs/hivemq/latest/upgrade/
+Redirect 301 /docs/plugins /docs/hivemq/latest/extensions/
+Redirect 301 /docs/web-ui /docs/hivemq/latest/control-center/
+Redirect 301 /docs/upgrade /docs/hivemq/latest/upgrade/
+
+Redirect 301 /documentation /docs/hivemq/latest/
+
+# Documentation: Shortlink for Windows-Service.
+Redirect 301 /windows-service /docs/hivemq/latest/user-guide/install-hivemq.html#windows
+
+#Download rewrites
+Redirect 301 /wp-content/uploads/hivemq-k8s.yaml /downloads/hivemq-k8s.yaml
+Redirect 301 /wp-content/uploads/hivemq-k8s.yml /downloads/hivemq-k8s.yaml
+Redirect 301 /wp-content/uploads/mqtt.yaml /downloads/mqtt.yaml
+Redirect 301 /wp-content/uploads/web-ui.yaml /downloads/web-ui.yaml
+Redirect 301 /wp-content/uploads/HiveMQ-Dashboard-Template.json.zip /downloads/HiveMQ-Dashboard-Template.json.zip
+Redirect 301 /wp-content/uploads/HiveMQ-Prometheus-Dashboard.json.zip /downloads/HiveMQ-Prometheus-Dashboard.json.zip
+
+#HiveMQ 3 Plugins
+Redirect 301 /wp-content/uploads/delete-retained-messages-recursively-plugin-3.0.0.zip /releases/plugins/delete-retained-messages-recursively-plugin-3.0.0.zip
+Redirect 301 /wp-content/uploads/deny-wildcard-plugin-3.0.0.zip /releases/plugins/deny-wildcard-plugin-3.0.0.zip
+Redirect 301 /wp-content/uploads/file-authentication-3.0.0.zip /releases/plugins/file-authentication-3.0.0.zip
+Redirect 301 /wp-content/uploads/file-authentication-3.0.1.zip /releases/plugins/file-authentication-3.0.1.zip
+Redirect 301 /wp-content/uploads/file-authentication-3.0.2-distribution.zip /releases/plugins/file-authentication-3.0.2-distribution.zip
+Redirect 301 /wp-content/uploads/file-authentication-3.1.0-distribution.zip /releases/plugins/file-authentication-3.1.0-distribution.zip
+Redirect 301 /wp-content/uploads/file-authentication-3.1.1-distribution.zip /releases/plugins/file-authentication-3.1.1-distribution.zip
+Redirect 301 /wp-content/uploads/hivemq-aws-cloudwatch-plugin-1.0.0-distribution.zip /releases/plugins/hivemq-aws-cloudwatch-plugin-1.0.0-distribution.zip
+Redirect 301 /wp-content/uploads/hivemq-dns-cluster-discovery-1.0.0-distribution.zip /releases/plugins/hivemq-dns-cluster-discovery-1.0.0-distribution.zip
+Redirect 301 /wp-content/uploads/hivemq-graphite-metrics-plugin-3.0.0.zip /releases/plugins/hivemq-graphite-metrics-plugin-3.0.0.zip
+Redirect 301 /wp-content/uploads/hivemq-graphite-metrics-plugin-3.1.1.zip /releases/plugins/hivemq-graphite-metrics-plugin-3.1.1.zip
+Redirect 301 /wp-content/uploads/hivemq-graphite-metrics-plugin-3.1.2.zip /releases/plugins/hivemq-graphite-metrics-plugin-3.1.2.zip
+Redirect 301 /wp-content/uploads/hivemq-influxdb-monitoring-plugin-1.0.0-distribution.zip /releases/plugins/hivemq-influxdb-monitoring-plugin-1.0.0-distribution.zip
+Redirect 301 /wp-content/uploads/hivemq-influxdb-monitoring-plugin-1.0.1-distribution.zip /releases/plugins/hivemq-influxdb-monitoring-plugin-1.0.1-distribution.zip
+Redirect 301 /wp-content/uploads/hivemq-influxdb-monitoring-plugin-1.0.2-distribution.zip /releases/plugins/hivemq-influxdb-monitoring-plugin-1.0.2-distribution.zip
+Redirect 301 /wp-content/uploads/hivemq-influxdb-monitoring-plugin-1.0.3-distribution.zip /releases/plugins/hivemq-influxdb-monitoring-plugin-1.0.3-distribution.zip
+Redirect 301 /wp-content/uploads/hivemq-jmx-metrics-plugin-3.0.0.zip /releases/plugins/hivemq-jmx-metrics-plugin-3.0.0.zip
+Redirect 301 /wp-content/uploads/hivemq-jmx-metrics-plugin-3.1.1.zip /releases/plugins/hivemq-jmx-metrics-plugin-3.1.1.zip
+Redirect 301 /wp-content/uploads/hivemq-prometheus-monitoring-plugin-1.0.0-PREVIEW-distribution.zip /releases/plugins/hivemq-prometheus-monitoring-plugin-1.0.0-PREVIEW-distribution.zip
+Redirect 301 /wp-content/uploads/hivemq-prometheus-monitoring-plugin-1.0.0-PREVIEW.zip /releases/plugins/hivemq-prometheus-monitoring-plugin-1.0.0-PREVIEW.zip
+Redirect 301 /wp-content/uploads/hivemq-prometheus-monitoring-plugin-1.0.0-distribution.zip /releases/plugins/hivemq-prometheus-monitoring-plugin-1.0.0-distribution.zip
+Redirect 301 /wp-content/uploads/hivemq-sys-topic-plugin-3.0.0.zip /releases/plugins/hivemq-sys-topic-plugin-3.0.0.zip
+Redirect 301 /wp-content/uploads/jvm-metrics-plugin-1.0-distribution.zip /releases/plugins/jvm-metrics-plugin-1.0-distribution.zip
+Redirect 301 /wp-content/uploads/jvm-metrics-plugin-3.1.0-distribution.zip /releases/plugins/jvm-metrics-plugin-3.1.0-distribution.zip
+Redirect 301 /wp-content/uploads/mqtt-message-log-3.0.0.zip /releases/plugins/mqtt-message-log-3.0.0.zip
+Redirect 301 /wp-content/uploads/s3-cluster-discovery-plugin-1.0.zip /releases/plugins/s3-cluster-discovery-plugin-1.0.zip
+Redirect 301 /wp-content/uploads/s3-cluster-discovery-plugin-1.1.0.zip /releases/plugins/s3-cluster-discovery-plugin-1.1.0.zip
+Redirect 301 /wp-content/uploads/s3-cluster-discovery-plugin-1.1.1-distribution.zip /releases/plugins/s3-cluster-discovery-plugin-1.1.1-distribution.zip
+Redirect 301 /wp-content/uploads/hivemq-data-sheet-3.4.pdf /downloads/hivemq-data-sheet-3.4.pdf
+Redirect 301 /wp-content/uploads/hivemq-data-sheet-3.3.pdf /downloads/hivemq-data-sheet-3.3.pdf
+Redirect 301 /HiveMQ-Software-Evaluation-Terms.pdf /downloads/HiveMQ-Software-Evaluation-Terms.pdf
+Redirect 301 /plugin/DNS-discovery-plugin /extension/dns-discovery-extension
+
+#Rewrite previous releases-all folder to releases
+Redirect 301 /releases-all /releases
+
+# Redirects for backlinks
+Redirect /docs/hivemq/4.4/user-guide/listeners.html /docs/hivemq/latest/user-guide/listeners.html
+Redirect /blog/mqtt-client-library-encyclopedia-m2mqtt /mqtt-client-library-encyclopedia/
+Redirect /documentations/getting-started-plugins /docs/hivemq/latest/user-guide/introduction.html
+Redirect /documentations/getting-started /docs/hivemq/latest/user-guide/introduction.html
+Redirect /docs/hivemq/4.4/extensions/authorization.html /docs/hivemq/latest/extensions/authorization.html
+Redirect /plugin/stormpath-plugin /extensions
+Redirect /showcase/public-mqtt-broker /public-mqtt-broker
+Redirect /mqtt-essentials/page/2 /mqtt-essentials
+Redirect /docs/hivemq/4.4/user-guide/proxy-protocol.html /docs/hivemq/latest/user-guide/proxy-protocol.html
+Redirect /docs/hivemq/4.4/extensions/introduction.html /docs/hivemq/latest/extensions/introduction.html
+Redirect /docs/hivemq/4.4/user-guide/introduction.html /docs/hivemq/latest/user-guide/introduction.html

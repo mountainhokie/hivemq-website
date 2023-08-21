@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Kamil",
+        "lastName": "Baczkowicz"
+    },
+    "image": "/img/blog/author-kb.jpg",
+    "description": "Kamil is a Technical Architect at Resonate. He's been working with MQTT and other messaging technologies since 2009 as part of the IECC Scalable development programme - the leading railway signalling control system in the UK.",
+    "links": {
+        "linkedin": "https://www.linkedin.com/in/kamilbaczkowicz"
+    },
+    "isGuestAuthor": "true"
+}

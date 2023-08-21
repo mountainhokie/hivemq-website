@@ -1,0 +1,100 @@
+
+{
+  "April 2023": {
+    "id": "44",
+    "release": "APR 2023",
+    "title": "Fast Track IoT App Development with HiveMQ MQTT Clients",
+    "url": "https://hivemq-5867930.hs-sites.com/fast-track-iot-iiot-app-development-reliable-mqtt-clients/"
+  },
+  "March 2023": {
+    "id": "43",
+    "release": "MAR 2023",
+    "title": "Achieving 200 Million Concurrent Connections with HiveMQ",
+    "url": "https://hivemq-5867930.hs-sites.com/newsletter-thinking-about-mqtt-get-our-2023-mqtt-buyers-guide-and-more-fresh-resources-to-help-you-succeed-in-iot-journey"
+  },
+
+  "February 2023": {
+    "id": "42",
+    "release": "FEB 2023",
+    "title": "Thinking about MQTT: Get our 2023 MQTT Buyers Guide and More Fresh Resources to Help You Succeed in IoT Journey",
+    "url": "https://www.hivemq.com/downloads/February 2023_Newsletter.pdf"
+  },
+  "January 2023": {
+    "id": "41",
+    "release": "JAN 2023",
+    "title": " How to Become Sparkplug Compatible and More Content on Whats New in Sparkplug 3.0",
+    "url": "https://www.hivemq.com/downloads/January 2023_Newsletter.pdf"
+  },
+  "December 2022": {
+    "id": "40",
+    "release": "DEC 2022",
+    "title": "HiveMQ is certified Sparkplug 3.0 Compatible and Aware",
+    "url": "https://www.hivemq.com/downloads/December 2022_newsletter.pdf"
+  },
+  "November 2022": {
+    "id": "39",
+    "release": "NOV 2022",
+    "title": "IIoT World Survey 2022 Results and More Fresh Content on Building IIoTIoT Systems",
+    "url": "https://www.hivemq.com/downloads/November_2022_newsletter.pdf"
+  },
+  "October 2022": {
+    "id": "38",
+    "release": "OCT 2022",
+    "title": "Enhanced reliability, flexibility, security, and observability features on HiveMQ 4.9",
+    "url": "https://www.hivemq.com/downloads/October_2022_newsletter.pdf"
+  },
+  "September 2022": {
+    "id": "37",
+    "release": "SEP 2022",
+    "title": "HiveMQ Applauded By Frost & Sullivan",
+    "url": "https://www.hivemq.com/downloads/September 2022_newsletter.pdf"
+  },
+  "August 2022": {
+    "id": "36",
+    "release": "AUG 2022",
+    "title": "Key Difference Between MQTT Sparkplug and OPCUA",
+    "url": "https://www.hivemq.com/downloads/August_2022_newsletter.pdf"
+  },
+  "July 2022": {
+    "id": "35",
+    "release": "JUL 2022",
+    "title": "Netflix Relies on HiveMQ for Certification & Testing of Thousands of Devices",
+    "url": "https://www.hivemq.com/downloads/july_2022_newsletter_netflix_relies_hivemq_ testing _devices.pdf"
+  },
+  "June 2022": {
+    "id": "34",
+    "release": "JUN 2022",
+    "title": "MQTT Vs. HTTP for IoT",
+    "url": "https://www.hivemq.com/downloads/june_2022_newsletter_mqtt_vs_http_for_iot.pdf"
+  },
+  "May 2022": {
+    "id": "33",
+    "release": "MAY 2022",
+    "title": "HiveMQ Closes €40 Million Series A Funding",
+    "url": "https://www.hivemq.com/downloads/newsletter_may2022_hivemq_closes_40_million_euro_ series_a_funding.pdf"
+  },
+  "April 2022": {
+    "id": "32",
+    "release": "APR 2022",
+    "title": "How to Bring the Full Value of IoT Data to Azure",
+    "url": "https://www.hivemq.com/downloads/april_2022_newsletter_bring_full_value_of_iot_to_azure.pdf"
+  },
+  "March 2022": {
+    "id": "31",
+    "release": "MAR 2022",
+    "title": "Modernize Your Industry 4.0 Architecture",
+    "url": "https://www.hivemq.com/downloads/march_newsletter_modernize_industry40_architecture.pdf"
+  },
+  "February 2022": {
+    "id": "30",
+    "release": "FEB 2022",
+    "title": "Streaming IoT MQTT Messages into the Azure Event Hubs Service",
+    "url": "https://f.hubspotusercontent30.net/hubfs/5867930/Monthly%20Newsletter/%5BHiveMQ%20Newsletter%5D%20How%20to%20Stream%20IoT%20MQTT%20Messages%20into%20the%20Azure%20Event%20Hubs%20Service.pdf"
+  },
+  "January 2022": {
+    "id": "29",
+    "release": "JAN 2022",
+    "title": "2021 Year-in-review and what's coming ahead in 2022",
+    "url": "https://f.hubspotusercontent30.net/hubfs/5867930/Monthly%20Newsletter/%5BHiveMQ%20Newsletter%5D%202021%20Year-in-review%20and%20whats%20coming%20ahead%20in%202022.pdf"
+  }
+}

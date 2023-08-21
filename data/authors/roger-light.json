@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Roger",
+        "lastName": "Light"
+    },
+    "image": "/img/blog/author-rl.jpg",
+    "description": "Roger is a lecturer in the Electrical and Electronic Engineering Department at the University of Nottingham, UK. As well as developing the Paho Python client, he is also the lead and main developer of the mosquitto MQTT broker.",
+    "links": {
+        "website": "http://mosquitto.org"
+    },
+    "isGuestAuthor": "true"
+}

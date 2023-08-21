@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "workswithweb",
+        "lastName": ""
+    },
+    "image": "/img/blog/author-sv.jpg",
+    "links": {
+        "email": "workswithweb@gmail.com",
+        "twitter": "https://twitter.com/workswithweb"
+    },
+    "isGuestAuthor": "true"
+}

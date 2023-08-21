@@ -1,0 +1,455 @@
+# Redirect for docs
+/docs/* https://docs.hivemq.com/:splat 301
+
+# Redirect for releases
+/releases/* https://releases.hivemq.com/:splat 200!
+
+/a-mqtt-broker-tailored-for-enterprises /blog/a-mqtt-broker-tailored-for-enterprises
+/mqtt-sql-database /blog/mqtt-sql-database
+/building-a-high-availability-mqtt-cluster /blog/building-a-high-availability-mqtt-cluster
+/overview-of-mqtt-client-tools/ /blog/overview-of-mqtt-client-tools
+/useful-hivemq-plugins-mqtt-access-log-plugin/ /blog/useful-hivemq-plugins-mqtt-access-log-plugin
+/pt-2-hivemq-plugins-file-authentication-plugin /blog/pt-2-hivemq-plugins-file-authentication-plugin
+/monitoring-hivemq-mqtt-broker-graphite-collectl /blog/monitoring-hivemq-mqtt-broker-graphite-collectl
+/hivemq-1-4-released-native-websockets-support-open-source-plugin-sdk /blog/hivemq-1-4-released-native-websockets-support-open-source-plugin-sdk
+/introducing-hivemq-deny-wildcard-plugin /blog/introducing-hivemq-deny-wildcard-plugin
+/full-featured-mqtt-client-browser /blog/full-featured-mqtt-client-browser
+/mqtt-over-websockets-with-hivemq /blog/mqtt-over-websockets-with-hivemq
+/supporting-mqtt-client-identifiers-23-characters /blog/supporting-mqtt-client-identifiers-23-characters
+/hivemq-on-windows-azure-mqtt-microsoft-cloud /blog/hivemq-on-windows-azure-mqtt-microsoft-cloud
+/build-javascript-mqtt-web-application /blog/build-javascript-mqtt-web-application
+/hivemq-monitoring-with-a-hosted-graphite-service /blog/hivemq-monitoring-with-a-hosted-graphite-service
+/file-authentication-plugin-open-source /blog/file-authentication-plugin-open-source
+/mqtt-message-log-plugin-released /blog/mqtt-message-log-plugin-released
+/hivemq-mqtt-websockets-support-message-log-plugin-2-min /blog/hivemq-mqtt-websockets-support-message-log-plugin-2-min
+/lightweight-authentication-authorization-mqtt-stormpath /blog/lightweight-authentication-authorization-mqtt-stormpath
+/delete-mqtt-retained-messages-subtopics-recursively /blog/delete-mqtt-retained-messages-subtopics-recursively
+/hivemq-2-1-0-hivemq-artifacts-maven-central /blog/hivemq-2-1-0-hivemq-artifacts-maven-central
+/how-to-get-started-with-mqtt /blog/how-to-get-started-with-mqtt
+/6-facts-why-its-worth-upgrading-to-mqtt-3-1-1 /blog/6-facts-why-its-worth-upgrading-to-mqtt-3-1-1
+/seven-best-mqtt-client-tools /blog/seven-best-mqtt-client-tools
+/mqtt-essentials-part-1-introducing-mqtt /blog/mqtt-essentials-part-1-introducing-mqtt
+/mqtt-essentials-part2-publish-subscribe /blog/mqtt-essentials-part2-publish-subscribe
+/mqtt-essentials-part-3-client-broker-connection-establishment /blog/mqtt-essentials-part-3-client-broker-connection-establishment
+/mqtt-essentials-part-4-mqtt-publish-subscribe-unsubscribe /blog/mqtt-essentials-part-4-mqtt-publish-subscribe-unsubscribe
+/mqtt-essentials-part-5-mqtt-topics-best-practices /blog/mqtt-essentials-part-5-mqtt-topics-best-practices
+/mqtt-essentials-part-6-mqtt-quality-of-service-levels /blog/mqtt-essentials-part-6-mqtt-quality-of-service-levels
+/mqtt-essentials-part-7-persistent-session-queuing-messages /blog/mqtt-essentials-part-7-persistent-session-queuing-messages
+/mqtt-essentials-part-8-retained-messages /blog/mqtt-essentials-part-8-retained-messages
+/mqtt-essentials-part-9-last-will-and-testament /blog/mqtt-essentials-part-9-last-will-and-testament
+/mqtt-essentials-part-10-alive-client-take-over /blog/mqtt-essentials-part-10-alive-client-take-over
+/mqtt-essentials-special-mqtt-over-websockets /blog/mqtt-essentials-special-mqtt-over-websockets
+/mqtt-essentials-wrap-up /blog/mqtt-essentials-wrap-up
+/announcing-the-mqtt-security-essentials /blog/announcing-the-mqtt-security-essentials
+/announcing-mqtt-client-library-encyclopedia-blog-post-series /blog/announcing-mqtt-client-library-encyclopedia-blog-post-series
+/introducing-the-mqtt-security-fundamentals /blog/introducing-the-mqtt-security-fundamentals
+/mqtt-security-fundamentals-authentication-username-password /blog/mqtt-security-fundamentals-authentication-username-password
+/mqtt-security-fundamentals-advanced-authentication-mechanisms /blog/mqtt-security-fundamentals-advanced-authentication-mechanisms
+/mqtt-security-fundamentals-authorization /blog/mqtt-security-fundamentals-authorization
+/mqtt-security-fundamentals-tls-ssl /blog/mqtt-security-fundamentals-tls-ssl
+/mqtt-security-fundamentals-x509-client-certificate-authentication /blog/mqtt-security-fundamentals-x509-client-certificate-authentication
+/mqtt-security-fundamentals-oauth-2-0-mqtt /blog/mqtt-security-fundamentals-oauth-2-0-mqtt
+/mqtt-security-fundamentals-payload-encryption /blog/mqtt-security-fundamentals-payload-encryption
+/mqtt-security-fundamentals-mqtt-message-data-integrity /blog/mqtt-security-fundamentals-mqtt-message-data-integrity
+/mqtt-security-fundamentals-securing-mqtt-systems /blog/mqtt-security-fundamentals-securing-mqtt-systems
+/mqtt-security-fundamentals-wrap-up /blog/mqtt-security-fundamentals-wrap-up
+/mqtt-client-library-encyclopedia-eclipse-paho-java /article/mqtt-client-library-encyclopedia-eclipse-paho-java
+/mqtt-client-library-encyclopedia-mqtt-client-framework /article/mqtt-client-library-encyclopedia-mqtt-client-framework
+/mqtt-client-library-encyclopedia-paho-embedded /article/mqtt-client-library-encyclopedia-paho-embedded
+/mqtt-client-library-encyclopedia-paho-lua /article/mqtt-client-library-encyclopedia-paho-lua
+/mqtt-client-library-encyclopedia-mosquitto-php /article/mqtt-client-library-encyclopedia-mosquitto-php
+/single-license-detail /pricing
+/single-instance-licenses /pricing
+/support-forum /support
+/mqtt-client-library-encyclopedia-arduino-pubsubclient /blog/mqtt-client-library-encyclopedia-arduino-pubsubclient
+/downloads/releases/latest /downloads
+/opensource/ /extensions
+/paho/ /blog/mqtt-client-library-encyclopedia-eclipse-paho-java
+/javascript/ /blog/build-javascript-mqtt-web-application
+/mqtt-payload-encryption /blog/mqtt-security-fundamentals-payload-encryption
+/6-facts-why-its-worth-upgrading-to-mqtt /blog/6-facts-why-its-worth-upgrading-to-mqtt-3-1-1
+/blog/deploying-hivemq-cluster-with-docker /blog/hivemq-on-dockerhub
+/blog/deploying-hivemq-with-docker /blog/hivemq-on-dockerhub
+/try-out /downloads
+/download /downloads
+/product /hivemq
+/enterprise-integrations/ /extensions
+/extensions/plugins/security /extensions/
+/extensions/plugins/monitoring /extensions/
+/extensions/plugins/management /extensions/
+/extensions/plugins/intregration /extensions/
+/plugins /extensions/
+/marketplace/* /extensions/:splat 301!
+/legal /imprint 301!
+/about /company 301!
+/resources/getting-started https://docs.hivemq.com/hivemq/latest/user-guide/getting-started.html#get-started
+/developers/getting-started https://docs.hivemq.com/hivemq/latest/user-guide/getting-started.html#get-started
+/resources/documentation https://docs.hivemq.com
+/resources/tutorials /developers
+/resources /developers/
+/editions /hivemq/editions
+/developers/tutorials /developers/
+/developer /developers/
+/plugin/graphite-plugin /extensions/
+/plugin/jmx-plugin /extensions
+/plugin/influxdb-plugin /extension/influxdb-extension
+/plugin/sys-topic-plugin /extensions
+/plugin/jvm-metrics-plugin /extensions
+/plugin/elastic-beam-plugin /extensions
+/plugin/DNS-discovery-plugin /extension/dns-discovery-extension
+/plugin/mqtt-message-log /extension/mqtt-message-log-extension
+/plugin/s3-cluster-discovery-plugin /extension/s3-cluster-discovery-extension
+/plugin/file-authentication /extension/file-rbac-extension
+/plugin/awscloudwatch-plugin /extension/aws-cloudwatch-extension
+/plugin/prometheus-plugin /extension/prometheus-extension
+/plugin/delete-retained-messages-recursively-plugin /extensions
+/blog/monitoring-your-hivemq-mqtt-broker-with-prometheus-and-grafana /blog/monitoring-hivemq-prometheus
+/german-accelerator-deloitte-technology-fast-50 /blog/german-accelerator-deloitte-technology-fast-50
+/blog/category/mqtt-toolbox /mqtt-toolbox
+/blog/mqtt-essentials /mqtt-essentials
+/blog/mqtt/ /mqtt/
+/blog/hivemq/ /hivemq/
+/blog/sparkplug-essentials-part-1-introduction /blog/mqtt-sparkplug-essentials-part-1-introduction
+/whats-new-in-hivemq3 /blog/whats-new-in-hivemq-3
+/whats-new-in-hivemq-3-1 /blog/whats-new-in-hivemq-3-1
+/whats-new-in-hivemq-3-3 /blog/whats-new-in-hivemq-3-3
+/whats-new-in-hivemq-3-4 /blog/whats-new-in-hivemq-3-4
+/hivemq-3-is-now-available /blog/hivemq-3-is-now-available
+/request-support /support
+/clustering-hivemq-paper /developers
+/tls-benchmarks /benchmarks
+/features /hivemq/features
+/hivemq/hivemq-cloud /mqtt-cloud-broker
+/downloads/hivemq-swarm /downloads/hivemq
+/sparkplug /solutions/technology/mqtt-sparkplug/
+/solution/* /solutions/:splat
+/hivemq-cloud /mqtt-cloud-broker/
+/blog/mqtt-vs-rabbitmq-for-iot /blog/mqtt-vs-amqp-for-iot/
+/cloud/integrations/confluent/ /extension/hivemq-kafka-extension/
+/blog/extending-confluent-cloud-to-ingest-data-from-millions-of-iot-devices/ /blog/streaming-iot-data-and-mqtt-messages-to-apache-kafka/
+/blog/seven-best-mqtt-client-tools /mqtt-toolbox 301!
+/blog/overview-of-mqtt-client-tools /mqtt-toolbox 301!
+
+# Do not delete below
+/cloud/recommendations /mqtt-client-library-encyclopedia/
+
+# Tag redirects
+# special for tags
+/tag/mqtt-lens /blog/mqtt-toolbox-mqtt-lens/
+/tag/mqtt-toolbox /mqtt-toolbox/
+/tag/mqtt-inspector /blog/mqtt-toolbox-mqtt-inspector/
+/tag/mqtt-tools /mqtt-toolbox/
+/tag/mqtt-fx /blog/mqtt-toolbox-mqtt-fx-extras/
+/tag/security /mqtt-security-fundamentals/
+/tag/mqtt /tags/mqtt/
+/tag/plugin /extensions/
+/taxonomy/hivemq-release /tags/hivemq-release/
+/taxonomy/hivemq /tags/hivemq/
+/taxonomy/hivemq-upgrade /tags/hivemq-release/
+/taxonomy/mqtt-client-library /tags/mqtt-client-library/
+/taxonomy/mqtt-essentials /tags/mqtt-essentials/
+/taxonomy/mqtt-security-fundamentals /tags/mqtt-security-fundamentals/
+/taxonomy/mqtt-toolbox /tags/mqtt-toolbox/
+/taxonomy/mqtt5-features-and-hidden-gems /tags/mqtt-5-essentials/
+/tags/mqtt5-features-and-hidden-gems /tags/mqtt-5-essentials/
+/blog/category/mqtt-5-features-and-hidden-gems /tags/mqtt-5-essentials/
+/taxonomy/third-party /tags/third-party/
+
+# regex to every other tag
+/tag/* /mqtt-client-library-encyclopedia/ 301
+
+/documentations/getting-started/ /developers/getting-started
+/documentations/getting-started-plugins/ /extensions
+/blog/category/clustering-mqtt /blog/
+/blog/mqtt/page /blog/
+/blog/hivemq/page /blog/
+/blog/mqtt/page /blog/
+/blog/mqtt-security-fundamentals /mqtt-security-fundamentals
+/blog/mqtt-client-library-encyclopedia/ /mqtt-client-library-encyclopedia
+/plugin/s3-cluster-discovery-plugin/s3 /extension/s3-cluster-discovery-extension/
+/blog/author/the-hivemq-team/page /blog
+/wp-content/uploads/hivemq-product-sheet.pdf/ /downloads/hivemq-product-sheet-v3.pdf
+/plugin/deny-root-wildcard-subscriptions/ /extension/deny-root-wildcard-subscriptions-extension/
+/resources/getting-started-with-plugins/ https://docs.hivemq.com/hivemq/latest/extensions/introduction.html
+/german-accelerator-deloitte-technology-fast-50/ /blog/german-accelerator-deloitte-technology-fast-50/
+/papers-download/Clustering_HiveMQ.pdf /downloads/clustering_hivemq.pdf
+/apply-mqtt-use-case-assessment /contact-sales/
+/mqtt-use-case-assessment /contact-sales/
+/payg-has-been-discontinued /pricing
+/client /blog/mqtt-client-library-enyclopedia-hivemq-mqtt-client/
+/blog/how-to-get-started-with-mqtt/embed /blog/how-to-get-started-with-mqtt/
+/blog/mqtt-essentials-part-4-mqtt-pub /blog/mqtt-essentials-part-4-mqtt-publish-subscribe-unsubscribe/
+/mqtt-toolbox/embed /mqtt-toolbox/
+/mqtt5-features-and-hidden-gems /mqtt-5
+/blog/mqtt-5-introduction-to-mqtt-5 /blog/mqtt5-essentials-part1-introduction-to-mqtt-5/
+/blog/mqtt-5-foundational-changes-in-the-protocol /blog/mqtt5-essentials-part2-foundational-changes-in-the-protocol/
+/blog/upgrade-to-mqtt5-now /blog/mqtt5-essentials-part3-upgrade-to-mqtt5-now/
+/blog/mqtt5-session-message-expiry /blog/mqtt5-essentials-part4-session-and-message-expiry/
+/blog/mqtt-5-features-client-feedback-negative-ack /blog/mqtt5-essentials-part5-client-feedback-negative-ack/
+/feed /feed.xml
+/careers /career
+/hivemq/kafka-solution /solutions/technology/kafka-solution/
+/hivemq/security /solutions/technology/security/
+/request-cloud-demo /mqtt-cloud-broker/
+/supported-versions https://hivemq.atlassian.net/servicedesk/customer/portal/1/article/831029609
+/downloads/download-10-mio-benchmark /benchmark-200-million
+/benchmark-10-million /benchmark-200-million
+/blog/mqtt-essentials-wrap-up /blog/mqtt-essentials-part-10-alive-client-take-over
+/subscription-terms /legal-documents
+
+# Automotive Solution page
+/solutions/automotive /solutions/connected-cars 301
+
+# /hivemq
+/hivemq /hivemq/mqtt-broker 301
+
+# /cloud
+/cloud /mqtt-cloud-broker 301
+
+# mqtt-protocol
+/mqtt-protocol/* /mqtt/mqtt-protocol 301
+/mqtt /mqtt-essentials 301!
+/faq /mqtt-essentials#faq 301!
+/mqtt/faq /mqtt-essentials#faq 301!
+/developers/faq /mqtt-essentials#faq 301!
+/mqtt-protocol/faq /mqtt-essentials#faq 301!
+
+/documentation https://docs.hivemq.com/hivemq/latest/
+
+# Documentation: Shortlink for Windows-Service.
+/windows-service https://docs.hivemq.com/hivemq/latest/user-guide/install-hivemq.html#windows
+
+#Download rewrites
+/wp-content/uploads/hivemq-k8s.yaml /downloads/hivemq-k8s.yaml
+/wp-content/uploads/hivemq-k8s.yml /downloads/hivemq-k8s.yaml
+/wp-content/uploads/mqtt.yaml /downloads/mqtt.yaml
+/wp-content/uploads/web-ui.yaml /downloads/web-ui.yaml
+/wp-content/uploads/HiveMQ-Dashboard-Template.json.zip /downloads/HiveMQ-Dashboard-Template.json.zip
+/wp-content/uploads/HiveMQ-Prometheus-Dashboard.json.zip /downloads/HiveMQ-Prometheus-Dashboard.json.zip
+
+#HiveMQ 3 Plugins
+/wp-content/uploads/delete-retained-messages-recursively-plugin-3.0.0.zip https://releases.hivemq.com/plugins/delete-retained-messages-recursively-plugin-3.0.0.zip
+/wp-content/uploads/deny-wildcard-plugin-3.0.0.zip https://releases.hivemq.com/plugins/deny-wildcard-plugin-3.0.0.zip
+/wp-content/uploads/file-authentication-3.0.0.zip https://releases.hivemq.com/plugins/file-authentication-3.0.0.zip
+/wp-content/uploads/file-authentication-3.0.1.zip https://releases.hivemq.com/plugins/file-authentication-3.0.1.zip
+/wp-content/uploads/file-authentication-3.0.2-distribution.zip https://releases.hivemq.com/plugins/file-authentication-3.0.2-distribution.zip
+/wp-content/uploads/file-authentication-3.1.0-distribution.zip https://releases.hivemq.com/plugins/file-authentication-3.1.0-distribution.zip
+/wp-content/uploads/file-authentication-3.1.1-distribution.zip https://releases.hivemq.com/plugins/file-authentication-3.1.1-distribution.zip
+/wp-content/uploads/hivemq-aws-cloudwatch-plugin-1.0.0-distribution.zip https://releases.hivemq.com/plugins/hivemq-aws-cloudwatch-plugin-1.0.0-distribution.zip
+/wp-content/uploads/hivemq-dns-cluster-discovery-1.0.0-distribution.zip https://releases.hivemq.com/plugins/hivemq-dns-cluster-discovery-1.0.0-distribution.zip
+/wp-content/uploads/hivemq-graphite-metrics-plugin-3.0.0.zip https://releases.hivemq.com/plugins/hivemq-graphite-metrics-plugin-3.0.0.zip
+/wp-content/uploads/hivemq-graphite-metrics-plugin-3.1.1.zip https://releases.hivemq.com/plugins/hivemq-graphite-metrics-plugin-3.1.1.zip
+/wp-content/uploads/hivemq-graphite-metrics-plugin-3.1.2.zip https://releases.hivemq.com/plugins/hivemq-graphite-metrics-plugin-3.1.2.zip
+/wp-content/uploads/hivemq-influxdb-monitoring-plugin-1.0.0-distribution.zip https://releases.hivemq.com/plugins/hivemq-influxdb-monitoring-plugin-1.0.0-distribution.zip
+/wp-content/uploads/hivemq-influxdb-monitoring-plugin-1.0.1-distribution.zip https://releases.hivemq.com/plugins/hivemq-influxdb-monitoring-plugin-1.0.1-distribution.zip
+/wp-content/uploads/hivemq-influxdb-monitoring-plugin-1.0.2-distribution.zip https://releases.hivemq.com/plugins/hivemq-influxdb-monitoring-plugin-1.0.2-distribution.zip
+/wp-content/uploads/hivemq-influxdb-monitoring-plugin-1.0.3-distribution.zip https://releases.hivemq.com/plugins/hivemq-influxdb-monitoring-plugin-1.0.3-distribution.zip
+/wp-content/uploads/hivemq-jmx-metrics-plugin-3.0.0.zip https://releases.hivemq.com/plugins/hivemq-jmx-metrics-plugin-3.0.0.zip
+/wp-content/uploads/hivemq-jmx-metrics-plugin-3.1.1.zip https://releases.hivemq.com/plugins/hivemq-jmx-metrics-plugin-3.1.1.zip
+/wp-content/uploads/hivemq-prometheus-monitoring-plugin-1.0.0-PREVIEW-distribution.zip https://releases.hivemq.com/plugins/hivemq-prometheus-monitoring-plugin-1.0.0-PREVIEW-distribution.zip
+/wp-content/uploads/hivemq-prometheus-monitoring-plugin-1.0.0-PREVIEW.zip https://releases.hivemq.com/plugins/hivemq-prometheus-monitoring-plugin-1.0.0-PREVIEW.zip
+/wp-content/uploads/hivemq-prometheus-monitoring-plugin-1.0.0-distribution.zip https://releases.hivemq.com/plugins/hivemq-prometheus-monitoring-plugin-1.0.0-distribution.zip
+/wp-content/uploads/hivemq-sys-topic-plugin-3.0.0.zip https://releases.hivemq.com/plugins/hivemq-sys-topic-plugin-3.0.0.zip
+/wp-content/uploads/jvm-metrics-plugin-1.0-distribution.zip https://releases.hivemq.com/plugins/jvm-metrics-plugin-1.0-distribution.zip
+/wp-content/uploads/jvm-metrics-plugin-3.1.0-distribution.zip https://releases.hivemq.com/plugins/jvm-metrics-plugin-3.1.0-distribution.zip
+/wp-content/uploads/mqtt-message-log-3.0.0.zip https://releases.hivemq.com/plugins/mqtt-message-log-3.0.0.zip
+/wp-content/uploads/s3-cluster-discovery-plugin-1.0.zip https://releases.hivemq.com/plugins/s3-cluster-discovery-plugin-1.0.zip
+/wp-content/uploads/s3-cluster-discovery-plugin-1.1.0.zip https://releases.hivemq.com/plugins/s3-cluster-discovery-plugin-1.1.0.zip
+/wp-content/uploads/s3-cluster-discovery-plugin-1.1.1-distribution.zip https://releases.hivemq.com/plugins/s3-cluster-discovery-plugin-1.1.1-distribution.zip
+/wp-content/uploads/hivemq-data-sheet-3.4.pdf /downloads/hivemq-data-sheet-3.4.pdf
+/wp-content/uploads/hivemq-data-sheet-3.3.pdf /downloads/hivemq-data-sheet-3.3.pdf
+/HiveMQ-Software-Evaluation-Terms.pdf /downloads/HiveMQ-Software-Evaluation-Terms.pdf
+/plugin/DNS-discovery-plugin /extension/dns-discovery-extension
+
+#Rewrite previous releases-all folder to releases
+/releases-all/* https://releases.hivemq.com/:splat
+
+# Redirects for backlinks
+/blog/mqtt-client-library-encyclopedia-m2mqtt /mqtt-client-library-encyclopedia/
+/documentations/getting-started-plugins http://docs.hivemq.com/hivemq/latest/user-guide/introduction.html
+/documentations/getting-started https://docs.hivemq.com/hivemq/latest/user-guide/introduction.html
+/plugin/stormpath-plugin /extensions
+/showcase/public-mqtt-broker /public-mqtt-broker
+/mqtt-essentials/page/2 /mqtt-essentials
+
+# Redirects from blog to articles
+/blog/15-frequently-asked-mqtt-questions /article/15-frequently-asked-mqtt-questions
+/blog/6-facts-why-its-worth-upgrading-to-mqtt-3-1-1 /article/6-facts-why-its-worth-upgrading-to-mqtt-3-1-1
+/blog/a-better-solution-for-iot-security-and-mqtt /article/a-better-solution-for-iot-security-and-mqtt
+/blog/achieving-manufacturing-efficiency-connecting-sap-iot-data-hivemq-mqtt-broker /article/achieving-manufacturing-efficiency-connecting-sap-iot-data-hivemq-mqtt-broker
+/blog/all-you-need-to-know-about-the-iot-in-industrial-applications /article/all-you-need-to-know-about-the-iot-in-industrial-applications
+/blog/are-your-mqtt-applications-resilient-enough /article/are-your-mqtt-applications-resilient-enough
+/blog/at-a-glance-the-hivemq-control-center /article/at-a-glance-the-hivemq-control-center
+/blog/azure-iot-edge-and-hivemq /article/azure-iot-edge-and-hivemq
+/blog/best-way-to-ingest-iot-data-to-microsoft-azure /article/best-way-to-ingest-iot-data-to-microsoft-azure
+/blog/bidirectional-iot-messaging-between-mqtt-and-apache-kafka /article/bidirectional-iot-messaging-between-mqtt-and-apache-kafka
+/blog/broker-test-best-practises /article/broker-test-best-practises
+/blog/build-javascript-mqtt-web-application /article/build-javascript-mqtt-web-application
+/blog/build-new-connected-car-features-on-connectivity-platform-with-mqtt /article/build-new-connected-car-features-on-connectivity-platform-with-mqtt
+/blog/building-a-high-availability-mqtt-cluster /article/building-a-high-availability-mqtt-cluster
+/blog/building-a-reliable-and-scalable-iot-platform /article/building-a-reliable-and-scalable-iot-platform
+/blog/building-industrial-digital-twins-on-aws-using-mqtt-sparkplug /article/building-industrial-digital-twins-on-aws-using-mqtt-sparkplug
+/blog/clustering-mqtt-introduction-benefits /article/clustering-mqtt-introduction-benefits
+/blog/connect-hivemq-and-azure-event-hubs /article/connect-hivemq-and-azure-event-hubs
+/blog/connect-home-assistant-to-hivemq-cloud /article/connect-home-assistant-to-hivemq-cloud
+/blog/connect-to-hivemq-cloud-for-free /article/connect-to-hivemq-cloud-for-free
+/blog/connecting-eclipse-paho-mqtt-java-client-hivemq-cloud-broker /article/connecting-eclipse-paho-mqtt-java-client-hivemq-cloud-broker
+/blog/creating-dashboards-for-mqtt-sparkplug-with-influxdb-and-hivemq /article/creating-dashboards-for-mqtt-sparkplug-with-influxdb-and-hivemq
+/blog/creating-iiot-data-pipeline-using-mqtt-and-kafka /article/creating-iiot-data-pipeline-using-mqtt-and-kafka
+/blog/data-driven-manufacturing-with-unified-namespace-uns /article/data-driven-manufacturing-with-unified-namespace-uns
+/blog/delete-mqtt-retained-messages-subtopics-recursively /article/delete-mqtt-retained-messages-subtopics-recursively
+/blog/empowering-edge-computing-with-mqtt /article/empowering-edge-computing-with-mqtt
+/blog/end-to-end-encryption-in-the-cloud /article/end-to-end-encryption-in-the-cloud
+/blog/enhanced-iot-security-mqtt-client-credentials-feature-hivemq-cloud /article/enhanced-iot-security-mqtt-client-credentials-feature-hivemq-cloud
+/blog/extension-gradle-plugin-2-0-0 /article/extension-gradle-plugin-2-0-0
+/blog/extension-gradle-support /article/extension-gradle-support
+/blog/full-featured-mqtt-client-browser /article/full-featured-mqtt-client-browser
+/blog/github-repositories-getting-started-with-cloud /article/github-repositories-getting-started-with-cloud
+/blog/guarantee-message-integrity-between-mqtt-and-kafka /article/guarantee-message-integrity-between-mqtt-and-kafka
+/blog/hivemq-2-1-0-hivemq-artifacts-maven-central /article/hivemq-2-1-0-hivemq-artifacts-maven-central
+/blog/hivemq-azure-cluster-quickstart-template /article/hivemq-azure-cluster-quickstart-template
+/blog/hivemq-ce-in-a-test-container /article/hivemq-ce-in-a-test-container
+/blog/hivemq-ce-on-dockerhub /article/hivemq-ce-on-dockerhub
+/blog/hivemq-cloud-integrates-confluent-cloud-aiven-kafka-services /article/hivemq-cloud-integrates-confluent-cloud-aiven-kafka-services
+/blog/hivemq-cloud-offers-pay-as-you-go-plan /article/hivemq-cloud-offers-pay-as-you-go-plan
+/blog/hivemq-cloud-on-azure /article/hivemq-cloud-on-azure
+/blog/hivemq-cloud-payg-urls-now-customizable /article/hivemq-cloud-payg-urls-now-customizable
+/blog/hivemq-cloud-vs-aws-iot /article/hivemq-cloud-vs-aws-iot
+/blog/hivemq-cluster-docker-kubernetes /article/hivemq-cluster-docker-kubernetes
+/blog/hivemq-enterprise-security-extension/authentication-of-iot-devices-with-ldap /article/hivemq-enterprise-security-extension/authentication-of-iot-devices-with-ldap
+/blog/hivemq-in-2022-laying-foundation-connected-world /article/hivemq-in-2022-laying-foundation-connected-world
+/blog/hivemq-is-now-available-in-testcontainers /article/hivemq-is-now-available-in-testcontainers
+/blog/hivemq-kubernetes-operator-eap /article/hivemq-kubernetes-operator-eap
+/blog/hivemq-monitoring-with-a-hosted-graphite-service /article/hivemq-monitoring-with-a-hosted-graphite-service
+/blog/hivemq-mqtt-client-features/android-support /article/hivemq-mqtt-client-features/android-support
+/blog/hivemq-mqtt-client-features/fluent-api /article/hivemq-mqtt-client-features/fluent-api
+/blog/hivemq-mqtt-client-features/reconnect-handling /article/hivemq-mqtt-client-features/reconnect-handling
+/blog/hivemq-mqtt-websockets-support-message-log-plugin-2-min /article/hivemq-mqtt-websockets-support-message-log-plugin-2-min
+/blog/hivemq-on-aws-wavelength-at-the-edge-of-5g-network /article/hivemq-on-aws-wavelength-at-the-edge-of-5g-network
+/blog/hivemq-on-dockerhub /article/hivemq-on-dockerhub
+/blog/hivemq-on-windows-azure-mqtt-microsoft-cloud /article/hivemq-on-windows-azure-mqtt-microsoft-cloud
+/blog/hivemq-open-source /article/hivemq-open-source
+/blog/hivemq-statefulsets-on-aks /article/hivemq-statefulsets-on-aks
+/blog/hivemq-swarm-new-iot-testing-tool /article/hivemq-swarm-new-iot-testing-tool
+/blog/hivemq-testcontainer-release /article/hivemq-testcontainer-release
+/blog/hivemq-to-google-cloud-bidirectional-data-movement /article/hivemq-to-google-cloud-bidirectional-data-movement
+/blog/hivemq-with-aks /article/hivemq-with-aks
+/blog/how-5g-and-mqtt-accelerate-v2x-adaption /article/how-5g-and-mqtt-accelerate-v2x-adaption
+/blog/how-does-tls-affect-mqtt-performance	/article/how-does-tls-affect-mqtt-performance
+/blog/how-does-unified-namespace-uns-work-iiot-industry-40 /article/how-does-unified-namespace-uns-work-iiot-industry-40
+/blog/how-to-get-started-with-mqtt /article/how-to-get-started-with-mqtt
+/blog/how-to-test-mqtt-client-applications /article/how-to-test-mqtt-client-applications
+/blog/how-to-use-distributed-tracing-to-maximize-observability-of-iot-applications /article/how-to-use-distributed-tracing-to-maximize-observability-of-iot-applications
+/blog/ibm-watson-iot-platform-message-gateway-replacement /article/ibm-watson-iot-platform-message-gateway-replacement
+/blog/iiot-protocols-opcua-vs-mqtt-sparkplug-digital-transformation /article/iiot-protocols-opcua-vs-mqtt-sparkplug-digital-transformation
+/blog/implementing-challenge-response-auth /article/implementing-challenge-response-auth
+/blog/implementing-unified-namespace-uns-mqtt-sparkplug /article/implementing-unified-namespace-uns-mqtt-sparkplug
+/blog/industrial-data-integration-mqtt-sparkplug-aws-iot-sitewise /article/industrial-data-integration-mqtt-sparkplug-aws-iot-sitewise
+/blog/industry-4-0-part1-mqtt-sparkplug-iiot-smart-factory	/article/industry-4-0-part1-mqtt-sparkplug-iiot-smart-factory
+/blog/industry-4-0-part2-mqtt-sparkplug-b-messages-raspberrypi-nodered-hivemq-cloud /article/industry-4-0-part2-mqtt-sparkplug-b-messages-raspberrypi-nodered-hivemq-cloud
+/blog/integrating-hivemq-with-okta /article/integrating-hivemq-with-okta
+/blog/introducing-hivemq-cloud /article/introducing-hivemq-cloud
+/blog/introducing-hivemq-deny-wildcard-plugin /article/introducing-hivemq-deny-wildcard-plugin
+/blog/introducing-the-hivemq-aws-cloud-watch-plugin /article/introducing-the-hivemq-aws-cloud-watch-plugin
+/blog/introducing-the-hivemq-influxdb-monitoring-plugin /article/introducing-the-hivemq-influxdb-monitoring-plugin
+/blog/iot-event-driven-microservices-architecture-mqtt /article/iot-event-driven-microservices-architecture-mqtt
+/blog/iot-observability /article/iot-observability
+/blog/iot-reading-sensor-data-raspberry-pi-pico-w-micropython-mqtt-node-red /article/iot-reading-sensor-data-raspberry-pi-pico-w-micropython-mqtt-node-red
+/blog/iot-security-hivemq-ese-aurora /article/iot-security-hivemq-ese-aurora
+/blog/iot-tutorial-bidirectional-mqtt-communication-esp32 /article/iot-tutorial-bidirectional-mqtt-communication-esp32
+/blog/lessons-learned-connected-cars /article/lessons-learned-connected-cars
+/blog/lorawan-and-mqtt-integrations-for-iot-applications-design /article/lorawan-and-mqtt-integrations-for-iot-applications-design
+/blog/making-the-internet-of-things /article/making-the-internet-of-things
+/blog/modbus-tcp-to-mqtt-for-iot-iiot-data-interoperability /article/modbus-tcp-to-mqtt-for-iot-iiot-data-interoperability
+/blog/monitoring-hivemq-influxdb-grafana /article/monitoring-hivemq-influxdb-grafana
+/blog/monitoring-hivemq-mqtt-broker-graphite-collectl /article/monitoring-hivemq-mqtt-broker-graphite-collectl
+/blog/monitoring-hivemq-prometheus /article/monitoring-hivemq-prometheus
+/blog/mqtt-5-time-to-upgrade-yet /article/mqtt-5-time-to-upgrade-yet
+/blog/mqtt-broker-comparison-iot-application /article/mqtt-broker-comparison-iot-application
+/blog/mqtt-broker-scalability-tests /article/mqtt-broker-scalability-tests
+/blog/mqtt-cli /article/mqtt-cli
+/blog/mqtt-client-api/the-hivemq-mqtt-client-library-for-java-and-its-async-api-flavor /article/mqtt-client-api/the-hivemq-mqtt-client-library-for-java-and-its-async-api-flavor
+/blog/mqtt-client-api/the-hivemq-mqtt-client-library-for-java-and-its-blocking-api-flavor /article/mqtt-client-api/the-hivemq-mqtt-client-library-for-java-and-its-blocking-api-flavor
+/blog/mqtt-client-api/the-hivemq-mqtt-client-library-for-java-and-its-reactive-api-flavor /article/mqtt-client-api/the-hivemq-mqtt-client-library-for-java-and-its-reactive-api-flavor
+/blog/mqtt-client-library-encyclopedia-arduino-pubsubclient /article/mqtt-client-library-arduino-pubsubclient
+/blog/mqtt-client-library-encyclopedia-eclipse-paho-java /article/mqtt-client-library-encyclopedia-eclipse-paho-java
+/blog/mqtt-client-library-encyclopedia-golang /article/mqtt-client-library-encyclopedia-golang
+/blog/mqtt-client-library-encyclopedia-mosquitto-php /article/mqtt-client-library-encyclopedia-mosquitto-php
+/blog/mqtt-client-library-encyclopedia-mqtt-client-framework /article/mqtt-client-library-encyclopedia-mqtt-client-framework
+/blog/mqtt-client-library-encyclopedia-mqttelements /article/mqtt-client-library-encyclopedia-mqttelements
+/blog/mqtt-client-library-encyclopedia-paho-embedded /article/mqtt-client-library-encyclopedia-paho-embedded
+/blog/mqtt-client-library-encyclopedia-paho-js /article/mqtt-client-library-encyclopedia-paho-js
+/blog/mqtt-client-library-encyclopedia-paho-lua /article/mqtt-client-library-encyclopedia-paho-lua
+/blog/mqtt-client-library-enyclopedia-hivemq-mqtt-client /article/mqtt-client-library-enyclopedia-hivemq-mqtt-client
+/blog/mqtt-client-library-enyclopedia-paho-android-service /article/mqtt-client-library-enyclopedia-paho-android-service
+/blog/mqtt-client-library-enyclopedia-wolfmqtt /article/mqtt-client-library-enyclopedia-wolfmqtt
+/blog/mqtt-client-library-for-c-sharp-dot-net /article/mqtt-client-library-for-c-sharp-dot-net
+/blog/mqtt-client-library-mqtt-dart /article/mqtt-client-library-mqtt-dart
+/blog/mqtt-client-library-mqtt-js /article/mqtt-client-library-mqtt-js
+/blog/mqtt-client-library-paho-python /article/mqtt-client-library-paho-python
+/blog/mqtt-client-library-pahocclient /article/mqtt-client-library-pahocclient
+/blog/mqtt-client-load-balancing-with-shared-subscriptions /article/mqtt-client-load-balancing-with-shared-subscriptions
+/blog/mqtt-influxdb-native-integration-hivemq-broker-aws-cloud /article/mqtt-influxdb-native-integration-hivemq-broker-aws-cloud
+/blog/mqtt-on-arduino-nodemcu-esp8266-hivemq-cloud /article/mqtt-on-arduino-nodemcu-esp8266-hivemq-cloud
+/blog/mqtt-over-websockets-with-hivemq /article/mqtt-over-websockets-with-hivemq
+/blog/mqtt-raspberrypi-part01-sensor-data-hivemqcloud-java-pi4j /article/mqtt-raspberrypi-part01-sensor-data-hivemqcloud-java-pi4j
+/blog/mqtt-raspberrypi-part02-visualizing-sensor-data-on-a-tilesfx-dashboard /article/mqtt-raspberrypi-part02-visualizing-sensor-data-on-a-tilesfx-dashboard
+/blog/mqtt-raspberrypi-part03-sending-sensor-data-hivemqcloud-pico /article/mqtt-raspberrypi-part03-sending-sensor-data-hivemqcloud-pico
+/blog/mqtt-security-principles-mitigate-iot-attacks /article/mqtt-security-principles-mitigate-iot-attacks
+/blog/mqtt-sparkplug-auto-discovery-using-plcnext-gateway-and-ignition-scada /article/mqtt-sparkplug-auto-discovery-using-plcnext-gateway-and-ignition-scada
+/blog/mqtt-sparkplug-to-solve-data-interoperability-in-iiot /article/mqtt-sparkplug-to-solve-data-interoperability-in-iiot/
+/blog/mqtt-sparkplug-whitepaper-and-webinar /article/mqtt-sparkplug-whitepaper-and-webinar
+/blog/mqtt-sql-database /article/mqtt-sql-database
+/blog/mqtt-standard-for-connected-car/	/article/mqtt-standard-for-connected-car/
+/blog/mqtt-toolbox-mqtt-client-chrome-app /article/mqtt-toolbox-mqtt-client-chrome-app
+/blog/mqtt-toolbox-mqtt-fx-extras /article/mqtt-toolbox-mqtt-fx-extras
+/blog/mqtt-toolbox-mqtt-fx /article/mqtt-toolbox-mqtt-fx
+/blog/mqtt-toolbox-mqtt-inspector /article/mqtt-toolbox-mqtt-inspector
+/blog/mqtt-toolbox-mqtt-lens /article/mqtt-toolbox-mqtt-lens
+/blog/mqtt-toolbox-mqtt-spy-advanced /article/mqtt-toolbox-mqtt-spy-advanced
+/blog/mqtt-toolbox-mqtt-spy-daemon /article/mqtt-toolbox-mqtt-spy-daemon
+/blog/mqtt-toolbox-mqtt-spy /article/mqtt-toolbox-mqtt-spy
+/blog/mqtt-toolbox-mqttbox /article/mqtt-toolbox-mqttbox
+/blog/mqtt-topic-tree-matching-challenges-best-practices-explained /article/mqtt-topic-tree-matching-challenges-best-practices-explained
+/blog/mqtt-vs-amqp-for-iot /article/mqtt-vs-amqp-for-iot
+/blog/mqtt-vs-coap-for-iot /article/mqtt-vs-coap-for-iot
+/blog/mqtt-vs-http-protocols-in-iot-iiot /article/mqtt-vs-http-protocols-in-iot-iiot
+/blog/mqtt-vs-zeromq-for-iot /article/mqtt-vs-zeromq-for-iot
+/blog/mqtt5-now-an-approved-oasis-standard /article/mqtt5-now-an-approved-oasis-standard
+/blog/new-industrial-iot-partner /article/new-industrial-iot-partner
+/blog/opentelemetry-distributed-tracing-mqtt-messages-iot-observability-apm /article/opentelemetry-distributed-tracing-mqtt-messages-iot-observability-apm
+/blog/pt-2-hivemq-plugins-file-authentication-plugin /article/pt-2-hivemq-plugins-file-authentication-plugin
+/blog/rbac-for-the-control-center-with-ese /article/rbac-for-the-control-center-with-ese
+/blog/real-time-plant-floor-data-monitoring-in-a-factory-using-mqtt /article/real-time-plant-floor-data-monitoring-in-a-factory-using-mqtt
+/blog/real-world-examples-of-hivemq-and-mqtt /article/real-world-examples-of-hivemq-and-mqtt
+/blog/reference-architecture-for-vda5050 /article/reference-architecture-for-vda5050
+/blog/report-hivemq-metrics-to-aws-cloudwatch /article/report-hivemq-metrics-to-aws-cloudwatch
+/blog/resilience-engineering-of-an-mqtt-client-application /article/resilience-engineering-of-an-mqtt-client-application
+/blog/restful-http-apis-with-hivemq /article/restful-http-apis-with-hivemq
+/blog/running-hivemq-cluster-aws-auto-discovery /article/running-hivemq-cluster-aws-auto-discovery
+/blog/send-mqtt-messages-using-hivemq-cloud-web-client /article/send-mqtt-messages-using-hivemq-cloud-web-client
+/blog/send-opc-ua-data-to-azure-with-hivemq-and-mqtt /article/send-opc-ua-data-to-azure-with-hivemq-and-mqtt
+/blog/setup-hivemq-cluster-with-terraform-on-aws /article/setup-hivemq-cluster-with-terraform-on-aws
+/blog/setup-hivemq-with-concourse-pipeline /article/setup-hivemq-with-concourse-pipeline
+/blog/starter-guide-sparkplug-3-0-certification-technology-compatibility-kit-tck-industry-40 /article/starter-guide-sparkplug-3-0-certification-technology-compatibility-kit-tck-industry-40
+/blog/stream-iot-data-hivemq-cloud-apache-kafka /article/stream-iot-data-hivemq-cloud-apache-kafka
+/blog/streaming-iot-data-and-mqtt-messages-to-apache-kafka /article/streaming-iot-data-and-mqtt-messages-to-apache-kafka
+/blog/supporting-mqtt-client-identifiers-23-characters /article/supporting-mqtt-client-identifiers-23-characters
+/blog/technology-considerations-deploying-connected-car-services /article/technology-considerations-deploying-connected-car-services
+/blog/test-iot-system-scalability-hivemq-swarm-mqtt-testing-tool /article/test-iot-system-scalability-hivemq-swarm-mqtt-testing-tool
+/blog/top-10-mqtt-broker-criteria /article/top-10-mqtt-broker-criteria
+/blog/two-free-hivemq-plugins-you-dont-want-to-miss-client-status-and-retained-messages-query-plugin /article/two-free-hivemq-plugins-you-dont-want-to-miss-client-status-and-retained-messages-query-plugin
+/blog/understanding-the-differences-between-mqtt-and-websockets-for-iot /article/understanding-the-differences-between-mqtt-and-websockets-for-iot
+/blog/using-spring-in-hivemq-plugins /article/using-spring-in-hivemq-plugins
+/blog/using-syslog-with-hivemq /article/using-syslog-with-hivemq
+/blog/visualize-mqtt-data-at-scale /article/visualize-mqtt-data-at-scale
+/blog/websocket-support-for-hivemq-cloud-basic /article/websocket-support-for-hivemq-cloud-basic
+/blog/what-are-iot-devices-and-how-mqtt-powers-them /article/what-are-iot-devices-and-how-mqtt-powers-them
+/blog/what-is-unified-namespace-uns-iiot-industry-40 /article/what-is-unified-namespace-uns-iiot-industry-40
+/blog/why-you-shouldnt-use-sys-topics-for-monitoring /article/why-you-shouldnt-use-sys-topics-for-monitoring
+/blog/how-to-build-dot-net-iot-application-using-c-sharp-mqtt-client /article/how-to-build-dot-net-iot-application-using-c-sharp-mqtt-client
+/blog/ultimate-guide-on-how-to-use-mqtt-with-node-js /article/ultimate-guide-on-how-to-use-mqtt-with-node-js
+/blog/manage-iot-data-streams-custom-permissions-mqtt-clients-hivemq-cloud /article/manage-iot-data-streams-custom-permissions-mqtt-clients-hivemq-cloud
+/blog/haproxy-load-balance-hivemq-using-health-api /article/haproxy-load-balance-hivemq-using-health-api
+/blog/decentralized-collaborative-text-editor-using-mqtt-crdts /article/decentralized-collaborative-text-editor-using-mqtt-crdts
+/case-studies/netflix /case-studies

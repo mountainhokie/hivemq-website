@@ -1,0 +1,93 @@
+baseURL = "https://www.hivemq.com"
+languageCode = "en-us"
+title = "HiveMQ - The MQTT Broker"
+theme = "beeswarm"
+summaryLength = 40
+PygmentsCodeFences = true
+PygmentsUseClasses = true
+canonifyURLs = true
+enableRobotsTXT = true
+invisibleSections=["download"]
+
+[privacy.googleAnalytics]
+  anonymizeIP = true
+
+[taxonomies]
+  tags = "tags"
+  plugintypes = "plugintypes"
+
+[outputs]
+  home = [ "HTML", "RSS", "Algolia" ]
+
+[outputFormats]
+# Create RSS feed at /feed.xml
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "feed"
+
+[outputFormats.Algolia]
+  baseName = "algolia"
+  isPlainText = true
+  mediaType = "application/json"
+  notAlternative = true
+
+# Necessary for Hugo version newer than 0.60 to render plain HTML in Markdown
+[markup.goldmark.renderer]
+  unsafe= true
+
+# Custom Parameters
+[params]
+  latestHivemqVersion = "4.17.0"
+  latestHivemqMqttClientVersion = "1.2.2"
+  latestExtensionGradlePluginVersion = "1.0.0"
+  latestExtensionGradlePluginVersion2 = "2.1.2"
+  latestHivemqTestcontainerVersion = "1.3.3"
+  latestHivemqTestcontainer2Version = "2.0.0"
+
+#AWS USA Ost (Nord-Virginia)
+  usEast1AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-0942c47f79bf0945d"
+#AWS USA Ost (Ohio)
+  usEast2AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=us-east-2#LaunchInstanceWizard:ami=ami-0768360232c30636e"
+#AWS USA West (Nordkalifornien)
+  usWest1AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=us-west-1#LaunchInstanceWizard:ami=ami-0cfed9b9386bfcc22"
+#AWS USA West (Oregon)
+  usWest2AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=us-west-2#LaunchInstanceWizard:ami=ami-08c71b1462f65f8b0"
+#AWS Kanada (Zentral)
+  caCentral1AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=ca-central-1#LaunchInstanceWizard:ami=ami-0a3f43ccadfffb562"
+#AWS EU (Frankfurt)
+  euCentral1AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LaunchInstanceWizard:ami=ami-0c7783b5fd8fd72b9"
+#AWS EU (Irland)
+  euWest1AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=eu-west-1#LaunchInstanceWizard:ami=ami-0be9f065c08d242cf"
+#AWS EU (London)
+  euWest2AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=eu-west-2#LaunchInstanceWizard:ami=ami-007c7c86e8c55450c"
+#AWS EU (Paris)
+  euWest3AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=eu-west-3#LaunchInstanceWizard:ami=ami-0511a86416b740378"
+#AWS EU (Stockholm)
+  euNorth1AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=eu-north-1#LaunchInstanceWizard:ami=ami-0bbf745a785e0d8ba"
+#AWS Asien-Pazifik (Tokio)
+  apNortheast1AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=ap-northeast-1#LaunchInstanceWizard:ami=ami-0bfc547c7dfb04223"
+#AWS Asien-Pazifik (Seoul)
+  apNortheast2AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=ap-northeast-2#LaunchInstanceWizard:ami=ami-08e5f941034f5cbf9"
+#AWS Asien-Pazifik (Singapur)
+  apSoutheast1AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=ap-southeast-1#LaunchInstanceWizard:ami=ami-0dd7e1b8fc12368b8"
+#AWS Asien-Pazifik (Sydney)
+  apSoutheast2AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=ap-southeast-2#LaunchInstanceWizard:ami=ami-09658b0810b012b6d"
+#AWS Asien-Pazifik (Mumbai)
+  apSouth1AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=ap-south-1#LaunchInstanceWizard:ami=ami-06b9ed5ae965b0751"
+#AWS Südamerika (São Paulo)
+  saEast1AmiLink = "https://console.aws.amazon.com/ec2/v2/home?region=sa-east-1#LaunchInstanceWizard:ami=ami-078d69ecbc9395925"
+
+[params.algolia]
+  vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+  params = ["categories", "tags"]
+# UI params
+# Enable / Disable algolia search
+  algolia_search        = true
+  algolia_appId         = "QUGH58B33P"
+  algolia_apiKey        = "25effb913b2f8f374300fb2b0a95c291"
+  algolia_netlifySiteId = "54c200c6-9b30-4505-b247-757bf92e2b6d"
+  algolia_branchName    = "master"
+  algolia_indexName     = "hivemq-website"
+
+# Set this option to false if you want to search within all articles in all languages at once
+  algolia_currentLanguageOnly = false

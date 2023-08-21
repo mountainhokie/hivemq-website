@@ -1,0 +1,73 @@
+<ul>
+  <li>
+    <input type="checkbox" id="ProductsSubMenu" />
+    <label for="ProductsSubMenu" class="navButton"><span>Products <svg width="14" height="10" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L9 9L17 1" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    </svg></span>
+    </label>
+    <a class="navButton" href="/hivemq/mqtt-broker/">Products</a>
+    <div class="subMenu">
+      <ul>
+        {{ partial "cta/submenu-cta-product-menu" . }}
+        {{ partial "navigation/nav-products" . }}
+      </ul>
+    </div>
+  </li>
+  <li>
+    <input type="checkbox" id="MQTTSubMenu" />
+    <label for="MQTTSubMenu" class="navButton"><span>MQTT <svg width="14" height="10" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L9 9L17 1" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    </svg></span></label>
+    <a class="navButton" href="/mqtt/mqtt-protocol/">MQTT</a>
+    <div class="subMenu">
+      <ul>
+        {{ partial "cta/submenu-cta-mqtt-menu" . }}
+        {{ partial "navigation/nav-mqtt" . }}
+      </ul>
+    </div>
+  </li>
+  <li>
+    <input type="checkbox" id="SolutionsSubMenu" />
+    <label for="SolutionsSubMenu" class="navButton"><span>Solutions <svg width="14" height="10" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L9 9L17 1" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    </svg></span></label>
+    <a class="navButton" href="/solutions">Solutions</a>
+    <div class="subMenu">
+      <ul>
+        {{ partial "cta/submenu-cta-solutions-menu" . }}
+        {{ partial "navigation/nav-solutions" . }}
+      </ul>
+    </div>
+  </li>
+  <li>
+    <a class="navButton navButtonOverride" href="/customers">Customers</a>
+  </li>
+  <li>
+    <input type="checkbox" id="LearnSubMenu" />
+    <label for="LearnSubMenu" class="navButton"><span>Learn <svg width="14" height="10" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L9 9L17 1" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    </svg></span></label>
+    <a class="navButton" href="#">Learn</a>
+    <div class="subMenu">
+      <ul>
+        {{ partial "cta/submenu-cta-learn-menu" . }}
+        {{ partial "navigation/nav-learn" . }}
+      </ul>
+    </div>
+  </li>
+  <li>
+    <input type="checkbox" id="CompanySubMenu" />
+    <label for="CompanySubMenu" class="navButton"><span>Company <svg width="14" height="10" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L9 9L17 1" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    </svg></span></label>
+    <a class="navButton" href="/company">Company</a>
+    <div class="subMenu">
+      <ul class="subMenu-company">
+        {{ partial "navigation/nav-company" . }}
+      </ul>
+    </div>
+  </li>
+  <li>
+    <a class="navButton navButtonOverride" href="/pricing">Pricing</a>
+  </li>
+</ul>

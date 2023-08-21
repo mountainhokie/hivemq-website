@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Simon",
+        "lastName": "Baier"
+    },
+    "image": "/img/blog/author-sb.jpg",
+    "description": "Simon is a software developer at HiveMQ. He is passionate about everything 'DevOps' like continuous integration, cloud nativeness, and containerization.",
+    "links": {
+        "email": "simon.baier@hivemq.com"
+    }
+}

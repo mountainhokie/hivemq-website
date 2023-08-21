@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Silvio",
+        "lastName": "Giebl"
+    },
+    "image": "/img/blog/author-sg.jpg",
+    "description": "Silvio Giebl is a software developer at HiveMQ and maintainer of the HiveMQ MQTT Client open-source library. He is interested in high-performance applications on the JVM and reactive programming.",
+    "links": {
+        "email": "silvio.giebl@hivemq.com"
+    }
+}

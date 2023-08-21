@@ -1,0 +1,45 @@
+<section class="popup-layer popup-form-standard" id="ebook-download-form">
+<div class="popup-form-standard-container" id="ebook-download-form-container">
+   <img src="/img/svg/fa-times.svg" id="close-ebook" style="float: right; height: 20px; width: 20px; position: relative; top: -8px; right: -15px; cursor: pointer;" />
+   <div id="ebook-form-layer-header">
+      <div style="min-width: 100px; margin-right: 10px;">
+         <img src="/img/cover-uns-essentials.jpg" class="ebook-banner" id="sparkplug-ebook-cover-form-layer" />
+      </div>
+      <div>
+         <h3>Get the UNS Essentials eBook</h3>
+         Fill out the form below, we will send you an email containing a link to download the free eBook.
+      </div>
+   </div>
+   <hr>
+   <div class="hubspot-form">
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          region: "na1",
+          portalId: "5867930",
+          formId: "9f8561ee-82dd-46e0-9f85-a43c54eac341"
+        });
+      </script>
+   </div>
+</div>
+</section>
+
+<div id="ebook-banner-mobile">
+<div style="border: 1px solid #999; border-radius: 10px; padding:0 10px 20px 10px;">
+   <h4>Get the UNS Essentials eBook</h4>
+   This will be your kickstart for Unified Namespace (UNS). The entire blog series is now available as eBook.
+   <br/>
+   <button class="btn-grey-outline ebook-banner" style="margin-top: 10px;">Get eBook now</button>
+</div>
+</div>
+<div class="clearfix"></div>
+
+<script>
+   $(".ebook-banner").click(function(){
+      $("#ebook-download-form").show(50, function(){
+         $("#close-ebook").click(function(){
+            $("#ebook-download-form").hide(50);
+            })
+      });
+   });
+</script>

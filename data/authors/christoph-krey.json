@@ -1,0 +1,13 @@
+{
+    "name": {
+        "firstName": "Christoph",
+        "lastName": "Krey"
+    },
+    "image": "/img/blog/author-ck.jpg",
+    "description": "Christoph Krey is a freelance network application specialist who designs and implements client/server solutions in corporate environments since 1983. After a career in IT Management, he began his focus on protocols, mobile devices, and distributed applications. Christoph Krey maintains the MQTT client framework and has created MQTTInspector and OwnTracks for iOS.",
+    "links": {
+        "email": "krey.christoph@gmail.com",
+        "github": "https://github.com/ckrey"
+    },
+    "isGuestAuthor": "true"
+}

@@ -1,0 +1,269 @@
+#full-mqtt-support-wrapper {
+    position: relative;
+    top: 65px;
+    background-color: #fff;
+}
+
+#azure-lp {
+    background: url('/img/mqtt-support-azure-iot-1600.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    padding: 100px 35% 0 15%;
+    background-color: #00153A;
+}
+
+#aws-lp {
+    background: rgb(2,22,45);
+    background: linear-gradient(125deg, rgba(2,22,45,1) 0%, rgba(65,121,152,1) 50%, rgba(6,18,51,1) 100%);
+    padding: 100px 25%;
+}
+.full-mqtt-support {
+    color: #fff;
+}
+
+.full-mqtt-support p {
+    font-size: 17px;
+    line-height: 1.5rem;
+}
+
+#aws-logo {
+    position: absolute;
+    left: 6%;
+    top: 225px;
+    width: 12%;
+    max-width: 220px;
+}
+
+.landing-page-headlines {
+    width: 100%;
+    display: flex;
+}
+
+.yellow-bar {
+    width: 15px;
+    display: block;
+    background-color: #ffc000;
+    margin: 10px 15px 15px 0;
+}
+
+.landing-page-headlines h1 {
+    color: #fff;
+    line-height: 1rem;
+}
+.landing-page-headlines h2 {
+    color: #fff;
+}
+
+.full-mqtt-support button,
+.full-mqtt-support button:hover {
+    box-shadow: none;
+    margin: 0 25px 15px 0;
+}
+
+.lp-table {
+    color: #000;
+    margin-top: 25px;
+}
+
+.lp-table-row div:first-child {
+    text-align: left;
+}
+
+.lp-table-row {
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    grid-gap: 4px;
+}
+
+.lp-table-row > div {
+    margin-bottom: 4px;
+    background-color: #fff;
+    text-align: center;
+    height: 30px;
+    padding: 10px 15px 4px 15px;
+    box-shadow: 8px 8px 6px rgba(0,0,0,.25);
+}
+
+.lp-table-row > .double-height {
+    height: 62px;
+}
+
+.lp-table-row.table-head {
+    color: #fff;
+    font-weight: bold;
+}
+
+.lp-table-row.table-head > div {
+    background-color: #454a54;
+    height: 50px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+.lp-table-row.color-hg > div {
+    background-color: #e2eaf1;
+}
+
+.lp-table-row > div > img {
+    margin-top: 3px;
+    height: 20px;
+}
+
+#trusted-by {
+    background-color: #fff;
+    margin-top: 250px;
+    padding: 0 10%;
+    margin: 50px 0 150px;
+    text-align: center;
+}
+
+#trusted-by > #logo-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#trusted-by > #logo-gallery > img {
+    width: 150px;
+    filter: grayscale(1);
+    transition: all 0.25s;
+}
+
+#trusted-by > #logo-gallery > img:hover {
+    filter: grayscale(0);
+}
+
+@media screen and (max-width:1280px) {
+    .full-mqtt-support,
+    #aws-lp {
+        padding: 80px 10% 50px 20%;
+    }
+    #azure-lp {
+        background: url('/img/mqtt-support-azure-iot-1280.jpg');
+        padding: 80px 10% 0 10%;
+        height: 800px;
+        background-repeat: no-repeat;
+    }
+    #azure-lp p {
+        width: 90%;
+    }
+
+    .lp-table {
+        width: 80%;
+    }
+
+    #aws-logo {
+        position: absolute;
+        left: 5%;
+        top: 225px;
+        width: 10%;
+        max-width: 200px;
+    }
+
+    #hivemq-aws-table {
+        width: 100%;
+    }
+
+    .lp-table-row > div {
+        height: 25px;
+        padding: 8px 15px 4px 12px;
+    }
+
+    .lp-table-row>.double-height {
+        height: 64px;
+    }
+
+    #trusted-by > #logo-gallery > img {
+        width: 125px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #azure-lp {
+        background: url('/img/mqtt-support-azure-iot-1024.jpg');
+        height: 800px;
+        padding: 100px 10% 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    full-mqtt-support,
+    #aws-lp {
+       padding: 50px 10% 50px;
+    }
+
+    #azure-lp p,
+    .lp-table {
+        width: 100%;
+    }
+    .lp-table-row > div {
+        height: auto;
+        padding: 8px 15px 4px 12px;
+    }
+
+    #trusted-by {
+        background-color: #fff;
+        padding: 0 5%;
+        text-align: center;
+    }
+    #azure-lp button {
+        font-size: smaller;
+        padding: 8px 12px;
+    }
+    #aws-logo {
+        position: relative;
+        top: 20px;
+        left: 0;
+        float: left;
+        margin: 0 35px 35px 0;
+        width: 75px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #full-mqtt-support-wrapper {
+        top: 60px;
+    }
+
+    full-mqtt-support,
+    #azure-lp,
+    #aws-lp {
+       padding: 50px 5% 50px;
+    }
+    #azure-lp {
+        background: rgb(0,21,59);
+        background: linear-gradient(300deg, rgba(0,21,59,1) 0%, rgba(15,132,222,1) 30%, rgba(1,41,107,1) 100%);
+        height: auto;
+    }
+    #azure-lp p,
+    .lp-table {
+        width: 100%;
+        font-size: smaller;
+    }
+    .lp-table-row > div,
+    .lp-table-row.table-head > div  {
+        height: auto;
+        font-size: small;
+    }
+    .lp-table-row>.double-height {
+        height: auto;
+        line-height: 1rem;
+    }
+    #trusted-by {
+        background-color: #fff;
+        padding: 0 5%;
+        text-align: center;
+    }
+    .landing-page-headlines h1 {
+        font-size: 28px;
+    }
+
+    .landing-page-headlines h2 {
+        font-size: 22px;
+    }
+}

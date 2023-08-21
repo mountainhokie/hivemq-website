@@ -1,0 +1,51 @@
+<div class="my-6 flex flex-col gap-6">
+   {{ range $author := .Page.Params.authors }}
+   {{ $data := index $.Site.Data.authors $author }}
+
+   <div class="border rounded border-solid border-[#d7d7d7] flex flex-col gap-4 sm:flex-row pb-6 px-6 mb-4 md:mb-0">
+      <div class="w-auto sm:w-2/5 min-w-fit sm:max-w-[10rem] mt-6 text-center">
+         <img style="height: 90px; width: 90px;" src="{{ $data.image }}"
+            alt="author {{ $data.name.firstName }} {{ $data.name.lastName }}" />
+      </div>
+      <div class="flex flex-col flex-1 gap-2">
+         <h3 class="text-[#ffc000] text-2xl">About {{ $data.name.firstName }} {{ $data.name.lastName
+            }}
+         </h3>
+         {{ if isset $data "isGuestAuthor" }}
+         <b>Thanks for this guest blog post</b>
+         {{ end }}
+         <p class="m-0">{{ $data.description | markdownify }}</p>
+         {{ if isset $data "links" }}
+         {{ if (or (isset $data.links "twitter") (isset $data.links "linkedin") (isset
+         $data.links "github")) }}
+         <p class="m-0">Follow {{ $data.name.firstName }} on {{ if isset $data.links "twitter" }} <a
+               href="{{ $data.links.twitter }}" target="_blank">Twitter</a>
+            {{ end }} {{ if (and (isset $data.links "twitter") (isset $data.links "linkedin")) }}
+            and
+            {{ end }} {{ if isset
+            $data.links "linkedin" }} <a href="{{ $data.links.linkedin }}" target="_blank">LinkedIn</a>
+            {{ end }} {{ if (or
+            (and (isset $data.links "github") (isset $data.links "linkedin")) (and (isset
+            $data.links "github") (isset
+            $data.links "twitter"))) }} and {{ end }} {{ if isset $data.links "github" }}<a
+               href="{{ $data.links.github }}" target="_blank">Github</a> {{ end }}</p>
+         {{end}}
+         {{ if isset $data.links "website" }}
+         <a href="{{ $data.links.website }}" class="block"><img src="/img/svg/fa-globe.svg"
+               class="fa-icon align-text-top" style="height: 18px; width: 27px;" alt="mail icon">Website</a>
+         {{ end }}
+         {{ if isset $data.links "email" }}
+         <a href="mailto:{{ $data.links.email }}?subject=Response to your article {{ $.Page.Params.Title }}"
+            class="block"><img src="/img/svg/fa-envelope.svg" class="fa-icon align-text-top"
+               style="height: 18px; width: 27px;" alt="mail icon"> Contact {{
+            $data.name.firstName }}</a>
+         {{ end }}
+         {{ end }}
+         {{ if (or (not (isset $data.links "email")) (eq $data.isGuestAuthor "true")) }}
+         <a href="/contact/" class="block"><img src="/img/svg/fa-envelope.svg" class="fa-icon align-text-top"
+               style="height: 18px; width: 27px;" alt="mail icon"> Contact HiveMQ</a>
+         {{ end }}
+      </div>
+   </div>
+   {{ end }}
+</div>

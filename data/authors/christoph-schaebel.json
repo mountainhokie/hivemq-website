@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Christoph",
+        "lastName": "Schäbel"
+    },
+    "image": "/img/blog/author-cs.jpg",
+    "description": "Christoph is a software developer for the product HiveMQ. He has been part of HiveMQ's journey from the beginning and is an expert in the practical use of MQTT.",
+    "links": {
+        "email": "christoph.schaebel@hivemq.com"
+    }
+}

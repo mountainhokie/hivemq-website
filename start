@@ -1,0 +1,25 @@
+#!/bin/sh
+
+set -euo pipefail
+
+if ! command -v docker &> /dev/null
+then
+    echo "'docker' command could not be found."
+    echo "Please install docker first."
+    exit 1
+fi
+
+
+command_to_run="npm run dev"
+
+maybe_all=${1:-}
+if [ -n "$maybe_all" ] && [ "$maybe_all" == "all" ]
+then
+  command_to_run="npm run dev-all"
+fi
+
+
+echo "Building docker image"
+docker build -f Dockerfile.dev -t hivemq-website:latest .
+echo "Starting docker container in dev mode"
+docker run -v "./:/app" -p "1313:1313" --rm -it hivemq-website:latest $command_to_run

@@ -1,0 +1,11 @@
+{
+    "name": {
+        "firstName": "Till",
+        "lastName": "Seeberger"
+    },
+    "image": "/img/blog/author-ts.jpg",
+    "description": "Till is a software engineer at HiveMQ and maintainer of the <a href=\"https://github.com/hivemq/mqtt-cli\" target=\"_blank\">MQTT CLI</a> open-source project.",
+    "links": {
+        "email": "till.seeberger@hivemq.com"
+    }
+}

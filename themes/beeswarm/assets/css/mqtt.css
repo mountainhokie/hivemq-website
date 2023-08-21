@@ -1,0 +1,407 @@
+/* MQTT Overview Start */
+.header-mqtt-logo {
+  width: 275px;
+}
+
+#mqtt-ebook-spotlight,
+.hs-button {
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.hs-form .hs-button.primary:hover  {
+  background-color: #000;
+  color: #ffc000;
+}
+#mqtt-ebook-ticker-bright {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(56,126,180,1) 100%);
+    color: #000;
+    padding: 10px 5% 10px 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #fff;
+    box-shadow: 0px 4px 6px #999;
+    cursor: pointer;
+}
+
+#mqtt-ebook-ticker-bright:hover {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(125,187,235,1) 100%);
+}
+
+#mqtt-ebook-ticker-bright:hover button {
+    background: #000;
+    color: #ffc000;
+}
+
+#mqtt-ebook-ticker-bright h4 {
+    margin: 0;
+}
+
+#mqtt-ebook-ticker-bright button {
+    margin-left: 100px;
+    width: 150px;
+    background: #ffc000;
+    border: 1px solid #666;
+    padding: 10px 15px;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#mqtt-ebook {
+  width: 300px;
+  height: 182px;
+  display: block;
+  background-image: url('/img/mqtt-essentials-ebook.png');
+  background-color: #FFFFFF;
+  line-height: 1.25em;
+  margin-top: -250px;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  position: relative;
+  float: right;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+#mqtt-ebook h4 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 16px;
+}
+
+#mqtt-ebook p {
+  font-size: 12px;
+  line-height: 1.1rem;
+  margin: 0 5px 0 120px;
+}
+
+#mqtt-ebook-description {
+  max-width: 350px;
+}
+
+#mqtt-ebook-mobile h4 {
+  font-size: 18px;
+  line-height: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#mqtt-intro {
+  padding: 50px 0 25px;
+}
+
+.mqtt-video {
+  width: 360px;
+  height: 220px;
+  margin: 25px auto 0;
+}
+
+#mqtt-resources {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#mqtt-resources div {
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+
+#mqtt-resources div.border-top {
+  border-top: 1px solid #666;
+}
+
+#mqtt-resources a {
+  color: #000;
+}
+
+#mqtt-resources a:hover {
+  color: #0060aa;
+}
+
+#mqtt-resources .fa-icon {
+  height: 20px;
+  margin: 0 5px 0 0;
+  position: relative;
+  top: 4px;
+  left: 0;
+}
+
+#mqtt-next-steps {
+  padding: 0 0 100px;
+  margin-top: 100px;
+  margin-bottom: -100px;
+}
+
+/* Blog Series Start */
+
+.blog-series-pic {
+  width: 50%;
+}
+
+.blog-series-box h4 {
+  min-height: 5rem;
+  margin-bottom: 0px;
+
+}
+
+#client-lib-list {
+  width: 90%;
+  padding: 5%;
+  margin: 25px auto;
+  text-align: center;
+  background-color:#efefef;
+}
+
+#client-lib-list .client-lib {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.client-lib {
+  width: 25%;
+  text-align: center;
+  margin: 1.5% ;
+  padding: 0 10px;
+  border: 1px solid #c9c9c9;
+  color: #000;
+  height: 325px;
+  background-color: #fff;
+}
+.client-lib h3 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.client-lib:hover {
+  color: #003e6e;
+}
+/* MQTT 5 Start */
+#mqtt5-intro {
+  text-align: left;
+  margin: -50px 0 50px;
+}
+
+#series-banner {
+  width: 100%;
+}
+
+#mqtt5-client-lib-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mqtt5-client-lib {
+  margin: 25px 0;
+}
+
+.mqtt5-client-lib {
+  width: 45%;
+}
+
+#mqtt5-webinar {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#mqtt5-features-table {
+  width: 80%;
+  margin: 50px auto;
+}
+#mqtt5-features-table .col {
+  text-align: left;
+  padding: 12px 25px 12px 0;
+}
+
+#mqtt5-features-table .col1 .fa-icon {
+  text-align: center;
+  height: 18px;
+  padding-left: 18px;
+}
+
+.mqtt5-client-lib {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.seperator-line {
+  border-right: 1px dashed #999;
+  margin: 25px 0;
+}
+
+.cloud-banner {
+    color: #fff;
+    padding: 2px 10px 20px;
+    margin: 25px 0 50px;
+    font-weight: 300;
+    box-sizing: border-box;
+    border-radius: 10px;
+    line-height: 1.2rem;
+    background-image: url("/img/cloud-banner-bg.jpg");
+}
+
+.cloud-banner button {
+    padding: 10px;
+    background-color: #ffc000;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+/* MQTT 5 End */
+/* Glossary */
+#showmore01,
+#showmore02,
+#showmore03 {
+    font-weight: bold;
+    color: #0060aa;
+    cursor: pointer;
+}
+#mqtt-packets,
+#topic-filters,
+#qos {
+    display: none;
+}
+.glossary-details {
+    padding-left: 25px;
+}
+/* Glossary End */
+
+/* Responsive Rules */
+
+@media screen and (max-width: 1280px ){
+  .client-lib {
+    height: 300px;
+  }
+  .client-lib > img {
+    width: 60%;
+  }
+  #mqtt5-features-table {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .mqtt5-posts {
+    width: 45%;
+  }
+  /* MQTT Overview */
+  #mqtt-ebook-spotlight,
+  #mqtt-ebook-desktop {
+    display: none;
+  }
+  #mqtt-ebook-mobile {
+        display: flex;
+        align-items: start;
+        font-size: 14px;
+        line-height: 1.1rem;
+        border-radius: 5px;
+        margin: 0;
+        padding: 0;
+  }
+
+  #mqtt-ebook-mobile .cloud-banner {
+     margin-top: 0;
+  }
+    .header-mqtt-logo {
+    width: 250px;
+  }
+  /* Blog Series */
+  .blog-series-box h4 {
+    min-height: 3.5rem;
+  }
+}
+ 
+ @media screen and (max-width: 1024px ){
+  .client-lib {
+    width: 40%;
+    height: 300px;
+  }
+  .client-lib > img {
+    width: 175px;
+  }
+  #mqtt5-features-table {
+    width: 100%;
+  }
+
+  .header-mqtt-logo {
+    width: 200px;
+  }
+  #mqtt-resources {
+    width: 90%;
+  }
+  #mqtt-resources div.border-top{
+    border-top: none;
+  }  
+ }
+ 
+ @media screen and (max-width: 768px ){
+  .blog-series-pic {
+    display: none;
+  }
+  .client-lib {
+    width: 70%;
+    height: 300px;
+  }
+  .client-lib > img {
+    width: 175px;
+  }
+  .mqtt5-posts,
+  .mqtt5-client-lib {
+    margin: 35px 0;
+    width: 100%;
+  }
+  #mqtt5-webinar {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .seperator-line {
+    display: none;
+  }
+  #visual-mqtt .white-h2 {
+    margin: 0;
+  } 
+  .mqtt-video {
+    width: auto;
+    height: 200px;
+    margin: 15px auto 0;
+  }
+
+  #mqtt-ebook-description-mobile,
+  #mqtt-ebook-download-page .hubspot-form {
+    width: 80%;
+  }
+  #mqtt-ebook-ticker-bright {
+    font-size: 15px;
+    line-height: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #mqtt-ebook-ticker-bright button {
+      margin: 10px 0 5px 0px;
+  }
+    /* Blog Series */
+    .blog-series-box h4 {
+      min-height: 2.5rem;
+    }
+}
+
+ @media screen and (max-width: 480px ){
+ .client-lib {
+   width: 70%;
+   height: 300px;
+   padding: 0 12.5%;
+ }
+ .client-lib > img {
+   width: 175px;
+ }
+ .mqtt-ebook-cover {
+   display: none;
+ }
+}

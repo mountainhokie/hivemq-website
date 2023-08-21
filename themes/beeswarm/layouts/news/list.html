@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section id="news-list">
+        <div id="top-pagination"  style="width: 100%; text-align: center;">{{ template "_internal/pagination.html" . }}</div>
+        {{ $paginator := .Paginate (where .Site.RegularPages "Section" "news") 20 }}
+        {{ range $paginator.Pages }}
+        <article class="news-list-preview">
+                <div class="news-overview-poster"><a href="{{.Permalink}}"><img src="{{ .Site.BaseURL }}{{ .Params.poster }}"></a></div>
+                <div class="news-overview-content">
+                        <span class="news-overview-details">{{ dateFormat " Jan 2, 2006" .Date }}</span>
+                        <h3><a href="{{.Permalink}}">{{ .Title }}</a></h3>
+                        <span class="news-overview-summary">{{ .Params.custom_summary }}</span><br/><br/>
+                        <a href="{{.Permalink}}"><img src="/img/svg/fa-circle-arrow-right.svg" style="height: 18px; position: relative; top: 3px;"> Read more</a><br>
+                </div>
+        </article>
+        {{ end }}
+<div id="bottom-pagination">{{ template "_internal/pagination.html" . }}</div>
+</section>
+{{ end }}

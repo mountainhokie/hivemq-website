@@ -1,0 +1,90 @@
++++
+title = "MQTT Data Integration with MongoDB"
+headline = ""
+date = 2023-07-10T00:00:28+02:00
+draft = false
+authors = ["humza-akhtar", "nasir-qureshi"]
+tags = ["HiveMQ"]
+poster = "/img/blog/header-mongodb-extension.jpg"
+special_link01 = ["/extension/mongodb-extension/", "MongoDB Extension"]
+custom_css = "css/blog.css"
+custom_summary = "Integrate HiveMQ with MongoDB, allowing MQTT data to be stored persistently in your MongoDB database. The Enterprise Extension for MongoDB is available now for a free trial."
+meta_description= "Integrate HiveMQ with MongoDB, allowing MQTT data to be stored persistently in your MongoDB database. The Enterprise Extension for MongoDB is available now for a free trial."
+ogtitle = "MQTT Data Integration with MongoDB"
+ogimage = "https://www.hivemq.com/img/blog/featured-image-for-social-media-og.jpg"
+ogdescription = "Integrate HiveMQ with MongoDB, allowing MQTT data to be stored persistently in your MongoDB database. The Enterprise Extension for MongoDB is available now for a free trial."
+url= "/article/mqtt-data-integration-with-mongodb-iot-iiot/"
++++
+
+HiveMQ has continued innovating and bringing new solutions to facilitate IoT data movement and become the central nervous system enabling fast, reliable, and secure IoT data movement. 
+HiveMQ’s full-featured MQTT broker can now integrate with MongoDB, the leading multi-cloud developer data platform for building modern applications.
+
+
+The Enterprise Extension for MongoDB is HiveMQ's latest addition to its rapidly growing suite of data integration solutions for [data analytics and streaming platforms](/extensions/). 
+The extension expands our customers' options to fully integrate their MQTT data with several data management solutions like MongoDB, PostgreSQL, Timescale, and CockroachDB reliably, securely, and at scale. 
+HiveMQ also has extensions to integrate Data Streaming technologies like Kafka, Google PubSub, and Amazon Kinesis.
+
+
+Try the HiveMQ platform now with the [Enterprise Extension for MongoDB for free](/extension/mongodb-extension/).
+
+
+## About the Enterprise Extension for MongoDB
+
+The new extension seamlessly integrates MQTT data for persistent data storage in MongoDB. 
+It also supports MongoDB’s __SCRAM Authentication__, Connection URIs for MongoDB, and secures the data with robust __TLS encryption__. 
+A unique feature of this extension is that it is fully customizable and allows users to define the precise format of documents in MongoDB, ensuring that MQTT messages can be optimally formatted for streamlined data querying.
+
+
+#### SCRAM Authentication Support:
+
+SCRAM is a widely used authentication mechanism in MongoDB that secures client-server communication by securely exchanging client credentials with the MongoDB server. 
+The HiveMQ Extension for MongoDB enables secure authentication using MongoDB's SCRAM authentication for clients connecting to HiveMQ and utilizing MongoDB as the storage backend.
+
+#### TLS Encryption:
+
+The extension can be configured to enable TLS encryption between HiveMQ and MongoDB. MongoDB and the driver must be configured separately. 
+Details on configuring TLS encryption with MongoDB can be found in the extension’s [documentation](https://docs.hivemq.com/hivemq-mongodb-extension/latest/index.html).
+
+#### Fully Customizable Templating:
+
+The extension's fully customizable templating system helps define documents' exact format. 
+This ensures the data is ingested and stored in MongoDB according to operational requirements and helps optimize data formatting for efficient data querying and quick analysis.
+
+## Sample Use Case: HiveMQ and MongoDB Make Smart Buildings Energy Efficient and Sustainable
+
+In a world where energy conservation and efficient resource utilization are essential, let's consider a use case where MongoDB, HiveMQ's MQTT broker, and the Enterprise Extension for MongoDB combine forces to enable real-time energy monitoring for smart buildings.
+
+#### Smart Sensors and the MQTT Broker Transmit Data
+
+Using MQTT-based IoT devices deployed throughout the building, electricity consumption, temperature, and occupancy data is collected and sent to the HiveMQ MQTT broker. 
+The MQTT broker acts as a central hub, efficiently and securely handling the communication between devices and backend systems. 
+The HiveMQ MQTT broker also ensures reliable message delivery and provides MQTT-specific features like quality of service, session management, and topic-based message routing.
+
+#### The Enterprise Extension for MongoDB Seamlessly Integrates MQTT Data
+
+The HiveMQ MongoDB extension seamlessly integrates with MongoDB, allowing for persistent storage of the MQTT data in a highly scalable and flexible manner. 
+The fully customizable templating system allows MQTT data to be stored according to the building’s specific operational requirements. 
+MongoDB's document-based model accommodates the varying data formats and structures generated by different IoT devices.
+
+#### MongoDB’s Analytics and Visualization Tools Make Data Actionable
+
+Once the MQTT data is securely stored in MongoDB, using its powerful in-app analytics, building managers can gain deep insights into energy consumption patterns, identify anomalies, and optimize energy usage. 
+
+By leveraging MongoDB's rich query support and aggregation framework, building managers can make data-driven decisions promptly, reducing costs and enhancing sustainability. 
+In cases where data needs to be exported to an ML/AI engine, MongoDB Spark and Kafka connectors can be used. 
+Users of MongoDB Atlas can leverage Atlas Device Sync and Realm to send real-time alerts and messages to mobile devices. 
+Data can be visualized using MongoDB Atlas Charts or through a third-party Business Intelligence (BI) tool connected via MongoDB BI connector or Atlas SQL interface. 
+To learn more about MongoDB’s role in industrial connectivity and IIoT, please visit {{< targetlink "MongoDB's Manufacturing and Industrial IoT" "https://www.mongodb.com/industries/manufacturing" "_blank" >}} page.
+
+## Reference Architecture
+
+
+{{< figure src="/img/hivemq-mongodb-data-procession.png" caption="Combine HiveMQ and MongoDB to process data in real-time and analyze it for informed, data-driven decision-making." alt="Combine HiveMQ and MongoDB to process data in real-time and analyze it for informed, data-driven decision-making" >}}
+
+## Get Started With the Enterprise MongoDB Extension
+
+If you haven’t already, download the latest [free trial version of the HiveMQ platform](/downloads/hivemq/). After that, follow the instructions in the MongoDB Documentation to get started.
+
+## Contact Us to Explore How HiveMQ Can Help
+
+Learn more about using HiveMQ's full-featured MQTT platform to publish MQTT data to MongoDB for persistent storage. [Reach out to us](/contact) to learn how we can help!

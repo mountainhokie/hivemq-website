@@ -1,0 +1,13 @@
+{
+    "name": {
+        "firstName": "Sathya",
+        "lastName": "Vikram"
+    },
+    "image": "/img/blog/author-sv.jpg",
+    "links": {
+        "linkedin": "https://www.linkedin.com/in/sathyavikram",
+        "email": "support@workswithweb.com",
+        "website": "workswithweb.com"
+    },
+    "isGuestAuthor": "true"
+}

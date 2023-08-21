@@ -1,0 +1,8 @@
+{
+    "name": {
+        "firstName": "Christian",
+        "lastName": "Rohmann"
+    },
+    "image": "portraits/portrait-christian-rohmann.jpg",
+    "description": "Christian Rohmann is expert on Kubernetes and cloud architectures at inovex."
+}

@@ -1,0 +1,12 @@
+{
+    "name": {
+        "firstName": "Nasir",
+        "lastName": "Qureshi"
+    },
+    "image": "/img/blog/author-nq.png",
+    "description": "Nasir Qureshi is a Senior Product Marketing Manager at HiveMQ. With a passion for working on disruptive technology products, Nasir has helped SaaS companies in their hyper-growth journey for over 3 years now. He holds an MBA from California State University with a major in Technology and Data Management. His interests include IoT devices, networking, data security, and privacy.",
+    "links": {
+        "email": "nasir.qureshi@hivemq.com",
+        "linkedin": "https://www.linkedin.com/in/nasir-qureshi/"
+    }
+}

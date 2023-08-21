@@ -1,0 +1,9 @@
+{
+    "name": {
+        "firstName": "James",
+        "lastName": "Sutton"
+    },
+    "image": "/img/blog/author-js.jpg",
+    "description": "James works for IBM in the Internet of Things Foundation team. He is a contributor on the Eclipse Paho Project, mainly working on the Java, Android and JavaScript Clients",
+    "isGuestAuthor": "true"
+}

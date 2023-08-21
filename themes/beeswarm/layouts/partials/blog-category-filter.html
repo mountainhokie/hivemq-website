@@ -1,0 +1,30 @@
+<div id="category-filter">
+<select name="categories" id="categories" onchange="categoryFilter()">
+    <option value="">Sort by category...</option>
+    <option value="/blog/">&gt; Show all</option>
+    <option value="/tags/hivemq/">HiveMQ</option>
+    <option value="/tags/hivemq-release/">HiveMQ Release</option>
+    <option value="/tags/hivemq-cloud/">HiveMQ Cloud</option>
+    <option value="/tags/hivemq-ese/">HiveMQ Enterprise Security Extension</option>
+    <option value="/tags/hivemq-extension-for-kafka/">HiveMQ Extension for Kafka</option>
+    <option value="/tags/hivemq-mqtt-client/">HiveMQ MQTT Client</option>
+    <option value="/tags/mqtt-cli/">MQTT CLI</option>
+    <option value="/tags/mqtt-essentials/">MQTT Essentials</option>
+    <option value="/tags/mqtt-toolbox/">MQTT Toolbox</option>
+    <option value="/tags/mqtt-client-library/">MQTT Client Library</option>
+    <option value="/tags/iot-security/">IoT Security</option>
+    <option value="/tags/mqtt-5/">MQTT 5</option>
+    <option value="/tags/mqtt-5-essentials/">MQTT 5 Essentials</option>
+    <option value="/tags/mqtt-sparkplug/">MQTT Sparkplug</option>
+    <option value="/tags/kubernetes/">Kubernetes</option>
+    <option value="/tags/third-party/">Third Party</option>
+</select>
+</div>
+<script>
+var indexSelection;
+function categoryFilter(){
+        var filterSelection = document.getElementById("categories").value;
+        window.location.assign(filterSelection);
+        document.getElementById("categories").selectedIndex = 0;
+}
+</script>

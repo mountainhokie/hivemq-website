@@ -1,0 +1,13 @@
+{
+    "name": {
+        "firstName": "Kévin",
+        "lastName": "KIN-FOO"
+    },
+    "image": "/img/blog/author-kkf.jpg",
+    "description": "Kévin is doing fine things at Sierra Wireless. He said that he loves his software simple.",
+    "links": {
+        "email": "kkinfoo@sierrawireless.com",
+        "twitter": "https://twitter.com/KevinKINFOO"
+    },
+    "isGuestAuthor": "true"
+}

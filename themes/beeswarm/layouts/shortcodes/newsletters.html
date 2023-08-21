@@ -1,0 +1,44 @@
+{{ range first 5 (sort .Site.Data.newsletters "id" "desc") }}
+<div class="data-box">
+   <h3 style="padding-top: 16px;">{{ .release }}</h3>
+   <div class="data-info">
+      <p>{{ .title }} <br/>
+      <img src="/img/svg/fa-circle-arrow-right-b.svg" style="width: 16px; height: 16px; margin-right: 5px; position: relative; top: 2px;" alt="arrow right icon"><a href="{{ .url }}" target="_blank">Read</a>
+      </p>
+   </div>
+</div>
+{{ end }}
+
+<div style="width: 100%; text-align: center;">
+   <button class="large-yellow-btn" id="revealNL">show all</button>
+</div>
+
+<div class="hidden">
+{{ range after 5 (sort .Site.Data.newsletters "id" "desc") }}
+<div class="data-box">
+   <h3 style="padding-top: 16px;">{{ .release }}</h3>
+   <div class="data-info">
+      <p>{{ .title }} <br/>
+      <img src="/img/svg/fa-circle-arrow-right-b.svg" style="width: 16px; height: 16px; margin-right: 5px; position: relative; top: 2px;" alt="arrow right icon"><a href="{{ .url }}" target="_blank">Read</a>
+      </p>
+   </div>
+</div>
+{{ end }}
+</div>
+
+<script>
+   $(document).ready(function(){
+      var pastIssues = "hidden";
+      $("#revealNL").html("Past issues");
+      $("#revealNL").click(function(){
+          $(".hidden").toggleClass("reveal");
+          if (pastIssues == "revealed"){
+            $("#revealNL").html("Past issues");
+               pastIssues = "hidden";
+          } else {
+            $("#revealNL").html("Hide past issues");
+            pastIssues = "revealed";
+          } 
+      });
+    });
+</script>

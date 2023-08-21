@@ -1,0 +1,36 @@
+<section id="cookie-consent-banner">
+    This website collects usage data using cookies. For more information about your right of objection and how you can prevent cookies from being stored, see our <a href="/privacy-policy">Privacy Policy.</a> <button id="bannerClose">Okay</button>
+</section>
+
+<script>
+$(document).ready(function () {
+    try {
+        var closeBanner = $("#bannerClose");
+        var cookieBanner = $("#cookie-consent-banner");
+
+        cookieBanner.hide();
+
+        closeBanner.click(function () {
+            setConsentCookie("cookie-consent-shown", "true");
+            cookieBanner.fadeOut();
+        });
+        var cookieConsentValue = getConsentCookie("cookie-consent-shown");
+        if (cookieConsentValue !== "true") {
+            cookieBanner.show();
+        }
+
+    } catch (e) {
+        console.log(e);
+    }
+});
+function setConsentCookie(key, value) {
+    var expires = new Date();
+    expires.setTime(expires.getTime() + (1 * 24 * 60 * 60 * 1000)); // 1 day
+    document.cookie = key + '=' + value + ';expires=' + expires.toUTCString() + ';path=/';
+}
+
+function getConsentCookie(key) {
+    var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+    return keyValue ? keyValue[2] : null;
+}
+</script>

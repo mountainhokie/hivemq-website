@@ -1,0 +1,13 @@
+{
+    "name": {
+        "firstName": "Sandro",
+        "lastName": "Kock"
+    },
+    "image": "/img/blog/author-sk.jpg",
+    "description": "Sandro Kock is a mobile developer at SSV Software Systems, responsible for developing mobile solutions, with a focus on IoT/M2M. The maintainer of <a href=\"https://github.com/mqttjs/mqtt-elements\" rel=\"nofollow\" target=\"_blank\">mqtt-elements</a>, a set of MQTT WebComponents, created with Polymer.",
+    "links": {
+        "email": "sandro.kock@gmail.com",
+        "github": "https://github.com/mqttjs/mqtt-elements"
+    },
+    "isGuestAuthor": "true"
+}
